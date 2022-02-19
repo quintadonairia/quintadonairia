@@ -2,7 +2,12 @@ import Head from "next/head";
 import Card from "../components/molecules/Card";
 import Section from "../components/organisms/Section";
 
-import { RiFacebookCircleFill, RiInstagramLine } from "react-icons/ri";
+import {
+  RiArrowDownSLine,
+  RiFacebookCircleFill,
+  RiInstagramLine,
+} from "react-icons/ri";
+import Icon from "../components/atoms/Icon";
 
 const Home = () => {
   return (
@@ -20,17 +25,13 @@ const Home = () => {
             "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
         }}
       >
-        <ul className="flex flex-col lg:flex-row items-center gap-8 lg:gap-48 text-white font-serif text-4xl lg:text-6xl">
-          <li className="hover:border-b-2 hover:border-white py-4 lg:py-8 cursor-pointer">
-            Stay
-          </li>
-          <li className="hover:border-b-2 hover:border-white py-4 lg:py-8 cursor-pointer">
-            Experience
-          </li>
-          <li className="hover:border-b-2 hover:border-white py-4 lg:py-8 cursor-pointer">
-            Dine
-          </li>
-        </ul>
+        <h1 className="text-white font-serif text-4xl px-8 leading-snug">
+          A wellness haven, combining wine and olive oil with the rich
+          Portuguese cuisine
+        </h1>
+        <Icon mobile>
+          <RiArrowDownSLine className="text-white text-4xl animate-bounce absolute bottom-16 left-56" />
+        </Icon>
       </header>
 
       {/* Stay Section */}
