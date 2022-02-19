@@ -3,6 +3,8 @@ import { RiMenuLine } from "react-icons/ri";
 import { RiCloseLine } from "react-icons/ri";
 import { useState } from "react";
 
+import Icon from "../atoms/Icon";
+
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
 
@@ -17,7 +19,7 @@ const Sidebar = () => {
           sidebar ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <ul className="flex flex-col gap-4 text-xl cursor-pointer">
+        <ul className="flex flex-col gap-8 text-4xl cursor-pointer font-serif">
           <Link href="/experiences">
             <li onClick={handleClick}>Experiences</li>
           </Link>
@@ -34,12 +36,13 @@ const Sidebar = () => {
             <li onClick={handleClick}>Contacts</li>
           </Link>
         </ul>
-        <RiCloseLine className="text-xl cursor-pointer" onClick={handleClick} />
+        <Icon>
+          <RiCloseLine onClick={handleClick} />
+        </Icon>
       </div>
-      <RiMenuLine
-        className="text-white text-2xl cursor-pointer"
-        onClick={handleClick}
-      />
+      <Icon>
+        <RiMenuLine onClick={handleClick} className="text-white" />
+      </Icon>
     </div>
   );
 };
