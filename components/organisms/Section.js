@@ -26,7 +26,9 @@ const Section = ({
           <h2 className="font-serif text-3xl lg:text-4xl">{subheading}</h2>
           <p>{description}</p>
           <Link href="/stay">
-            <Button variant="primary">{action}</Button>
+            <Button variant="primary" size="lg">
+              {action}
+            </Button>
           </Link>
         </div>
       </div>

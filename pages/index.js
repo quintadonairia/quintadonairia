@@ -51,11 +51,11 @@ const Home = () => {
       <img src="images/20210820-donairia-008.jpg" alt="" />
 
       {/* Experience Section */}
-      <section className="flex flex-col items-center p-16 gap-16 lg:gap-0">
+      <section className="flex flex-col items-center p-8 gap-16 lg:gap-0 lg:p-24">
         <h1 className="text-4xl lg:text-6xl font-serif text-olive">
           Experiences
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 lg:p-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
           <Card
             image="images/20211003-donairia-024.jpg"
             title="Guided Tour and Tasting"

@@ -14,7 +14,9 @@ const Navigation = () => {
         />
       </Link>
       <Link href="/stay">
-        <Button variant="primary">Book Now</Button>
+        <Button variant="primary" size="sm">
+          Book Now
+        </Button>
       </Link>
     </div>
   );

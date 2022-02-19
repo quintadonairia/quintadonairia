@@ -1,13 +1,21 @@
 import React from "react";
 
-const Button = ({ children, variant }) => {
+const Button = ({ children, variant, size }) => {
+  const sizes = {
+    sm: "text-xs px-6 py-3",
+    md: "text-xs px-8 py-4",
+    lg: "text-sm px-12 py-4",
+  };
+
   const variants = {
-    primary: "bg-transparent border-stone-300 hover:bg-tan hover:text-white",
+    primary:
+      "bg-transparent border-stone-300 hover:bg-tan hover:text-white border-2",
+    link: "px-0 pb-2 border-b-2 border-black",
   };
 
   return (
     <button
-      className={`w-fit uppercase font-bold tracking-widest text-sm border-2 px-12 py-5 duration-300 ${variants[variant]}`}
+      className={`w-fit uppercase font-bold tracking-widest text-sm duration-300 ${variants[variant]} ${sizes[size]}`}
     >
       {children}
     </button>
