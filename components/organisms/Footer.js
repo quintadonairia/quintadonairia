@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "./atoms/Button";
+import Button from "../atoms/Button";
 
 import { RiArrowRightLine } from "react-icons/ri";
 
@@ -11,7 +11,7 @@ const Footer = () => {
           <img
             src="/graphics/wordmark-white.svg"
             alt="logo"
-            className="w-32 lg:w-40 cursor-pointer"
+            className="w-24 lg:w-40 cursor-pointer"
           />
         </Link>
         <ul className="grid grid-cols-2 gap-5 font-serif text-2xl">

@@ -114,7 +114,7 @@ const Home = () => {
               Stay connected with us
             </h1>
             <p className="text-sm lg:text-base">
-              Share your memories with us with <strong>#quintadonairia</strong>
+              Share your memories with <strong>#quintadonairia</strong>
             </p>
           </div>
         </div>

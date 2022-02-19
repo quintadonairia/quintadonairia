@@ -37,7 +37,7 @@ const Sidebar = () => {
         <RiCloseLine className="text-xl cursor-pointer" onClick={handleClick} />
       </div>
       <RiMenuLine
-        className={`text-white text-xl cursor-pointer`}
+        className="text-white text-2xl cursor-pointer"
         onClick={handleClick}
       />
     </div>
