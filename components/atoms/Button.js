@@ -7,7 +7,7 @@ const Button = ({ children, variant }) => {
 
   return (
     <button
-      className={`uppercase font-bold tracking-widest text-sm border-2  px-4 py-2 duration-300 ${variants[variant]}`}
+      className={`w-fit uppercase font-bold tracking-widest text-sm border-2 px-12 py-5 duration-300 ${variants[variant]}`}
     >
       {children}
     </button>
