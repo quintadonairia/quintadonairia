@@ -13,7 +13,7 @@ const Sidebar = () => {
   return (
     <div>
       <div
-        className={`flex p-8 bg-merino shadow-xl min-h-screen w-full sm:w-1/4 items-start justify-between text-gray-900 fixed top-0 left-0 transition-all duration-700 ${
+        className={`z-20 flex p-8 bg-merino shadow-xl min-h-screen w-full sm:w-1/4 items-start justify-between text-gray-900 fixed top-0 left-0 transition-all duration-700 ${
           sidebar ? "translate-x-0" : "-translate-x-full"
         }`}
       >
