@@ -16,7 +16,7 @@ const Section = ({
         <small className="text-sm uppercase tracking-widest font-bold">
           {title}
         </small>
-        <h1 className="text-4xl lg:text-5xl text-center font-serif text-olive">
+        <h1 className="text-4xl lg:text-5xl text-center font-serif text-olive-500">
           {heading}
         </h1>
       </div>

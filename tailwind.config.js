@@ -12,7 +12,8 @@ module.exports = {
         serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
       },
       colors: {
-        olive: "#808000",
+        "olive-500": "#808000",
+        "olive-800": "#393913",
         burgundy: "#800020",
         tan: "#D2B48C",
         merino: "#FBF8F4",

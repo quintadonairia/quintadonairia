@@ -6,7 +6,7 @@ import { RiFacebookCircleFill, RiInstagramLine } from "react-icons/ri";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen gap-8">
+    <div className="flex flex-col items-center min-h-screen">
       <Head>
         <title>Quinta Dona Iria | Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -52,7 +52,7 @@ const Home = () => {
 
       {/* Experience Section */}
       <section className="flex flex-col items-center p-8 gap-16 lg:gap-0 lg:p-24">
-        <h1 className="text-4xl lg:text-6xl font-serif text-olive">
+        <h1 className="text-4xl lg:text-6xl font-serif text-olive-500">
           Experiences
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
@@ -103,19 +103,27 @@ const Home = () => {
       />
 
       {/* Social Section */}
-      <div className="bg-olive w-full h-96 text-white flex flex-col items-center p-16 gap-12">
+
+      <div className="bg-olive-500 w-full text-white flex flex-col items-center p-8 lg:p-16 gap-8 lg:gap-12">
         <div className="flex flex-col items-center">
           <small className="uppercase tracking-widest pb-2 text-sm font-bold">
             Social
           </small>
-          <h1 className="font-serif text-5xl">Stay connected with us</h1>
+          <div className="flex flex-col gap-4 items-center">
+            <h1 className="font-serif text-3xl lg:text-5xl">
+              Stay connected with us
+            </h1>
+            <p className="text-sm lg:text-base">
+              Share your memories with us with <strong>#quintadonairia</strong>
+            </p>
+          </div>
         </div>
         <ul className="flex items-center gap-8">
           <a href="https://www.facebook.com/quintadonairia" target="_blank">
-            <RiFacebookCircleFill className="text-4xl" />
+            <RiFacebookCircleFill className="text-3xl lg:text-4xl" />
           </a>
           <a href="https://www.instagram.com/quintadonairia/" target="_blank">
-            <RiInstagramLine className="text-4xl" />
+            <RiInstagramLine className="text-3xl lg:text-4xl" />
           </a>
         </ul>
       </div>

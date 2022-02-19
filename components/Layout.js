@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-merino flex flex-col gap-8">
+    <div className="bg-merino flex flex-col">
       <Navigation />
       <main>{children}</main>
       <Footer />
