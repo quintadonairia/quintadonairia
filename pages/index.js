@@ -1,13 +1,14 @@
 import Head from "next/head";
 import Card from "../components/molecules/Card";
 import Section from "../components/organisms/Section";
+import Icon from "../components/atoms/Icon";
 
 import {
   RiArrowDownSLine,
   RiFacebookCircleFill,
   RiInstagramLine,
 } from "react-icons/ri";
-import Icon from "../components/atoms/Icon";
+import Header from "../components/molecules/Header";
 
 const Home = () => {
   return (
@@ -25,19 +26,19 @@ const Home = () => {
             "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
         }}
       >
-        <h1 className="text-white font-serif text-4xl px-8 leading-snug">
+        <h1 className="text-white font-serif text-4xl px-8 leading-snug lg:text-6xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight">
           A wellness haven, combining wine and olive oil with the rich
           Portuguese cuisine
         </h1>
-        <Icon mobile>
-          <RiArrowDownSLine className="text-white text-4xl animate-bounce absolute bottom-16 left-56" />
+        <Icon size="xl" mode="dark" mobile>
+          <RiArrowDownSLine className="absolute bottom-16 left-1/2 -translate-x-1/2" />
         </Icon>
       </header>
 
       {/* Stay Section */}
       <Section
         title="Lodging"
-        heading="Steeped in history, enveloped in nature and inspired by a passion for
+        heading="Enveloped in nature and inspired by a passion for
           hospitality."
         subheading="Stay with us"
         image="images/20210820-donairia-009.jpg"
@@ -49,13 +50,12 @@ const Home = () => {
         action="View Lodging"
       />
 
-      <img src="images/20210820-donairia-008.jpg" alt="" />
-
       {/* Experience Section */}
-      <section className="flex flex-col items-center p-8 gap-16 lg:gap-0 lg:p-24">
-        <h1 className="text-4xl lg:text-6xl font-serif text-olive-500">
-          Experiences
-        </h1>
+      <section className="flex flex-col items-center px-6 py-16 gap-16 lg:gap-24 lg:p-24">
+        <Header
+          title="Experience"
+          heading="There is always something to enjoy and experience"
+        />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
           <Card
             image="images/20211003-donairia-024.jpg"
@@ -103,9 +103,15 @@ const Home = () => {
         reverse
       />
 
-      {/* Social Section */}
+      {/* Social Banner */}
 
-      <div className="bg-olive-500 w-full text-white flex flex-col items-center p-8 lg:p-16 gap-8 lg:gap-12">
+      <div
+        className="w-full text-white flex flex-col items-center p-8 lg:p-16 gap-8 lg:gap-12"
+        style={{
+          backgroundImage:
+            "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
+        }}
+      >
         <div className="flex flex-col items-center">
           <small className="uppercase tracking-widest pb-2 text-sm font-bold">
             Social

@@ -5,13 +5,13 @@ import { RiArrowRightLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-start gap-24 py-16 px-8 lg:py-16 lg:px-32 bg-olive-800 text-white">
+    <footer className="flex flex-col items-start gap-24 py-16 px-8 lg:py-16 lg:px-32 bg-olive-900 text-white">
       <div className="w-full flex flex-col gap-16 lg:gap-0 lg:flex-row lg:items-start lg:justify-between">
         <Link href="/">
           <img
             src="/graphics/wordmark-white.svg"
             alt="logo"
-            className="w-24 lg:w-40 cursor-pointer"
+            className="w-32 lg:w-40 cursor-pointer"
           />
         </Link>
         <ul className="grid grid-cols-2 gap-5 font-serif text-2xl">
