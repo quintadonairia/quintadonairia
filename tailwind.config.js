@@ -16,6 +16,7 @@ module.exports = {
         "olive-900": "#1B1B0E",
         "burgundy-500": "#800020",
         "tan-500": "#D2B48C",
+        "tan-100": "#F0ECE6",
         "tan-50": "#FBF8F4",
       },
     },

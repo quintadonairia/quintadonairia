@@ -3,12 +3,9 @@ import Card from "../components/molecules/Card";
 import Section from "../components/organisms/Section";
 import Icon from "../components/atoms/Icon";
 
-import {
-  RiArrowDownSLine,
-  RiFacebookCircleFill,
-  RiInstagramLine,
-} from "react-icons/ri";
+import { RiArrowDownSLine } from "react-icons/ri";
 import Header from "../components/molecules/Header";
+import Banner from "../components/molecules/Banner";
 
 const Home = () => {
   return (
@@ -100,35 +97,7 @@ const Home = () => {
       />
 
       {/* Social Banner */}
-      <div
-        className="w-full text-white flex flex-col items-center p-8 lg:p-16 gap-8 lg:gap-12"
-        style={{
-          backgroundImage:
-            "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
-        }}
-      >
-        <div className="flex flex-col items-center">
-          <small className="uppercase tracking-widest pb-2 text-sm font-bold">
-            Social
-          </small>
-          <div className="flex flex-col gap-4 items-center">
-            <h1 className="font-serif text-3xl lg:text-5xl">
-              Stay connected with us
-            </h1>
-            <p className="text-sm lg:text-base">
-              Share your memories with <strong>#quintadonairia</strong>
-            </p>
-          </div>
-        </div>
-        <ul className="flex items-center gap-8">
-          <a href="https://www.facebook.com/quintadonairia" target="_blank">
-            <RiFacebookCircleFill className="text-3xl lg:text-4xl" />
-          </a>
-          <a href="https://www.instagram.com/quintadonairia/" target="_blank">
-            <RiInstagramLine className="text-3xl lg:text-4xl" />
-          </a>
-        </ul>
-      </div>
+      <Banner />
     </div>
   );
 };
