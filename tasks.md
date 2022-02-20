@@ -10,7 +10,6 @@
   🔃 Extend and optimize color palettes
   ✅ Fix various spacing and alignment issues
   ✅ Reduce section padding on mobile
-  🔃 Turn Experiences section into a carousel
 - Conditionally render coming soon page
 
 - Our story

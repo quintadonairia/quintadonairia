@@ -5,17 +5,32 @@ module.exports = {
       return [
         {
           source: "/lodging",
-          destination: "/maintenance",
+          destination: "/coming-soon",
           permanent: false,
         },
         {
           source: "/experiences",
-          destination: "/maintenance",
+          destination: "/coming-soon",
           permanent: false,
         },
         {
           source: "/restaurant",
-          destination: "/maintenance",
+          destination: "/coming-soon",
+          permanent: false,
+        },
+        {
+          source: "/products",
+          destination: "/coming-soon",
+          permanent: false,
+        },
+        {
+          source: "/story",
+          destination: "/coming-soon",
+          permanent: false,
+        },
+        {
+          source: "/contacts",
+          destination: "/coming-soon",
           permanent: false,
         },
       ];

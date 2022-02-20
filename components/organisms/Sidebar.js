@@ -20,24 +20,24 @@ const Sidebar = () => {
         }`}
       >
         <ul className="flex flex-col gap-8 text-3xl cursor-pointer font-serif text-olive-900">
-          <Link href="/lodging">
+          <a href="/lodging">
             <li onClick={handleClick}>Lodging</li>
-          </Link>
-          <Link href="/experiences">
+          </a>
+          <a href="/experiences">
             <li onClick={handleClick}>Experiences</li>
-          </Link>
-          <Link href="/restaurant">
+          </a>
+          <a href="/restaurant">
             <li onClick={handleClick}>Restaurant</li>
-          </Link>
-          <Link href="/products">
+          </a>
+          <a href="/products">
             <li onClick={handleClick}>Products</li>
-          </Link>
-          <Link href="/story">
+          </a>
+          <a href="/story">
             <li onClick={handleClick}>Our Story</li>
-          </Link>
-          <Link href="/contacts">
+          </a>
+          <a href="/contacts">
             <li onClick={handleClick}>Contacts</li>
-          </Link>
+          </a>
         </ul>
         <Icon>
           <RiCloseLine onClick={handleClick} />
