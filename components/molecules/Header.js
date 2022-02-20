@@ -4,7 +4,7 @@ const Header = ({ title, heading }) => {
       <small className="text-sm uppercase tracking-widest font-bold">
         {title}
       </small>
-      <h1 className="text-4xl lg:text-5xl text-center font-serif text-olive-500">
+      <h1 className="text-4xl lg:text-5xl text-center font-serif text-olive-500 lg:max-w-4xl">
         {heading}
       </h1>
     </div>

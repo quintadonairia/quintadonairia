@@ -10,7 +10,7 @@ const Card = ({ image, title, description }) => {
           <p>{description}</p>
         </div>
         <Button variant="link" size="sm">
-          Read more
+          Learn More
         </Button>
       </div>
     </article>

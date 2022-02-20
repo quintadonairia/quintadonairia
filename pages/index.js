@@ -26,7 +26,7 @@ const Home = () => {
             "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
         }}
       >
-        <h1 className="text-white font-serif text-4xl px-8 leading-snug lg:text-6xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight">
+        <h1 className="text-white font-serif text-4xl px-8 leading-snug lg:text-5xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight">
           A wellness haven, combining wine and olive oil with the rich
           Portuguese cuisine
         </h1>
@@ -42,19 +42,15 @@ const Home = () => {
           hospitality."
         subheading="Stay with us"
         image="images/20210820-donairia-009.jpg"
-        description="Indulge yourself in the luxury of one of Aberdeenshire's most
-            historic hotels. Nestled on the banks of the River Dee, many of our
-            40 bedrooms boasts stunning views coupled with contemporary Scottish
-            interiors. Relax in our comfortable beds, luxuriate in our stylish
-            bathrooms and enjoy our personal touches of Scottish hospitality."
+        description="Indulge yourself in the rustic, comfortable environment of our small hotel. With stunning views over the nearby fields and mountains, we want to offer you moments of rest and leisure in the 8 rooms equipped with air conditioning, Wi-Fi and TV."
         action="View Lodging"
       />
 
       {/* Experience Section */}
       <section className="flex flex-col items-center px-6 py-16 gap-16 lg:gap-24 lg:p-24">
         <Header
-          title="Experience"
-          heading="There is always something to enjoy and experience"
+          title="Experiences"
+          heading="There is always something to enjoy and experience at our place"
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
           <Card
@@ -98,13 +94,12 @@ const Home = () => {
         heading="Taste the traditional Portuguese cuisine"
         subheading="Dine with us"
         image="images/20211003-donairia-050.jpg"
-        description="Enjoying good food and company in our atmospheric Poachers Brasserie with views of the river is a quintessential part of the Maryculter House experience. Inspired by the abundance of fine produce from our local larder, our Head Chef, Alan Clarke and his team carefully prepare delicious dishes from seasonal, local ingredients."
+        description="In the Safra Restaurant, we explore new tastes and sensations, intersecting tradition and modernity. Whether you are staying in, or just visiting us for the day, we want to offer you a unique and memorable dining experience, rooted on our local and sustainable products."
         action="Make a Reservation"
         reverse
       />
 
       {/* Social Banner */}
-
       <div
         className="w-full text-white flex flex-col items-center p-8 lg:p-16 gap-8 lg:gap-12"
         style={{

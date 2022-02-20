@@ -10,5 +10,5 @@
 - Extend and optimize color palettes
 - Fix various spacing and alignment issues
   ✅ Reduce section padding on mobile
-- Shorten Experiences cards
+- Turn Experiences section into a carousel
 - Conditionally render coming soon page
