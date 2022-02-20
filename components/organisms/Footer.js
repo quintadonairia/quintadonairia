@@ -17,7 +17,7 @@ const Footer = () => {
         <ul className="grid grid-cols-2 gap-5 font-serif text-2xl">
           <li>Lodging</li>
           <li>Experiences</li>
-          <li>Dining</li>
+          <li>Restaurant</li>
           <li>Products</li>
           <li>Our Story</li>
           <li>Contacts</li>
