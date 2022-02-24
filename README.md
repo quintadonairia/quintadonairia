@@ -4,5 +4,5 @@ Quinta Dona Iria is a website project for a local farm / hotel. It is currently 
 
 Built With
 
-- Next.js
-- TailwindCSS
+- [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)

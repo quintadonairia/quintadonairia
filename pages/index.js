@@ -1,13 +1,30 @@
-import Head from "next/head";
-import Card from "../components/molecules/Card";
-import Section from "../components/organisms/Section";
-import Icon from "../components/atoms/Icon";
+import { useRouter } from "next/router";
+import en from "../locales/en/index.json";
+import pt from "../locales/pt/index.json";
 
-import { RiArrowDownSLine } from "react-icons/ri";
+import Head from "next/head";
+import Icon from "../components/atoms/Icon";
+import Card from "../components/molecules/Card";
 import Header from "../components/molecules/Header";
 import Banner from "../components/molecules/Banner";
+import Section from "../components/organisms/Section";
+
+import { RiArrowDownSLine } from "react-icons/ri";
 
 const Home = () => {
+  const router = useRouter();
+  const { locale } = router;
+
+  let t;
+  switch (locale) {
+    case "en":
+      t = en;
+      break;
+    case "pt":
+      t = pt;
+      break;
+  }
+
   return (
     <div className="flex flex-col items-center min-h-screen">
       <Head>
@@ -24,31 +41,26 @@ const Home = () => {
         }}
       >
         <h1 className="text-white font-serif text-4xl px-8 leading-snug lg:text-5xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight">
-          A wellness haven, combining wine and olive oil with the rich
-          Portuguese cuisine
+          {t.heroTitle}
         </h1>
         <Icon size="xl" mode="dark" mobile>
           <RiArrowDownSLine className="absolute bottom-16 left-1/2 -translate-x-1/2" />
         </Icon>
       </header>
 
-      {/* Stay Section */}
+      {/* Lodging Section */}
       <Section
-        title="Lodging"
-        heading="Enveloped in nature and inspired by a passion for
-          hospitality."
-        subheading="Stay with us"
+        title={t.lodgingTitle}
+        heading={t.lodgingHeading}
+        subheading={t.lodgingSubheading}
         image="images/20210820-donairia-009.jpg"
-        description="Indulge yourself in the rustic, comfortable environment of our small hotel. With stunning views over the nearby fields and mountains, we want to offer you moments of rest and leisure in the 8 rooms equipped with air conditioning, Wi-Fi and TV."
-        action="View Lodging"
+        description={t.lodgingDescription}
+        action={t.lodgingAction}
       />
 
-      {/* Experience Section */}
+      {/* Experiences Section */}
       <section className="flex flex-col items-center px-6 py-16 gap-16 lg:gap-24 lg:p-24">
-        <Header
-          title="Experiences"
-          heading="There is always something to enjoy and experience at our place"
-        />
+        <Header title={t.experiencesTitle} heading={t.experiencesHeading} />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
           <Card
             image="images/20211003-donairia-024.jpg"
