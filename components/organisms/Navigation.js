@@ -32,7 +32,7 @@ const Navigation = () => {
           className="w-32 lg:w-40 cursor-pointer absolute left-1/2 -translate-x-1/2"
         />
       </Link>
-      <Link href="/stay">
+      <Link href="/lodging">
         <Button variant="primary" size="sm" mode="dark" desktop>
           Book Now
         </Button>

@@ -39,11 +39,11 @@ const Sidebar = () => {
             <li onClick={handleClick}>Contacts</li>
           </a>
         </ul>
-        <Icon>
+        <Icon size="sm">
           <RiCloseLine onClick={handleClick} />
         </Icon>
       </div>
-      <Icon>
+      <Icon size="sm">
         <RiMenuLine onClick={handleClick} className="text-white" />
       </Icon>
     </div>
