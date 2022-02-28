@@ -11,4 +11,4 @@
 - ✅ Fix various spacing and alignment issues
 - ✅ Reduce section padding on mobile
 - ✅ Conditionally render coming soon page
-- 🔃 Implement global translation (Portuguese)
+- ✅ Implement global translation (Portuguese)

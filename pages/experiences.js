@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import en from "../locales/en/index.json";
-import pt from "../locales/pt/index.json";
+import en from "../locales/en/experiences.json";
+import pt from "../locales/pt/experiences.json";
 
 import Header from "../components/molecules/Header";
 import Card from "../components/molecules/Card";
@@ -25,35 +25,23 @@ const Experiences = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
         <Card
           image="images/20211003-donairia-024.jpg"
-          title="Guided Tour and Tasting"
-          description="Visit the wine cellar, the olive press, the regional products store and other spaces on the farm. Enjoy
-    the silence of nature, the chirping of the birds, contemplating
-    the landscape of vineyards, olive groves and surrounding
-    mountains. To accompany the tasting, taste the region
-    products: Rabaçal cheese, honey and farm nut bread, olives and
-    sausages."
+          title={t.firstExperienceTitle}
+          description={t.firstExperienceDescription}
         />
         <Card
           image="images/20211003-donairia-048.jpg"
-          title="Visit and Lunch"
-          description="In a lunch filled with our local gastronomy, we highlight the
-    wedding soup, the tiborna of bacalhau as in our mill, the
-    octopus à lagareiro, the chicken from the farm, the suckling
-    piglet, the chanfana of our village, or the goatling roasted in the
-    oven of firewood"
+          title={t.secondExperienceTitle}
+          description={t.secondExperienceDescription}
         />
         <Card
           image="images/20211003-donairia-022.jpg"
-          title="Picnic at the Farm"
-          description="Basket with regional products (ham, salpicão, chorizo, cheese, nuts, pataniscas, and piglet sandwiches), Dona Iria olive oil and Tocata Wine."
+          title={t.thirdExperienceTitle}
+          description={t.thirdExperienceDescription}
         />
         <Card
           image="images/20210928-donairia-027.jpg"
-          title="Grape Harvest"
-          description="In September, guests and visitors of the farm are challenged to
-      work on the grape harvest, with a break to eat the “bucha”.
-      After work comes rest and reward, with a lunch fulfilled with
-      local cuisine and harmonized with the house wines."
+          title={t.fourthExperienceTitle}
+          description={t.fourthExperienceDescription}
         />
       </div>
     </section>
