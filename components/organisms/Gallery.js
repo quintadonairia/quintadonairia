@@ -35,19 +35,21 @@ const Gallery = () => {
     setSlideIndex(slideIndex === length - 1 ? 0 : slideIndex + 1);
   };
 
-  console.log(slideIndex);
-
   return (
     <section className="flex flex-col gap-6">
-      <div className={`flex flex-row`}>
+      <div className="flex flex-row">
         {slides.map((slide, index) => {
           return (
             <div
-              className={`flex flex-col gap-6 ${
+              className={`flex flex-col gap-6 lg:px-32 ${
                 index === slideIndex ? "block" : "hidden"
               }`}
+              key={slide.id}
             >
-              <img src={slide.image}></img>
+              <img
+                src={slide.image}
+                className="lg:aspect-[2/1] object-cover"
+              ></img>
               <div className="flex flex-row justify-between px-6">
                 <BsArrowLeft
                   className="hover:scale-125 duration-100 hover:text-tan-500 cursor-pointer"
