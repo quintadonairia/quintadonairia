@@ -20,7 +20,7 @@ const Button = ({ children, variant, size, mode, desktop, mobile }) => {
 
   return (
     <button
-      className={`w-fit uppercase font-bold tracking-widest text-sm duration-300 ${
+      className={`w-fit uppercase font-bold tracking-widest duration-300 ${
         variants[variant]
       } ${sizes[size]} ${modes[mode]} ${desktop && "hidden lg:block"} ${
         mobile && "block lg:hidden"

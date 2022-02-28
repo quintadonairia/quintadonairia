@@ -7,7 +7,16 @@
   "lodgingAction": "View Lodging",
   "experiencesTitle": "Experiences",
   "experiencesHeading": "There is always something to enjoy and experience at our place",
-  "experiencesSubheading": "Fique connosco",
-  "experiencesDescription": "Relaxe no ambiente rústico e confortável do nosso pequeno hotel. Com vistas deslumbrantes sobre a quinta e serras próximas, queremos oferecer-lhe momentos de descanso e lazer nos 8 quartos equipados com ar condicionado, Wi-Fi e TV.",
-  "experiencesAction": "Ver Alojamento"
+  "firstExperienceTitle": "Guided Tour and Tasting",
+  "firstExperienceDescription": "Visit the wine cellar, the olive press, the regional products store and other spaces on the farm. Enjoy the silence of nature, the chirping of the birds, contemplating the landscape of vineyards, olive groves and surrounding mountains. To accompany the tasting, taste the region products: Rabaçal cheese, honey and farm nut bread, olives and sausages.",
+  "secondExperienceTitle": "Visit and Lunch",
+  "secondExperienceDescription": "In a lunch filled with our local gastronomy, we highlight the wedding soup, the tiborna of bacalhau as in our mill, the octopus à lagareiro, the chicken from the farm, the suckling piglet, the chanfana of our village, or the goatling roasted in the oven of firewood.",
+  "thirdExperienceTitle": "Picnic at the Farm",
+  "thirdExperienceDescription": "Basket with regional products (ham, salpicão, chorizo, cheese, nuts, pataniscas, and piglet sandwiches), Dona Iria olive oil and Tocata Wine.",
+  "fourthExperienceTitle": "Grape Harvest",
+  "fourthExperienceDescription": "In September, guests and visitors of the farm are challenged to work on the grape harvest, with a break to eat the “bucha”. After work comes rest and reward, with a lunch fulfilled with local cuisine and harmonized with the house wines.",
+  "restaurantTitle": "Restaurant",
+  "restaurantHeading": "Taste the Portuguese traditional cuisine.",
+  "restaurantSubheading": "Dine with us",
+  "restaurantDescription": "In the Safra Restaurant, we explore new tastes and sensations, intersecting tradition and modernity. Whether you are staying in, or just visiting us for the day, we want to offer you a unique and memorable dining experience, rooted on our local and sustainable products."
 }

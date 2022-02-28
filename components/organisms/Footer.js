@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
       <div className="w-full flex flex-col gap-12 lg:items-start lg:gap-0 lg:flex-row lg:justify-between text-sm">
         <div className="flex flex-col gap-2">
-          <p>Copyright © 2022 Quinta Dona Iria. All Rights Reserved.</p>
+          <p>© 2022 Quinta Dona Iria</p>
           <ul className="flex gap-2">
             <li>Terms</li>
             <li>Privacy</li>
