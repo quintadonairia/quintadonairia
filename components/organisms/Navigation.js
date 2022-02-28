@@ -38,7 +38,9 @@ const Navigation = () => {
         </Button>
       </Link>
       <Icon variant="primary" size="sm" mode="dark" mobile>
-        <RiPhoneFill className="text-white" />
+        <a href="tel:966923278">
+          <RiPhoneFill className="text-white" />
+        </a>
       </Icon>
     </nav>
   );
