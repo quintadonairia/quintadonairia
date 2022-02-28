@@ -37,7 +37,10 @@ const Footer = () => {
           <Button variant="primary" size="md">
             Book Now
           </Button>
-          <a href="" className="flex items-center gap-2">
+          <a
+            href="https://www.google.com/maps/dir//Quinta+Dona+Iria,+R.+Central+n%C2%BA35,+3220-336+Coimbra/@40.1713618,-8.3993411,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd22f170ee4c62c9:0xc108f06628ebaecb!2m2!1d-8.3320875!2d40.1440357"
+            className="flex items-center gap-2"
+          >
             Get directions
             <RiArrowRightLine />
           </a>
