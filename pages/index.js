@@ -4,12 +4,13 @@ import pt from "../locales/pt/index.json";
 
 import Head from "next/head";
 import Icon from "../components/atoms/Icon";
-import Card from "../components/molecules/Card";
-import Header from "../components/molecules/Header";
 import Banner from "../components/molecules/Banner";
+import Header from "../components/molecules/Header";
 import Section from "../components/organisms/Section";
+import Gallery from "../components/organisms/Gallery";
 
 import { RiArrowDownSLine } from "react-icons/ri";
+import Button from "../components/atoms/Button";
 
 const Home = () => {
   const router = useRouter();
@@ -59,57 +60,31 @@ const Home = () => {
       />
 
       {/* Experiences Section */}
-      <section className="flex flex-col items-center px-6 py-16 gap-16 lg:gap-24 lg:p-24">
+      <section className="flex flex-col items-center px-6 py-16 gap-16">
         <Header title={t.experiencesTitle} heading={t.experiencesHeading} />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
-          <Card
-            image="images/20211003-donairia-024.jpg"
-            title="Guided Tour and Tasting"
-            description="Visit the wine cellar, the olive press, the regional products store and other spaces on the farm. Enjoy
-          the silence of nature, the chirping of the birds, contemplating
-          the landscape of vineyards, olive groves and surrounding
-          mountains. To accompany the tasting, taste the region
-          products: Rabaçal cheese, honey and farm nut bread, olives and
-          sausages."
-          />
-          <Card
-            image="images/20211003-donairia-048.jpg"
-            title="Visit and Lunch"
-            description="In a lunch filled with our local gastronomy, we highlight the
-          wedding soup, the tiborna of bacalhau as in our mill, the
-          octopus à lagareiro, the chicken from the farm, the suckling
-          piglet, the chanfana of our village, or the goatling roasted in the
-          oven of firewood"
-          />
-          <Card
-            image="images/20211003-donairia-022.jpg"
-            title="Picnic at the Farm"
-            description="Basket with regional products (ham, salpicão, chorizo, cheese, nuts, pataniscas, and piglet sandwiches), Dona Iria olive oil and Tocata Wine."
-          />
-          <Card
-            image="images/20210928-donairia-027.jpg"
-            title="Grape Harvest"
-            description="In September, guests and visitors of the farm are challenged to
-            work on the grape harvest, with a break to eat the “bucha”.
-            After work comes rest and reward, with a lunch fulfilled with
-            local cuisine and harmonized with the house wines."
-          />
-        </div>
+        <Gallery />
+        <Button variant="primary" size="lg" mode="light">
+          {t.experiencesAction}
+        </Button>
       </section>
 
       {/* Dine Section */}
       <Section
-        title="Restaurant"
-        heading="Taste the traditional Portuguese cuisine"
-        subheading="Dine with us"
+        title={t.restaurantTitle}
+        heading={t.restaurantHeading}
+        subheading={t.restaurantSubheading}
         image="images/20211003-donairia-050.jpg"
-        description="In the Safra Restaurant, we explore new tastes and sensations, intersecting tradition and modernity. Whether you are staying in, or just visiting us for the day, we want to offer you a unique and memorable dining experience, rooted on our local and sustainable products."
-        action="Make a Reservation"
+        description={t.restaurantDescription}
+        action={t.restaurantAction}
         reverse
       />
 
       {/* Social Banner */}
-      <Banner />
+      <Banner
+        title={t.bannerTitle}
+        heading={t.bannerHeading}
+        description={t.bannerDescription}
+      />
     </div>
   );
 };

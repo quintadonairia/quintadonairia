@@ -12,4 +12,3 @@
 - ✅ Reduce section padding on mobile
 - ✅ Conditionally render coming soon page
 - 🔃 Implement global translation (Portuguese)
-  - Either use static js object files with all the translations, or use a library (other method?)

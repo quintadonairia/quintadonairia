@@ -7,6 +7,15 @@
   "lodgingAction": "View Lodging",
   "experiencesTitle": "Experiences",
   "experiencesHeading": "There is always something to enjoy and experience at our place",
+  "experiencesAction": "Discover Experiences",
+  "restaurantTitle": "Restaurant",
+  "restaurantHeading": "Taste the Portuguese traditional cuisine.",
+  "restaurantSubheading": "Dine with us",
+  "restaurantDescription": "In the Safra Restaurant, we explore new tastes and sensations, intersecting tradition and modernity. Whether you are staying in, or just visiting us for the day, we want to offer you a unique and memorable dining experience, rooted on our local and sustainable products.",
+  "restaurantAction": "Make a Reservation",
+  "bannerTitle": "Social",
+  "bannerHeading": "Stay connected with us",
+  "bannerDescription": "Share your memories with #quintadonairia",
   "firstExperienceTitle": "Guided Tour and Tasting",
   "firstExperienceDescription": "Visit the wine cellar, the olive press, the regional products store and other spaces on the farm. Enjoy the silence of nature, the chirping of the birds, contemplating the landscape of vineyards, olive groves and surrounding mountains. To accompany the tasting, taste the region products: Rabaçal cheese, honey and farm nut bread, olives and sausages.",
   "secondExperienceTitle": "Visit and Lunch",
@@ -14,9 +23,5 @@
   "thirdExperienceTitle": "Picnic at the Farm",
   "thirdExperienceDescription": "Basket with regional products (ham, salpicão, chorizo, cheese, nuts, pataniscas, and piglet sandwiches), Dona Iria olive oil and Tocata Wine.",
   "fourthExperienceTitle": "Grape Harvest",
-  "fourthExperienceDescription": "In September, guests and visitors of the farm are challenged to work on the grape harvest, with a break to eat the “bucha”. After work comes rest and reward, with a lunch fulfilled with local cuisine and harmonized with the house wines.",
-  "restaurantTitle": "Restaurant",
-  "restaurantHeading": "Taste the Portuguese traditional cuisine.",
-  "restaurantSubheading": "Dine with us",
-  "restaurantDescription": "In the Safra Restaurant, we explore new tastes and sensations, intersecting tradition and modernity. Whether you are staying in, or just visiting us for the day, we want to offer you a unique and memorable dining experience, rooted on our local and sustainable products."
+  "fourthExperienceDescription": "In September, guests and visitors of the farm are challenged to work on the grape harvest, with a break to eat the “bucha”. After work comes rest and reward, with a lunch fulfilled with local cuisine and harmonized with the house wines."
 }
