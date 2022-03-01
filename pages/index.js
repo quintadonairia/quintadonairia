@@ -3,6 +3,8 @@ import en from "../locales/en/index.json";
 import pt from "../locales/pt/index.json";
 
 import Head from "next/head";
+import { motion } from "framer-motion";
+
 import Icon from "../components/atoms/Icon";
 import Banner from "../components/molecules/Banner";
 import Header from "../components/molecules/Header";
@@ -41,9 +43,14 @@ const Home = () => {
             "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
         }}
       >
-        <h1 className="text-white font-serif text-4xl px-8 leading-snug lg:text-5xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight">
+        <motion.h1
+          initial={{ x: "-4rem", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="text-white font-serif text-4xl px-8 leading-snug lg:text-5xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight"
+        >
           {t.heroTitle}
-        </h1>
+        </motion.h1>
         <Icon size="xl" mode="dark" mobile>
           <RiArrowDownSLine className="absolute bottom-16 left-1/2 -translate-x-1/2" />
         </Icon>

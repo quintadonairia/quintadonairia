@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <Button variant="primary" size="md">
+          <Button variant="primary" size="sm">
             Book Now
           </Button>
           <a
