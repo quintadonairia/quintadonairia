@@ -16,12 +16,14 @@ const Section = ({
   return (
     <section className="flex flex-col items-center gap-16 px-6 py-16 lg:p-24">
       <Header title={title} heading={heading} />
-      <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center`}>
+      <div
+        className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center`}
+      >
         <motion.img
           initial={{ x: "-4rem", opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1 }}
           src={image}
           alt=""
           className={`${reverse && `order-last`}`}
