@@ -5,6 +5,10 @@ class MyDocument extends Document {
     return (
       <Html className="scroll-smooth">
         <Head>
+          <meta
+            name="description"
+            content="A wellness haven, combining wine and olive oil with the rich Portuguese cuisine"
+          ></meta>
           <link
             href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
             rel="stylesheet"

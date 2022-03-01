@@ -12,3 +12,5 @@
 - ✅ Reduce section padding on mobile
 - ✅ Conditionally render coming soon page
 - ✅ Implement global translation (Portuguese)
+- 🔃 Optimize SEO meta tags
+- 🔃 Remove blue background on mobile tap
