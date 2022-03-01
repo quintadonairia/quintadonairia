@@ -29,7 +29,7 @@ const Home = () => {
   }
 
   return (
-    <div className="flex flex-col items-center min-h-screen">
+    <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
       <Head>
         <title>Quinta Dona Iria | Home</title>
         <link rel="icon" href="/favicon.ico" />
