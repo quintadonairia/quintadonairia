@@ -13,7 +13,7 @@ const Banner = ({ title, heading, description }) => {
         <small className="uppercase tracking-widest pb-2 text-sm font-bold">
           {title}
         </small>
-        <div className="flex flex-col gap-4 items-center">
+        <div className="flex flex-col gap-4 items-center text-center">
           <h1 className="font-serif text-3xl lg:text-5xl">{heading}</h1>
           <p className="text-sm lg:text-base">{description}</p>
         </div>
