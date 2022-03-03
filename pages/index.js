@@ -51,9 +51,6 @@ const Home = () => {
         >
           {t.heroTitle}
         </motion.h1>
-        <Icon size="xl" mode="dark" mobile>
-          <RiArrowDownSLine className="absolute bottom-16 left-1/2 -translate-x-1/2" />
-        </Icon>
       </header>
 
       {/* Lodging Section */}
@@ -61,7 +58,7 @@ const Home = () => {
         title={t.lodgingTitle}
         heading={t.lodgingHeading}
         subheading={t.lodgingSubheading}
-        image="images/20210820-donairia-009.jpg"
+        image="images/20210820-donairia-008.jpg"
         description={t.lodgingDescription}
         action={t.lodgingAction}
       />
