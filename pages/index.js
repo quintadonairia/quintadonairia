@@ -34,7 +34,7 @@ const Home = () => {
       </Head>
 
       {/* Hero Section */}
-      <Hero title={t.heroTitle} />
+      <Hero title={t.heroTitle} image="url(images/20211013-donairia-004.jpg)" />
 
       {/* Lodging Section */}
       <Section

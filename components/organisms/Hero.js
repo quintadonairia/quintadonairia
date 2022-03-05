@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 
-const Hero = ({ title }) => {
+const Hero = ({ title, image }) => {
   return (
     <header
       className="w-full h-[32rem] lg:h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
       style={{
-        backgroundImage:
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
+        backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ${image}`,
       }}
     >
       <motion.h1

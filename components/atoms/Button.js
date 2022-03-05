@@ -15,7 +15,7 @@ const Button = ({ children, variant, size, mode, desktop, mobile }) => {
 
   const variants = {
     primary: "bg-transparent border-2",
-    link: "px-0 pb-2 border-b-2 border-black",
+    link: "px-0 pb-2 border-b-2",
   };
 
   return (
