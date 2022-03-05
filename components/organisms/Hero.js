@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const Hero = ({ title }) => {
   return (
     <header
       className="w-full h-[32rem] lg:h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center relative"
@@ -15,7 +15,7 @@ const Hero = () => {
         transition={{ duration: 1 }}
         className="text-white font-serif text-3xl px-8 leading-snug lg:text-5xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight"
       >
-        {t.heroTitle}
+        {title}
       </motion.h1>
     </header>
   );

@@ -34,7 +34,7 @@ const Home = () => {
       </Head>
 
       {/* Hero Section */}
-      <Hero />
+      <Hero title={t.heroTitle} />
 
       {/* Lodging Section */}
       <Section
