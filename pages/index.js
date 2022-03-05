@@ -3,16 +3,14 @@ import en from "../locales/en/index.json";
 import pt from "../locales/pt/index.json";
 
 import Head from "next/head";
-import { motion } from "framer-motion";
 
-import Icon from "../components/atoms/Icon";
 import Banner from "../components/molecules/Banner";
 import Header from "../components/molecules/Header";
 import Section from "../components/organisms/Section";
 import Gallery from "../components/organisms/Gallery";
 
-import { RiArrowDownSLine } from "react-icons/ri";
 import Button from "../components/atoms/Button";
+import Hero from "../components/organisms/Hero";
 
 const Home = () => {
   const router = useRouter();
@@ -36,22 +34,7 @@ const Home = () => {
       </Head>
 
       {/* Hero Section */}
-      <header
-        className="w-full h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
-        style={{
-          backgroundImage:
-            "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
-        }}
-      >
-        <motion.h1
-          initial={{ x: "-4rem", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-white font-serif text-4xl px-8 leading-snug lg:text-5xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight"
-        >
-          {t.heroTitle}
-        </motion.h1>
-      </header>
+      <Hero />
 
       {/* Lodging Section */}
       <Section
