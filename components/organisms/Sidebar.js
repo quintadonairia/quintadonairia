@@ -1,3 +1,7 @@
+import { useRouter } from "next/router";
+import en from "../../locales/en/Sidebar.json";
+import pt from "../../locales/pt/Sidebar.json";
+
 import Link from "next/link";
 import { RiMenuLine } from "react-icons/ri";
 import { RiCloseLine } from "react-icons/ri";
@@ -6,6 +10,19 @@ import { useState } from "react";
 import Icon from "../atoms/Icon";
 
 const Sidebar = () => {
+  const router = useRouter();
+  const { locale } = router;
+
+  let t;
+  switch (locale) {
+    case "en":
+      t = en;
+      break;
+    case "pt":
+      t = pt;
+      break;
+  }
+
   const [sidebar, setSidebar] = useState(false);
 
   const handleClick = () => {
@@ -21,22 +38,22 @@ const Sidebar = () => {
       >
         <ul className="flex flex-col gap-8 text-3xl cursor-pointer font-serif text-olive-900">
           <a href="/lodging">
-            <li onClick={handleClick}>Lodging</li>
+            <li onClick={handleClick}>{t.page1}</li>
           </a>
           <a href="/experiences">
-            <li onClick={handleClick}>Experiences</li>
+            <li onClick={handleClick}>{t.page2}</li>
           </a>
           <a href="/restaurant">
-            <li onClick={handleClick}>Restaurant</li>
+            <li onClick={handleClick}>{t.page3}</li>
           </a>
           <a href="/products">
-            <li onClick={handleClick}>Products</li>
+            <li onClick={handleClick}>{t.page4}</li>
           </a>
           <a href="/story">
-            <li onClick={handleClick}>Our Story</li>
+            <li onClick={handleClick}>{t.page5}</li>
           </a>
           <a href="/contacts">
-            <li onClick={handleClick}>Contacts</li>
+            <li onClick={handleClick}>{t.page6}</li>
           </a>
         </ul>
         <Icon size="sm">

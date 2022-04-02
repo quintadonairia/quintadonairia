@@ -1,3 +1,7 @@
+import { useRouter } from "next/router";
+import en from "../../locales/en/Navigation.json";
+import pt from "../../locales/pt/Navigation.json";
+
 import { useState, useEffect } from "react";
 
 import Link from "next/link";
@@ -7,6 +11,19 @@ import { RiPhoneFill } from "react-icons/ri";
 import Icon from "../atoms/Icon";
 
 const Navigation = () => {
+  const router = useRouter();
+  const { locale } = router;
+
+  let t;
+  switch (locale) {
+    case "en":
+      t = en;
+      break;
+    case "pt":
+      t = pt;
+      break;
+  }
+
   const [background, setBackground] = useState(false);
 
   useEffect(() => {
@@ -34,7 +51,7 @@ const Navigation = () => {
       </Link>
       <Link href="/lodging">
         <Button variant="primary" size="sm" mode="dark" desktop>
-          Book Now
+          {t.ctaLabel}
         </Button>
       </Link>
       <Icon variant="primary" size="sm" mode="dark" mobile>
