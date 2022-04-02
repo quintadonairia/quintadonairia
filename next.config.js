@@ -32,11 +32,6 @@ module.exports = {
           destination: "/coming-soon",
           permanent: false,
         },
-        {
-          source: "/contacts",
-          destination: "/coming-soon",
-          permanent: false,
-        },
       ];
     } else {
       return [];
