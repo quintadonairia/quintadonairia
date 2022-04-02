@@ -15,5 +15,20 @@
   "restaurantAction": "Make a Reservation",
   "bannerTitle": "Social",
   "bannerHeading": "Stay connected with us",
-  "bannerDescription": "Share your memories with #quintadonairia"
+  "bannerDescription": "Share your memories with #quintadonairia",
+  "footer": {
+    "page1": "Lodging",
+    "page2": "Experiences",
+    "page3": "Restaurant",
+    "page4": "Products",
+    "page5": "Our Story",
+    "page6": "Contacts",
+    "link1": "Get directions",
+    "link2": "Email us",
+    "link3": "Call us",
+    "legalTerms": "Terms",
+    "legalPrivacy": "Privacy",
+    "legalEnvironmentalPolicy": "Environmental Policy",
+    "signature": "Made with &hearts; by"
+  }
 }

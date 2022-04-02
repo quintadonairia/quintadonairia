@@ -34,4 +34,4 @@ yarn-error.log*
 .vercel
 
 # tasks log
-/tasks.md
+tasks.md
