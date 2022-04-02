@@ -17,7 +17,7 @@ module.exports = {
         "burgundy-500": "#800020",
         "tan-500": "#D2B48C",
         "tan-100": "#F0ECE6",
-        "tan-50": "#FBF8F4",
+        "tan-50": "#FCFAF8",
       },
     },
   },

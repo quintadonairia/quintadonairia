@@ -8,12 +8,12 @@ const Lodging = () => {
       <Hero title="Stay with us" image="url(images/20210820-donairia-008.jpg" />
       <LayoutPrimary>
         <div className="flex flex-col gap-4">
-          <h1 className="text-5xl font-serif text-olive-500">
+          <h1 className="text-4xl font-serif text-olive-500">
             Each room, a special person
           </h1>
           <p>
-            In each room we preserved the memory of the people who were part of
-            our collective history.
+            We preserve the memory of the people who were part of our collective
+            history.
           </p>
         </div>
         <div className="grid grid-cols-3 gap-16">

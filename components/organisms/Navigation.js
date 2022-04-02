@@ -20,7 +20,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`flex items-center justify-between z-10 p-8 fixed top-0 left-0 right-0 ${
+      className={`flex items-center justify-between z-10 p-6 fixed top-0 left-0 right-0 ${
         background && "bg-neutral-800 opacity-95 duration-500"
       }`}
     >
@@ -29,7 +29,7 @@ const Navigation = () => {
         <img
           src="/graphics/wordmark-white.svg"
           alt="logo"
-          className="w-32 lg:w-40 cursor-pointer absolute left-1/2 -translate-x-1/2"
+          className="w-28 lg:w-36 cursor-pointer absolute left-1/2 -translate-x-1/2"
         />
       </Link>
       <Link href="/lodging">

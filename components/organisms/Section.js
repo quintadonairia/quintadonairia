@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import { motion } from "framer-motion";
 import Button from "../atoms/Button";
 import Header from "../molecules/Header";
 
@@ -19,22 +18,8 @@ const Section = ({
       <div
         className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center`}
       >
-        <motion.img
-          initial={{ x: "-4rem", opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          src={image}
-          alt=""
-          className={`${reverse && `order-last`}`}
-        />
-        <motion.div
-          initial={{ x: "4rem", opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="flex flex-col gap-8"
-        >
+        <img src={image} alt="" className={`${reverse && `order-last`}`} />
+        <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <h2 className="font-serif text-3xl lg:text-4xl">{subheading}</h2>
             <p>{description}</p>
@@ -44,7 +29,7 @@ const Section = ({
               {action}
             </Button>
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
