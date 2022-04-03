@@ -25,7 +25,6 @@ const Contacts = () => {
     <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Contacts</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Hero Section */}

@@ -1,11 +1,12 @@
 import LayoutPrimary from "../components/layouts/LayoutPrimary";
+import LayoutSplit from "../components/layouts/LayoutSplit";
 import Room from "../components/molecules/Room";
 import Hero from "../components/organisms/Hero";
 
 const Lodging = () => {
   return (
     <div className="flex flex-col min-h-screen relative overflow-x-hidden">
-      <Hero title="Stay with us" image="url(images/20210820-donairia-008.jpg" />
+      <Hero title="Lodging" image="url(images/20210820-donairia-008.jpg" />
       <LayoutPrimary>
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-serif text-olive-500">
@@ -34,6 +35,33 @@ const Lodging = () => {
           />
         </div>
       </LayoutPrimary>
+      <LayoutSplit
+        childrenLeading={
+          <>
+            <img
+              src="/images/senjuti-kundu-GCI8dqi4uWM-unsplash.jpg"
+              alt=""
+              className="w-full lg:w-[28rem] aspect-[5/4] lg:aspect-[4/5] object-cover object-[center,65%]"
+            />
+          </>
+        }
+        childrenTrailing={
+          <>
+            <h1 className="font-serif text-2xl lg:text-4xl">Family Friendly</h1>
+            <div className="flex flex-col gap-4 text-sm lg:text-base">
+              <p className="leading-relaxed">
+                Making it a family affair? Get in touch to find out about our
+                family friendly room styles and options for when you're bringing
+                the children along.
+              </p>
+              <p className="leading-relaxed">
+                Of course, we also welcome our four-legged friends in certain
+                specific rooms, at a charge of €10 per night.
+              </p>
+            </div>
+          </>
+        }
+      />
     </div>
   );
 };
