@@ -1,3 +1,8 @@
 {
-  "heroTitle": "Contacts"
+  "heroTitle": "Contacts",
+  "contactsHeading": "Ready to indulge yourself?",
+  "contactsSubheading": "Get in touch with us to discuss your next getaway.",
+  "contactsAddress": "Address",
+  "contactsEmail": "Email",
+  "contactsPhone": "Phone"
 }

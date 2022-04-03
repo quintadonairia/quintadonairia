@@ -31,18 +31,19 @@ const Contacts = () => {
       {/* Hero Section */}
       <Hero title={t.heroTitle} image="url(images/20210903-donairia-003.jpg)" />
 
+      {/* Contacts Section */}
       <section className="flex flex-col lg:flex-row items-center gap-16 px-6 py-16 lg:p-24">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-2">
             <h1 className="font-serif text-3xl lg:text-4xl text-olive-500">
-              Ready to indulge yourself?
+              {t.contactsHeading}
             </h1>
-            <p>Get in touch today to discuss your dream getaway.</p>
+            <p>{t.contactsSubheading}</p>
           </div>
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">
               <small className="uppercase tracking-wider text-xs font-semibold text-olive-500">
-                Address
+                {t.contactsAddress}
               </small>
               <p className="text-sm">
                 Rua Central nº35, Rio de Vide, Miranda do Corvo
@@ -51,13 +52,13 @@ const Contacts = () => {
             </div>
             <div className="flex flex-col gap-1">
               <small className="uppercase tracking-wider text-xs font-semibold text-olive-500">
-                Email
+                {t.contactsEmail}
               </small>
               <p className="text-sm">hello@quintadonairia.com</p>
             </div>
             <div className="flex flex-col gap-1">
               <small className="uppercase tracking-wider text-xs font-semibold text-olive-500">
-                Phone
+                {t.contactsPhone}
               </small>
               <p className="text-sm">+351 966 923 278</p>
             </div>
@@ -73,7 +74,7 @@ const Contacts = () => {
         </div>
 
         <iframe
-          className="w-full h-96"
+          className="w-full lg:w-[40rem] h-96"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.921164002513!2d-8.334276185146324!3d40.1440397801037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f170ee4c62c9%3A0xc108f06628ebaecb!2sQuinta%20Dona%20Iria!5e0!3m2!1sen!2spt!4v1648913488549!5m2!1sen!2spt"
           allowFullScreen=""
           loading="lazy"

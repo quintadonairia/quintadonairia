@@ -52,9 +52,9 @@ const Sidebar = () => {
           <a href="/story">
             <li onClick={handleClick}>{t.page5}</li>
           </a>
-          <a href="/contacts">
+          <Link href="/contacts">
             <li onClick={handleClick}>{t.page6}</li>
-          </a>
+          </Link>
         </ul>
         <Icon size="sm">
           <RiCloseLine onClick={handleClick} />
