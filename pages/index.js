@@ -49,7 +49,7 @@ const Home = () => {
       <section className="flex flex-col items-center px-6 py-16 gap-16">
         <Header title={t.experiencesTitle} heading={t.experiencesHeading} />
         <Gallery />
-        <Button variant="primary" size="lg" mode="light">
+        <Button variant="primary" size="lg">
           {t.experiencesAction}
         </Button>
       </section>

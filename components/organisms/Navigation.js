@@ -50,11 +50,11 @@ const Navigation = () => {
         />
       </Link>
       <Link href="/lodging">
-        <Button variant="primary" size="sm" mode="dark" desktop>
+        <Button variant="secondary" size="sm" desktop>
           {t.ctaLabel}
         </Button>
       </Link>
-      <Icon variant="primary" size="sm" mode="dark" mobile>
+      <Icon variant="primary" size="xl" mode="dark" mobile>
         <a href="tel:+351966923278">
           <RiPhoneFill className="text-white" />
         </a>

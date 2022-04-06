@@ -56,12 +56,12 @@ const Sidebar = () => {
             <li onClick={handleClick}>{t.page6}</li>
           </Link>
         </ul>
-        <Icon size="sm">
+        <Icon size="xl" mode="light">
           <RiCloseLine onClick={handleClick} />
         </Icon>
       </div>
-      <Icon size="sm">
-        <RiMenuLine onClick={handleClick} className="text-white" />
+      <Icon size="xl" mode="dark">
+        <RiMenuLine onClick={handleClick} />
       </Icon>
     </div>
   );

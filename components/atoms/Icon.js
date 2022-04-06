@@ -1,9 +1,9 @@
-const Icon = ({ size, mode, mobile, desktop, children }) => {
+const Icon = ({ children, size, mode, desktop, mobile }) => {
   const sizes = {
-    sm: "text-xl",
-    md: "text-2xl",
-    lg: "text-3xl",
-    xl: "text-4xl",
+    sm: "text-sm",
+    md: "text-base",
+    lg: "text-lg",
+    xl: "text-xl",
   };
 
   const modes = {

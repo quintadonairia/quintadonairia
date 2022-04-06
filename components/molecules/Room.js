@@ -1,9 +1,12 @@
 import Button from "../atoms/Button";
+import Icon from "../atoms/Icon";
+
+import { RiArrowRightLine } from "react-icons/ri";
 
 const Room = ({ image, name, description }) => {
   return (
     <article
-      className="p-6 w-96 h-96 bg-cover bg-center bg-no-repeat flex flex-col justify-end relative text-white hover:bg-neutral-900/50 hover:cursor-pointer duration-300"
+      className="px-6 py-2 w-96 h-96 bg-cover bg-center bg-no-repeat flex flex-col justify-end relative text-white hover:bg-neutral-900/50 hover:cursor-pointer duration-300"
       style={{
         backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), ${image}`,
       }}
@@ -14,6 +17,9 @@ const Room = ({ image, name, description }) => {
       </div>
       <div className="flex items-end justify-end">
         <Button size="md" variant="link" mode="dark">
+          <Icon size="md">
+            <RiArrowRightLine />
+          </Icon>
           Book Now
         </Button>
       </div>

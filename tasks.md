@@ -1,5 +1,3 @@
 ## Tasks log
 
-🔃 Add brand favicon
-
--
+🔃 Work on Lodging page sections

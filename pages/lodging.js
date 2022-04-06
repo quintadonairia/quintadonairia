@@ -1,7 +1,11 @@
+import Button from "../components/atoms/Button";
+import Icon from "../components/atoms/Icon";
 import LayoutPrimary from "../components/layouts/LayoutPrimary";
 import LayoutSplit from "../components/layouts/LayoutSplit";
 import Room from "../components/molecules/Room";
 import Hero from "../components/organisms/Hero";
+
+import { RiArrowRightLine } from "react-icons/ri";
 
 const Lodging = () => {
   return (
@@ -58,6 +62,15 @@ const Lodging = () => {
                 Of course, we also welcome our four-legged friends in certain
                 specific rooms, at a charge of €10 per night.
               </p>
+              <Button size="md" variant="link">
+                <Icon size="md" mode="light">
+                  <RiArrowRightLine />
+                </Icon>
+                Hello
+              </Button>
+              <Button size="md" variant="primary">
+                Hello
+              </Button>
             </div>
           </>
         }
