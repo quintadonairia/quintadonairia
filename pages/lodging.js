@@ -62,15 +62,6 @@ const Lodging = () => {
                 Of course, we also welcome our four-legged friends in certain
                 specific rooms, at a charge of €10 per night.
               </p>
-              <Button size="md" variant="link">
-                <Icon size="md" mode="light">
-                  <RiArrowRightLine />
-                </Icon>
-                Hello
-              </Button>
-              <Button size="md" variant="primary">
-                Hello
-              </Button>
             </div>
           </>
         }

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import Button from "../atoms/Button";
 import Header from "../molecules/Header";
 
