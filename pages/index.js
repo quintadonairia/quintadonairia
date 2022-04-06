@@ -3,6 +3,7 @@ import en from "../locales/en/index.json";
 import pt from "../locales/pt/index.json";
 
 import Head from "next/head";
+import Link from "next/link";
 
 import Banner from "../components/molecules/Banner";
 import Header from "../components/molecules/Header";
@@ -49,9 +50,13 @@ const Home = () => {
       <section className="flex flex-col items-center px-6 py-16 gap-16">
         <Header title={t.experiencesTitle} heading={t.experiencesHeading} />
         <Gallery />
-        <Button variant="primary" size="lg">
-          {t.experiencesAction}
-        </Button>
+        <Link href="/experiences" passHref>
+          <a>
+            <Button variant="primary" size="lg">
+              {t.experiencesAction}
+            </Button>
+          </a>
+        </Link>
       </section>
 
       {/* Dine Section */}
