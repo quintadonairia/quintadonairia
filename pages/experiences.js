@@ -65,10 +65,23 @@ const Experiences = () => {
       </LayoutSplit>
       <LayoutSplit>
         <img
-          src="/images/20220306-donairia-001.jpg"
+          src="/images/20211003-donairia-022.jpg"
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
+        <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-6">
+          <h1 className="font-serif text-2xl lg:text-3xl">
+            Wine and olive oil tastings
+          </h1>
+          <div className="flex flex-col gap-4 text-sm lg:text-base">
+            <p className="leading-relaxed">
+              Taste the wine and olive oil produced in our farm. To accompany
+              the tasting, savor the best of our local Portuguese gastronomy.
+            </p>
+          </div>
+        </div>
+      </LayoutSplit>
+      <LayoutSplit>
         <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-6">
           <h1 className="font-serif text-2xl lg:text-3xl">
             Custom and curated experiences and in-room amenities
@@ -81,6 +94,11 @@ const Experiences = () => {
             </p>
           </div>
         </div>
+        <img
+          src="/images/20220319-donairia-006.jpg"
+          alt=""
+          className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
+        />
       </LayoutSplit>
       {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
         <Experience
