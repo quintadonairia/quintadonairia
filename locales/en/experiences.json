@@ -1,10 +1,11 @@
 {
-  "firstExperienceTitle": "Guided Tour and Tasting",
-  "firstExperienceDescription": "Visit the wine cellar, the olive press, the regional products store and other spaces on the farm. Enjoy the silence of nature, the chirping of the birds, contemplating the landscape of vineyards, olive groves and surrounding mountains. To accompany the tasting, taste the region products: Rabaçal cheese, honey and farm nut bread, olives and sausages.",
-  "secondExperienceTitle": "Visit and Lunch",
-  "secondExperienceDescription": "In a lunch filled with our local gastronomy, we highlight the wedding soup, the tiborna of bacalhau as in our mill, the octopus à lagareiro, the chicken from the farm, the suckling piglet, the chanfana of our village, or the goatling roasted in the oven of firewood.",
-  "thirdExperienceTitle": "Picnic at the Farm",
-  "thirdExperienceDescription": "Basket with regional products (ham, salpicão, chorizo, cheese, nuts, pataniscas, and piglet sandwiches), Dona Iria olive oil and Tocata Wine.",
-  "fourthExperienceTitle": "Grape Harvest",
-  "fourthExperienceDescription": "In September, guests and visitors of the farm are challenged to work on the grape harvest, with a break to eat the “bucha”. After work comes rest and reward, with a lunch fulfilled with local cuisine and harmonized with the house wines."
+  "heroTitle": "Experiences",
+  "ExperienceTitle1": "Guided Tour and Tasting",
+  "ExperienceDescription1": "Visit the wine cellar, the olive press, the regional products store and other spaces on the farm. Enjoy the silence of nature, the chirping of the birds, contemplating the landscape of vineyards, olive groves and surrounding mountains. To accompany the tasting, taste the region products: Rabaçal cheese, honey and farm nut bread, olives and sausages.",
+  "ExperienceTitle2": "Visit and Lunch",
+  "ExperienceDescription2": "In a lunch filled with our local gastronomy, we highlight the wedding soup, the tiborna of bacalhau as in our mill, the octopus à lagareiro, the chicken from the farm, the suckling piglet, the chanfana of our village, or the goatling roasted in the oven of firewood.",
+  "ExperienceTitle3": "Picnic at the Farm",
+  "ExperienceDescription3": "Basket with regional products (ham, salpicão, chorizo, cheese, nuts, pataniscas, and piglet sandwiches), Dona Iria olive oil and Tocata Wine.",
+  "ExperienceTitle4": "Grape Harvest",
+  "ExperienceDescription4": "In September, guests and visitors of the farm are challenged to work on the grape harvest, with a break to eat the “bucha”. After work comes rest and reward, with a lunch fulfilled with local cuisine and harmonized with the house wines."
 }

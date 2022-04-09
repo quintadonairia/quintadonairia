@@ -1,20 +1,15 @@
-import Button from "../atoms/Button";
-
-const Card = ({ image, title, description }) => {
+const Experience = ({ imageSrc, imageAlt, title, description }) => {
   return (
     <article className="flex flex-col gap-8">
-      <img src={image} alt="" />
+      <img src={imageSrc} alt={imageAlt} />
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-2">
           <h1 className="font-serif text-2xl text-olive-500">{title}</h1>
           <p>{description}</p>
         </div>
-        <Button variant="link" size="sm">
-          Learn More
-        </Button>
       </div>
     </article>
   );
 };
 
-export default Card;
+export default Experience;
