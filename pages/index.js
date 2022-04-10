@@ -38,7 +38,7 @@ const Home = () => {
 
       {/* Lodging Section */}
       <Section
-        title={t.lodgingTitle}
+        kicker={t.lodgingTitle}
         heading={t.lodgingHeading}
         subheading={t.lodgingSubheading}
         image="images/20210820-donairia-008.jpg"
@@ -48,7 +48,7 @@ const Home = () => {
 
       {/* Experiences Section */}
       <section className="flex flex-col items-center px-6 py-16 gap-16">
-        <Header title={t.experiencesTitle} heading={t.experiencesHeading} />
+        <Header kicker={t.experiencesTitle} heading={t.experiencesHeading} />
         <Gallery />
         <Link href="/experiences" passHref>
           <a>
@@ -61,7 +61,7 @@ const Home = () => {
 
       {/* Dine Section */}
       <Section
-        title={t.restaurantTitle}
+        kicker={t.restaurantTitle}
         heading={t.restaurantHeading}
         subheading={t.restaurantSubheading}
         image="images/20211003-donairia-050.jpg"

@@ -7,6 +7,7 @@ import Hero from "../components/organisms/Hero";
 import Experience from "../components/molecules/Experience";
 
 import LayoutSplit from "../components/layouts/LayoutSplit";
+import Header from "../components/molecules/Header";
 
 const Experiences = () => {
   const router = useRouter();
@@ -28,16 +29,7 @@ const Experiences = () => {
         <title>Quinta Dona Iria - Enoturismo | Experiences</title>
       </Head>
       <Hero title={t.heroTitle} image="url(images/20211003-donairia-024.jpg)" />
-      <section className="flex flex-col items-center px-6 py-16 gap-16 lg:gap-24 lg:p-24">
-        <div className="flex flex-col gap-4 items-center">
-          <h1 className="text-3xl lg:text-4xl font-serif text-olive-500">
-            {t.heading}
-          </h1>
-          <p className="leading-relaxed lg:max-w-prose lg:text-center">
-            {t.subheading}
-          </p>
-        </div>
-      </section>
+      <Header heading={t.heading}>{t.subheading}</Header>
       <LayoutSplit vDirection="reverse">
         <div
           className="flex 

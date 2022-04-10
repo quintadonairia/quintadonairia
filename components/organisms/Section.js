@@ -2,7 +2,7 @@ import Button from "../atoms/Button";
 import Header from "../molecules/Header";
 
 const Section = ({
-  title,
+  kicker,
   heading,
   subheading,
   image,
@@ -12,7 +12,7 @@ const Section = ({
 }) => {
   return (
     <section className="flex flex-col items-center gap-16 px-6 py-16 lg:p-24">
-      <Header title={title} heading={heading} />
+      <Header kicker={kicker} heading={heading} />
       <div
         className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center`}
       >
