@@ -43,17 +43,20 @@ const Experiences = () => {
           </p>
         </div>
       </section>
-      <LayoutSplit>
-        <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-6">
-          <h1 className="font-serif text-2xl lg:text-3xl">
+      <LayoutSplit vDirection="reverse">
+        <div
+          className="flex 
+        flex-col gap-4 lg:w-1/2 lg:gap-6"
+        >
+          <h1 className="font-serif text-olive-500 text-2xl lg:text-3xl">
             Property Amenities
           </h1>
           <div className="flex flex-col gap-4 text-sm lg:text-base">
             <p className="leading-relaxed">
               Our property includes all sorts of on-site amenities for whatever
               you seek out when getting away from it all. Take a dip in the
-              pool, stroll through the gardens, visit the vineyards, and gaze
-              upon our clear night sky.
+              pool, stroll through the gardens, or just contemplate the nature
+              surrounding us.
             </p>
           </div>
         </div>
@@ -63,14 +66,14 @@ const Experiences = () => {
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
       </LayoutSplit>
-      <LayoutSplit>
+      <LayoutSplit vDirection="normal">
         <img
           src="/images/20211003-donairia-022.jpg"
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
         <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-6">
-          <h1 className="font-serif text-2xl lg:text-3xl">
+          <h1 className="font-serif text-olive-500 text-2xl lg:text-3xl">
             Wine and olive oil tastings
           </h1>
           <div className="flex flex-col gap-4 text-sm lg:text-base">
@@ -81,16 +84,15 @@ const Experiences = () => {
           </div>
         </div>
       </LayoutSplit>
-      <LayoutSplit>
+      <LayoutSplit vDirection="reverse">
         <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-6">
-          <h1 className="font-serif text-2xl lg:text-3xl">
+          <h1 className="font-serif text-olive-500 text-2xl lg:text-3xl">
             Custom and curated experiences and in-room amenities
           </h1>
           <div className="flex flex-col gap-4 text-sm lg:text-base">
             <p className="leading-relaxed">
-              Quinta Dona Iria's on-site concierge is there to set up your
-              in-room services as well as planning custom excursions and
-              adventures.
+              Our on-site concierge is there to set up your in-room services as
+              well as planning custom excursions and adventures.
             </p>
           </div>
         </div>
