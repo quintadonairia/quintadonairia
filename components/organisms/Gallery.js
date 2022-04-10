@@ -33,7 +33,7 @@ const Gallery = () => {
         {slides.map((slide, index) => {
           return (
             <div
-              className={`relative duration-200 flex flex-col gap-6 lg:px-32 ${
+              className={`relative flex flex-col gap-6 lg:px-32 ${
                 index === slideIndex ? "block" : "hidden"
               }`}
               key={slide.id}
