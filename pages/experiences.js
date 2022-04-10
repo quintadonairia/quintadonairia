@@ -27,19 +27,14 @@ const Experiences = () => {
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Experiences</title>
       </Head>
-      {/* Hero Section */}
       <Hero title={t.heroTitle} image="url(images/20211003-donairia-024.jpg)" />
       <section className="flex flex-col items-center px-6 py-16 gap-16 lg:gap-24 lg:p-24">
         <div className="flex flex-col gap-4 items-center">
           <h1 className="text-3xl lg:text-4xl font-serif text-olive-500">
-            Far more than just a stopping point
+            {t.heading}
           </h1>
           <p className="leading-relaxed lg:max-w-prose lg:text-center">
-            Quinta Dona Iria may be a great place to stay, but it is far more
-            than just a stopping point. From our onsite amenities like our pool
-            and gardens, to the stunning vineyards and olive tree fields, to our
-            custom planned trips and excursions - there is always something to
-            experience at our place.
+            {t.subheading}
           </p>
         </div>
       </section>
@@ -49,15 +44,10 @@ const Experiences = () => {
         flex-col gap-4 lg:w-1/2 lg:gap-6"
         >
           <h1 className="font-serif text-olive-500 text-2xl lg:text-3xl">
-            Property Amenities
+            {t.experienceTitle1}
           </h1>
           <div className="flex flex-col gap-4 text-sm lg:text-base">
-            <p className="leading-relaxed">
-              Our property includes all sorts of on-site amenities for whatever
-              you seek out when getting away from it all. Take a dip in the
-              pool, stroll through the gardens, or just contemplate the nature
-              surrounding us.
-            </p>
+            <p className="leading-relaxed">{t.experienceDescription1}</p>
           </div>
         </div>
         <img
@@ -74,26 +64,20 @@ const Experiences = () => {
         />
         <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-6">
           <h1 className="font-serif text-olive-500 text-2xl lg:text-3xl">
-            Wine and olive oil tastings
+            {t.experienceTitle2}
           </h1>
           <div className="flex flex-col gap-4 text-sm lg:text-base">
-            <p className="leading-relaxed">
-              Taste the wine and olive oil produced in our farm. To accompany
-              the tasting, savor the best of our local Portuguese gastronomy.
-            </p>
+            <p className="leading-relaxed">{t.experienceDescription2}</p>
           </div>
         </div>
       </LayoutSplit>
       <LayoutSplit vDirection="reverse">
         <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-6">
           <h1 className="font-serif text-olive-500 text-2xl lg:text-3xl">
-            Custom and curated experiences and in-room amenities
+            {t.experienceTitle3}
           </h1>
           <div className="flex flex-col gap-4 text-sm lg:text-base">
-            <p className="leading-relaxed">
-              Our on-site concierge is there to set up your in-room services as
-              well as planning custom excursions and adventures.
-            </p>
+            <p className="leading-relaxed">{t.experienceDescription3}</p>
           </div>
         </div>
         <img
@@ -102,32 +86,6 @@ const Experiences = () => {
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
       </LayoutSplit>
-      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
-        <Experience
-          imageSrc="images/20211003-donairia-024.jpg"
-          imageAlt="A group of people next to a olive tree field."
-          title={t.ExperienceTitle1}
-          description={t.ExperienceDescription1}
-        />
-        <Experience
-          imageSrc="images/20211003-donairia-048.jpg"
-          imageAlt="A group of people sitted in a restaurant, clapping and smiling."
-          title={t.ExperienceTitle2}
-          description={t.ExperienceDescription2}
-        />
-        <Experience
-          imageSrc="images/20211003-donairia-022.jpg"
-          imageAlt="A group of people hanging out on an outdoor terrace."
-          title={t.ExperienceTitle3}
-          description={t.ExperienceDescription3}
-        />
-        <Experience
-          imageSrc="images/20210928-donairia-027.jpg"
-          imageAlt="A person harvesting grapes by hand."
-          title={t.ExperienceTitle4}
-          description={t.ExperienceDescription4}
-        />
-      </div> */}
     </div>
   );
 };
