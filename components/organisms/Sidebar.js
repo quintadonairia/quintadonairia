@@ -40,9 +40,9 @@ const Sidebar = () => {
           <a href="/lodging">
             <li onClick={handleClick}>{t.page1}</li>
           </a>
-          <a href="/experiences">
+          <Link href="/experiences">
             <li onClick={handleClick}>{t.page2}</li>
-          </a>
+          </Link>
           <a href="/restaurant">
             <li onClick={handleClick}>{t.page3}</li>
           </a>

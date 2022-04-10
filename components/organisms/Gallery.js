@@ -5,23 +5,15 @@ const Gallery = () => {
   const slides = [
     {
       id: 1,
-      image: "images/20211003-donairia-024.jpg",
-      caption: "Guided Tours",
+      image: "/images/20220306-donairia-001.jpg",
     },
     {
       id: 2,
-      image: "images/20211003-donairia-048.jpg",
-      caption: "Visit and Lunch",
+      image: "/images/20211003-donairia-022.jpg",
     },
     {
       id: 3,
-      image: "images/20211003-donairia-022.jpg",
-      caption: "Picnic at the Farm",
-    },
-    {
-      id: 4,
-      image: "images/20210928-donairia-027.jpg",
-      caption: "Grape Harvest",
+      image: "/images/20220319-donairia-006.jpg",
     },
   ];
 
@@ -41,23 +33,22 @@ const Gallery = () => {
         {slides.map((slide, index) => {
           return (
             <div
-              className={`flex flex-col gap-6 lg:px-32 ${
+              className={`relative duration-200 flex flex-col gap-6 lg:px-32 ${
                 index === slideIndex ? "block" : "hidden"
               }`}
               key={slide.id}
             >
               <img
                 src={slide.image}
-                className="lg:aspect-[2/1] object-cover"
+                className="aspect-[5/4] lg:aspect-[2/1] object-cover lg:max-w-screen-lg"
               ></img>
-              <div className="flex flex-row justify-between px-6">
+              <div className="flex flex-row justify-between px-6 text-white lg:text-neutral-900 text-2xl lg:text-4xl">
                 <BsArrowLeft
-                  className="hover:scale-125 duration-100 hover:text-tan-500 cursor-pointer"
+                  className="absolute left-6 lg:left-12 top-1/2 hover:scale-110 duration-200 hover:text-olive-500 cursor-pointer"
                   onClick={prevSlide}
                 />
-                <p className="text-sm">{slide.caption}</p>
                 <BsArrowRight
-                  className="hover:scale-125 duration-100 hover:text-tan-500 cursor-pointer"
+                  className="absolute right-6 lg:right-12 top-1/2 hover:scale-110 duration-200 hover:text-olive-500 cursor-pointer"
                   onClick={nextSlide}
                 />
               </div>
