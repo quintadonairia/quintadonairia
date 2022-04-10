@@ -8,6 +8,8 @@ import Experience from "../components/molecules/Experience";
 
 import LayoutSplit from "../components/layouts/LayoutSplit";
 import Header from "../components/molecules/Header";
+import Container from "../components/organisms/Container";
+import Block from "../components/molecules/Block";
 
 const Experiences = () => {
   const router = useRouter();
@@ -29,19 +31,11 @@ const Experiences = () => {
         <title>Quinta Dona Iria - Enoturismo | Experiences</title>
       </Head>
       <Hero title={t.heroTitle} image="url(images/20211003-donairia-024.jpg)" />
-      <Header heading={t.heading}>{t.subheading}</Header>
+      <Container>
+        <Header heading={t.heading} subheading={t.subheading} />
+      </Container>
       <LayoutSplit vDirection="reverse">
-        <div
-          className="flex 
-        flex-col gap-4 lg:w-1/2 lg:gap-6"
-        >
-          <h1 className="font-serif text-olive-500 text-2xl lg:text-3xl">
-            {t.experienceTitle1}
-          </h1>
-          <div className="flex flex-col gap-4 text-sm lg:text-base">
-            <p className="leading-relaxed">{t.experienceDescription1}</p>
-          </div>
-        </div>
+        <Block title={t.experienceTitle1} text={t.experienceDescription1} />
         <img
           src="/images/20220306-donairia-001.jpg"
           alt=""
@@ -54,24 +48,10 @@ const Experiences = () => {
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
-        <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-6">
-          <h1 className="font-serif text-olive-500 text-2xl lg:text-3xl">
-            {t.experienceTitle2}
-          </h1>
-          <div className="flex flex-col gap-4 text-sm lg:text-base">
-            <p className="leading-relaxed">{t.experienceDescription2}</p>
-          </div>
-        </div>
+        <Block title={t.experienceTitle2} text={t.experienceDescription2} />
       </LayoutSplit>
       <LayoutSplit vDirection="reverse">
-        <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-6">
-          <h1 className="font-serif text-olive-500 text-2xl lg:text-3xl">
-            {t.experienceTitle3}
-          </h1>
-          <div className="flex flex-col gap-4 text-sm lg:text-base">
-            <p className="leading-relaxed">{t.experienceDescription3}</p>
-          </div>
-        </div>
+        <Block title={t.experienceTitle3} text={t.experienceDescription3} />
         <img
           src="/images/20220319-donairia-006.jpg"
           alt=""

@@ -1,31 +1,33 @@
-import Button from "../atoms/Button";
 import Header from "../molecules/Header";
+import Block from "../molecules/Block";
 
 const Section = ({
   kicker,
   heading,
   subheading,
-  image,
-  description,
+  title,
+  imageSrc,
+  imageAlt,
+  text,
   action,
-  reverse,
+  label,
 }) => {
   return (
-    <section className="flex flex-col items-center gap-16 px-6 py-16 lg:p-24">
-      <Header kicker={kicker} heading={heading} />
+    <section className="flex flex-col items-center gap-8 lg:gap-12 px-6 py-16 lg:p-32">
+      <Header kicker={kicker} heading={heading} subheading={subheading} />
       <div
-        className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center`}
+        className={`flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-24`}
       >
-        <img src={image} alt="" className={`${reverse && `order-last`}`} />
-        <div className="flex flex-col gap-8">
-          <div className="flex flex-col gap-4">
-            <h2 className="font-serif text-3xl lg:text-4xl">{subheading}</h2>
-            <p>{description}</p>
-          </div>
-          <Button variant="primary" size="lg">
-            {action}
-          </Button>
-        </div>
+        <img
+          src={imageSrc}
+          alt={imageAlt}
+          className={`w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover`}
+        />
+        {action ? (
+          <Block title={title} text={text} action={action} label={label} />
+        ) : (
+          <Block title={title} text={text} />
+        )}
       </div>
     </section>
   );

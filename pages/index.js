@@ -40,14 +40,16 @@ const Home = () => {
       <Section
         kicker={t.lodgingTitle}
         heading={t.lodgingHeading}
-        subheading={t.lodgingSubheading}
-        image="images/20210820-donairia-008.jpg"
-        description={t.lodgingDescription}
-        action={t.lodgingAction}
+        title={t.lodgingSubheading}
+        imageSrc="images/20210820-donairia-008.jpg"
+        imageAlt="An empty corridor"
+        text={t.lodgingDescription}
+        action
+        label={t.lodgingAction}
       />
 
       {/* Experiences Section */}
-      <section className="flex flex-col items-center px-6 py-16 gap-16">
+      <section className="flex flex-col items-center px-6 py-16 gap-6 lg:gap-12">
         <Header kicker={t.experiencesTitle} heading={t.experiencesHeading} />
         <Gallery />
         <Link href="/experiences" passHref>
@@ -63,11 +65,12 @@ const Home = () => {
       <Section
         kicker={t.restaurantTitle}
         heading={t.restaurantHeading}
-        subheading={t.restaurantSubheading}
-        image="images/20211003-donairia-050.jpg"
-        description={t.restaurantDescription}
-        action={t.restaurantAction}
-        reverse
+        title={t.restaurantSubheading}
+        imageSrc="images/20211003-donairia-050.jpg"
+        imageAlt="A restaurant full of people dining in a cozy environment"
+        text={t.restaurantDescription}
+        action
+        label={t.restaurantAction}
       />
 
       {/* Social Banner */}
