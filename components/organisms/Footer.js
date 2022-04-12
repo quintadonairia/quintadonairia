@@ -71,7 +71,11 @@ const Footer = () => {
           <ul className="flex gap-2">
             <li>{t.legalTerms}</li>
             <li>{t.legalPrivacy}</li>
-            <li>{t.legalEnvironmentalPolicy}</li>
+            <li>
+              <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao">
+                {t.legalComplaintsBook}
+              </a>
+            </li>
           </ul>
         </div>
         <p>
