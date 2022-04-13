@@ -3,20 +3,18 @@ import Icon from "../atoms/Icon";
 
 import { RiArrowRightLine } from "react-icons/ri";
 
-const Room = ({ image, name, description }) => {
+const Room2 = ({ imageSrc, imageAlt, title, description }) => {
   return (
-    <article
-      className="px-6 py-2 w-96 h-96 bg-cover bg-center bg-no-repeat flex flex-col justify-end relative text-white hover:bg-neutral-900/50 hover:cursor-pointer duration-300"
-      style={{
-        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), ${image}`,
-      }}
-    >
-      <div className="flex flex-col gap-2">
-        <h2 className="font-serif text-2xl">{name}</h2>
-        <p className="text-sm text-neutral-100">{description}</p>
-      </div>
-      <div className="flex items-end justify-end">
-        <Button size="md" variant="link" mode="dark">
+    <article className="flex flex-col gap-8 items-center">
+      <img
+        src={imageSrc}
+        alt={imageAlt}
+        className="aspect-[4/3] object-cover w-[32rem]"
+      />
+      <div className="flex flex-col gap-4 items-center text-center lg:px-16">
+        <h1 className="font-serif text-3xl text-olive-500">{title}</h1>
+        <h4 className="text-neutral-600 leading-relaxed">{description}</h4>
+        <Button size="lg" variant="link" mode="light">
           <Icon size="md">
             <RiArrowRightLine />
           </Icon>
@@ -27,4 +25,4 @@ const Room = ({ image, name, description }) => {
   );
 };
 
-export default Room;
+export default Room2;

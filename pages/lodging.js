@@ -20,16 +20,18 @@ const Lodging = () => {
         />
       </Container>
       <Container>
-        <div className="grid grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <Room
-            image="url(images/20220410-donairia-008.jpg)"
-            name="Suites"
-            description="2 persons, approx. 25m² from 75€"
+            imageSrc="images/20220410-donairia-008.jpg"
+            imageAlt="Bedroom with flowers."
+            title="Suite"
+            description="These 400-square-foot guestrooms are situated around our Mediterranean-inspired lagoon."
           />
           <Room
-            image="url(images/20220410-donairia-008.jpg)"
-            name="Room Isabel Silvestre"
-            description="2 persons, approx. 25m² from 75€"
+            imageSrc="images/20220410-donairia-008.jpg"
+            imageAlt="Bedroom with flowers."
+            title="Twin / Double Room"
+            description="Take in relaxing resort views of our sandy beach-bottom or lushly landscaped main pool."
           />
         </div>
       </Container>
