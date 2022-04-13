@@ -7,7 +7,7 @@ import Header from "../components/molecules/Header";
 
 const Lodging = () => {
   return (
-    <div className="flex flex-col min-h-screen relative overflow-x-hidden">
+    <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
       <Hero title="Lodging" image="url(images/20210820-donairia-008.jpg" />
       <Container>
         <Header

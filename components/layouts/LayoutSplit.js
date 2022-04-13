@@ -6,7 +6,7 @@ const LayoutSplit = ({ children, vDirection }) => {
 
   return (
     <section
-      className={`flex lg:flex-row items-center justify-between gap-8 lg:gap-24 px-6 py-16 lg:px-36 ${vDirections[vDirection]}`}
+      className={`flex lg:flex-row items-center justify-between gap-8 lg:gap-24 px-6 py-16 lg:px-12 max-w-screen-xl ${vDirections[vDirection]}`}
     >
       {children}
     </section>

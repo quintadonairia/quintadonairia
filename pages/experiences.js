@@ -4,7 +4,6 @@ import en from "../locales/en/experiences.json";
 import pt from "../locales/pt/experiences.json";
 
 import Hero from "../components/organisms/Hero";
-import Experience from "../components/molecules/Experience";
 
 import LayoutSplit from "../components/layouts/LayoutSplit";
 import Header from "../components/molecules/Header";
