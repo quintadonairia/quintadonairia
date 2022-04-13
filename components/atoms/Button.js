@@ -4,7 +4,7 @@ const Button = ({ children, size, variant, mode, desktop, mobile }) => {
   const sizes = {
     sm: "text-xs px-6 py-3",
     md: "text-xs px-8 py-4",
-    lg: "text-sm px-12 py-4",
+    lg: "text-sm px-10 py-4",
   };
 
   const variants = {
