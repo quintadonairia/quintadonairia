@@ -41,8 +41,7 @@ const Home = () => {
         kicker={t.lodgingTitle}
         heading={t.lodgingHeading}
         title={t.lodgingSubheading}
-        imageSrc="images/20210820-donairia-008.jpg"
-        imageAlt="An empty corridor"
+        imageSrc="/images/20220410-donairia-004.jpg"
         text={t.lodgingDescription}
         action
         label={t.lodgingAction}

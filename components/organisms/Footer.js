@@ -36,8 +36,6 @@ const Footer = () => {
             <li>{t.page2}</li>
             <li>{t.page3}</li>
             <li>{t.page4}</li>
-            <li>{t.page5}</li>
-            <li>{t.page6}</li>
           </ul>
         </div>
         <div className="flex flex-col justify-start items-start gap-4">

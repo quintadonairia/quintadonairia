@@ -24,7 +24,10 @@ const Restaurant = () => {
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Restaurant</title>
       </Head>
-      <Hero title={t.heroTitle} image="url(images/20211003-donairia-050.jpg)" />
+      <Hero
+        title={t.heroTitle}
+        image="url(/images/20211003-donairia-050.jpg)"
+      />
     </div>
   );
 };

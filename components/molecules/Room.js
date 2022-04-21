@@ -3,7 +3,7 @@ import Icon from "../atoms/Icon";
 
 import { RiArrowRightLine } from "react-icons/ri";
 
-const Room2 = ({ imageSrc, imageAlt, title, description }) => {
+const Room2 = ({ imageSrc, imageAlt, title, description, buttonLabel }) => {
   return (
     <article className="flex flex-col gap-8 items-center">
       <img
@@ -18,7 +18,7 @@ const Room2 = ({ imageSrc, imageAlt, title, description }) => {
           <Icon size="md">
             <RiArrowRightLine />
           </Icon>
-          Book Now
+          {buttonLabel}
         </Button>
       </div>
     </article>

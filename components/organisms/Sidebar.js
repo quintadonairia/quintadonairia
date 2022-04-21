@@ -37,9 +37,9 @@ const Sidebar = () => {
         }`}
       >
         <ul className="flex flex-col gap-8 text-3xl cursor-pointer font-serif text-olive-900">
-          <a href="/lodging">
+          <Link href="/lodging">
             <li onClick={handleClick}>{t.page1}</li>
-          </a>
+          </Link>
           <Link href="/experiences">
             <li onClick={handleClick}>{t.page2}</li>
           </Link>
