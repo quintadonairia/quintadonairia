@@ -43,9 +43,9 @@ const Sidebar = () => {
           <Link href="/experiences">
             <li onClick={handleClick}>{t.page2}</li>
           </Link>
-          <a href="/restaurant">
+          <Link href="/restaurant">
             <li onClick={handleClick}>{t.page3}</li>
-          </a>
+          </Link>
           <Link href="/contacts">
             <li onClick={handleClick}>{t.page6}</li>
           </Link>
