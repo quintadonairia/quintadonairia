@@ -20,6 +20,9 @@ const Footer = () => {
       break;
   }
 
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+
   return (
     <footer className="flex flex-col items-start gap-24 py-12 px-8 lg:py-16 lg:px-32 bg-olive-900 text-white">
       <div className="w-full flex flex-col gap-16 lg:gap-0 lg:flex-row lg:items-start lg:justify-between">
@@ -31,12 +34,6 @@ const Footer = () => {
               className="w-28 lg:w-36 cursor-pointer"
             />
           </Link>
-          <ul className="grid grid-cols-2 gap-4 font-serif text-xl">
-            <li>{t.page1}</li>
-            <li>{t.page2}</li>
-            <li>{t.page3}</li>
-            <li>{t.page4}</li>
-          </ul>
         </div>
         <div className="flex flex-col justify-start items-start gap-4">
           <a
@@ -65,7 +62,7 @@ const Footer = () => {
       </div>
       <div className="w-full flex flex-col gap-12 lg:items-start lg:gap-0 lg:flex-row lg:justify-between text-sm">
         <div className="flex flex-col gap-2">
-          <p>© 2022 Quinta Dona Iria</p>
+          <p>© {year} Quinta Dona Iria</p>
           <ul className="flex gap-2">
             <li>{t.legalTerms}</li>
             <li>{t.legalPrivacy}</li>
