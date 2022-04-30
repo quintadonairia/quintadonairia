@@ -29,7 +29,10 @@ const Experiences = () => {
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Experiences</title>
       </Head>
-      <Hero title={t.heroTitle} image="url(images/20211003-donairia-024.jpg)" />
+      <Hero
+        title={t.heroTitle}
+        image="url(/images/20211003-donairia-024.jpg)"
+      />
       <Container>
         <Header heading={t.heading} subheading={t.subheading} />
       </Container>
