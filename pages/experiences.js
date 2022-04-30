@@ -5,9 +5,9 @@ import pt from "../locales/pt/experiences.json";
 
 import Hero from "../components/organisms/Hero";
 
-import LayoutSplit from "../components/layouts/LayoutSplit";
+import Split from "../components/layouts/Split";
 import Header from "../components/molecules/Header";
-import Container from "../components/organisms/Container";
+import Container from "../components/layouts/Container";
 import Block from "../components/molecules/Block";
 
 const Experiences = () => {
@@ -36,30 +36,30 @@ const Experiences = () => {
       <Container>
         <Header heading={t.heading} subheading={t.subheading} />
       </Container>
-      <LayoutSplit vDirection="reverse">
-        <Block title={t.experienceTitle1} text={t.experienceDescription1} />
+      <Split direction="reverse">
         <img
           src="/images/20220306-donairia-001.jpg"
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
-      </LayoutSplit>
-      <LayoutSplit vDirection="normal">
+        <Block title={t.experienceTitle1} text={t.experienceDescription1} />
+      </Split>
+      <Split direction="normal">
         <img
           src="/images/20211003-donairia-022.jpg"
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
         <Block title={t.experienceTitle2} text={t.experienceDescription2} />
-      </LayoutSplit>
-      <LayoutSplit vDirection="reverse">
-        <Block title={t.experienceTitle3} text={t.experienceDescription3} />
+      </Split>
+      <Split direction="reverse">
         <img
           src="/images/20220319-donairia-006.jpg"
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
-      </LayoutSplit>
+        <Block title={t.experienceTitle3} text={t.experienceDescription3} />
+      </Split>
     </div>
   );
 };

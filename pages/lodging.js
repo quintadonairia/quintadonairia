@@ -6,7 +6,7 @@ import pt from "../locales/pt/lodging.json";
 import LayoutSplit from "../components/layouts/LayoutSplit";
 import Room from "../components/molecules/Room";
 import Hero from "../components/organisms/Hero";
-import Container from "../components/organisms/Container";
+import Container from "../components/layouts/Container";
 import Block from "../components/molecules/Block";
 import Header from "../components/molecules/Header";
 
