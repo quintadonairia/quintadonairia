@@ -1,6 +1,6 @@
 import { RiFacebookCircleFill, RiInstagramLine } from "react-icons/ri";
 
-const Banner = ({ title, heading, description }) => {
+const Banner = ({ kicker, heading, description }) => {
   return (
     <div
       className="w-full text-white flex flex-col items-center p-8 lg:p-16 gap-8 lg:gap-12"
@@ -11,7 +11,7 @@ const Banner = ({ title, heading, description }) => {
     >
       <div className="flex flex-col items-center">
         <small className="uppercase tracking-widest pb-2 text-sm font-bold">
-          {title}
+          {kicker}
         </small>
         <div className="flex flex-col gap-4 items-center text-center">
           <h1 className="font-serif text-3xl lg:text-5xl">{heading}</h1>
