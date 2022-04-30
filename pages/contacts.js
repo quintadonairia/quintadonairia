@@ -28,7 +28,10 @@ const Contacts = () => {
       </Head>
 
       {/* Hero Section */}
-      <Hero title={t.heroTitle} image="url(images/20210903-donairia-003.jpg)" />
+      <Hero
+        title={t.heroTitle}
+        image="url(/images/20210903-donairia-003.jpg)"
+      />
 
       {/* Contacts Section */}
       <section className="flex flex-col lg:flex-row items-center gap-16 px-6 py-16 lg:p-24">
