@@ -3,7 +3,7 @@ import Head from "next/head";
 import en from "../locales/en/lodging.json";
 import pt from "../locales/pt/lodging.json";
 
-import LayoutSplit from "../components/layouts/LayoutSplit";
+import Split from "../components/layouts/Split";
 import Room from "../components/molecules/Room";
 import Hero from "../components/organisms/Hero";
 import Container from "../components/layouts/Container";
@@ -95,22 +95,22 @@ const Lodging = () => {
           </div>
         </section>
       </Container>
-      <LayoutSplit vDirection="normal">
+      <Split vDirection="normal">
         <img
           src="/images/senjuti-kundu-GCI8dqi4uWM-unsplash.jpg"
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
         <Block title={t.amenitiesTitle1} text={t.amenitiesDescription1} />
-      </LayoutSplit>
-      <LayoutSplit vDirection="reverse">
+      </Split>
+      <Split vDirection="reverse">
         <Block title={t.amenitiesTitle2} text={t.amenitiesDescription2} />
         <img
           src="/images/20220410-donairia-017.jpg"
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
-      </LayoutSplit>
+      </Split>
     </div>
   );
 };
