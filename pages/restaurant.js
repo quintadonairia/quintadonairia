@@ -41,16 +41,16 @@ const Restaurant = () => {
               className="w-48 lg:w-64"
             />
             <Header heading={t.headerHeading} subheading={t.headerSubheading} />
-            <div className="flex gap-2 overflow-auto no-scrollbar snap-x">
+            <div className="flex gap-2 overflow-auto no-scrollbar snap-x lg:overflow-visible lg:gap-16 lg:flex-wrap">
               <img
                 src="/images/20220504-donairia-002.jpg"
                 alt=""
-                className="snap-start"
+                className="snap-start lg:max-w-lg"
               />
               <img
                 src="/images/20220506-donairia-002.jpg"
                 alt=""
-                className="snap-start"
+                className="snap-start lg:max-w-lg"
               />
             </div>
           </div>
