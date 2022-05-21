@@ -34,16 +34,24 @@ const Restaurant = () => {
       {/* Reservation Form */}
       <section>
         <Container>
-          <div className="flex flex-col gap-16 items-center">
+          <div className="flex flex-col gap-8 lg:gap-12 items-center">
             <img
               src="/graphics/wordmark-dark.svg"
               alt=""
               className="w-48 lg:w-64"
             />
             <Header heading={t.headerHeading} subheading={t.headerSubheading} />
-            <div>
-              <img src="" alt="" />
-              <img src="" alt="" />
+            <div className="flex gap-2 overflow-auto no-scrollbar snap-x">
+              <img
+                src="/images/20220504-donairia-002.jpg"
+                alt=""
+                className="snap-start"
+              />
+              <img
+                src="/images/20220506-donairia-002.jpg"
+                alt=""
+                className="snap-start"
+              />
             </div>
           </div>
         </Container>
