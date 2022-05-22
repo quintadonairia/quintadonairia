@@ -34,27 +34,28 @@ const Restaurant = () => {
       {/* Reservation Form */}
       <section>
         <Container>
-          <div className="flex flex-col gap-8 lg:gap-12 items-center">
-            <img
-              src="/graphics/wordmark-dark.svg"
-              alt=""
-              className="w-48 lg:w-64"
-            />
-            <Header heading={t.headerHeading} subheading={t.headerSubheading} />
-            <div className="flex gap-2 overflow-auto no-scrollbar snap-x lg:overflow-visible lg:gap-16 lg:flex-wrap">
-              <img
-                src="/images/20220504-donairia-002.jpg"
-                alt=""
-                className="snap-start lg:max-w-lg"
-              />
-              <img
-                src="/images/20220506-donairia-002.jpg"
-                alt=""
-                className="snap-start lg:max-w-lg"
-              />
-            </div>
-          </div>
+          <Header heading={t.headerHeading} subheading={t.headerSubheading} />
         </Container>
+        <div className="grid grid-flow-col auto-cols-[80%] lg:auto-cols-[40%] gap-8 overflow-x-auto snap-mandatory snap-x no-scrollbar pb-12">
+          <div className="snap-start lg:max-w-lg">
+            <img src="/images/20220423-donairia-001.jpg" />
+          </div>
+          <div className="snap-start lg:max-w-lg">
+            <img src="/images/20220506-donairia-002.jpg" />
+          </div>
+          <div className="snap-start lg:max-w-lg">
+            <img src="/images/20220501-donairia-003.jpg" />
+          </div>
+          <div className="snap-start lg:max-w-lg">
+            <img src="/images/20220423-donairia-002.jpg" />
+          </div>
+          <div className="snap-start lg:max-w-lg">
+            <img src="/images/20220504-donairia-002.jpg" />
+          </div>
+          <div className="snap-start lg:max-w-lg">
+            <img src="/images/20220423-donairia-010.jpg" />
+          </div>
+        </div>
       </section>
     </div>
   );
