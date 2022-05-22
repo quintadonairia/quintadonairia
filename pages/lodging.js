@@ -68,27 +68,27 @@ const Lodging = () => {
         <section className="flex flex-col gap-8 items-center">
           <div>{t.featuresTitle}</div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg">
-            <div className="flex flex-col items-center gap-2 font-serif text-xl text-olive-500">
+            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive-500">
               <RiHotelBedLine className="text-3xl" />
               <p>{t.feature1}</p>
             </div>
-            <div className="flex flex-col items-center gap-2 font-serif text-xl text-olive-500">
+            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive-500">
               <RiDropLine className="text-3xl" />
               <p>{t.feature2}</p>
             </div>
-            <div className="flex flex-col items-center gap-2 font-serif text-xl text-olive-500">
+            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive-500">
               <RiWifiLine className="text-3xl" />
               <p>{t.feature3}</p>
             </div>
-            <div className="flex flex-col items-center gap-2 font-serif text-xl text-olive-500">
+            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive-500">
               <RiWindyLine className="text-3xl" />
               <p>{t.feature4}</p>
             </div>
-            <div className="flex flex-col items-center gap-2 font-serif text-xl text-olive-500">
+            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive-500">
               <RiTvLine className="text-3xl" />
               <p>{t.feature5}</p>
             </div>
-            <div className="flex flex-col items-center gap-2 font-serif text-xl text-olive-500">
+            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive-500">
               <RiCellphoneLine className="text-3xl" />
               <p>{t.feature6}</p>
             </div>
