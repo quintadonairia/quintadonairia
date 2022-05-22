@@ -95,7 +95,7 @@ const Lodging = () => {
           </div>
         </section>
       </Container>
-      <Split vDirection="normal">
+      <Split direction="normal">
         <img
           src="/images/senjuti-kundu-GCI8dqi4uWM-unsplash.jpg"
           alt=""
@@ -103,13 +103,13 @@ const Lodging = () => {
         />
         <Block title={t.amenitiesTitle1} text={t.amenitiesDescription1} />
       </Split>
-      <Split vDirection="reverse">
-        <Block title={t.amenitiesTitle2} text={t.amenitiesDescription2} />
+      <Split direction="reverse">
         <img
           src="/images/20220410-donairia-017.jpg"
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
+        <Block title={t.amenitiesTitle2} text={t.amenitiesDescription2} />
       </Split>
     </div>
   );
