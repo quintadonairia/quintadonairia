@@ -51,6 +51,7 @@ const Lodging = () => {
             imageSrc="/images/20220410-donairia-006.jpg"
             imageAlt={t.roomImageAlt1}
             title={t.roomTitle1}
+            price={t.roomPrice1}
             description={t.roomDescription1}
             buttonLabel={t.roomButtonLabel}
           />
@@ -58,6 +59,7 @@ const Lodging = () => {
             imageSrc="/images/20220410-donairia-010.jpg"
             imageAlt={t.roomImageAlt2}
             title={t.roomTitle2}
+            price={t.roomPrice2}
             description={t.roomDescription2}
             buttonLabel={t.roomButtonLabel}
           />
