@@ -1,4 +1,4 @@
-## About The Project
+## Quinta Dona Iria
 
 A wellness haven, combining wine and olive oil with the rich Portuguese cuisine.
 
