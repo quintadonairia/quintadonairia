@@ -9,6 +9,7 @@ const Room2 = ({
   title,
   price,
   description,
+  bookingLink,
   buttonLabel,
 }) => {
   return (
@@ -24,7 +25,7 @@ const Room2 = ({
           {price}
         </h3>
         <h4 className="text-neutral-600 leading-relaxed">{description}</h4>
-        <a href="mailto:hello@quintadonairia.com?subject=Pedido de Reserva&body=Olá!%0A%0AObrigado por escolher a Quinta Dona Iria.%0A%0AInformações que precisamos para a reserva:%0A%0A- Dias da estadia%0A- Nº de pessoas%0A- Nome da reserva%0A- Quarto pretendido (Quarto Vista Olival ou Quarto Vista Serra)">
+        <a href={bookingLink}>
           <Button size="lg" variant="link" mode="light">
             <Icon size="md">
               <RiArrowRightLine />
