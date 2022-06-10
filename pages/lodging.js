@@ -53,6 +53,7 @@ const Lodging = () => {
             title={t.roomTitle1}
             price={t.roomPrice1}
             description={t.roomDescription1}
+            bookingLink={t.roomBookingLink}
             buttonLabel={t.roomButtonLabel}
           />
           <Room
@@ -61,6 +62,7 @@ const Lodging = () => {
             title={t.roomTitle2}
             price={t.roomPrice2}
             description={t.roomDescription2}
+            bookingLink={t.roomBookingLink}
             buttonLabel={t.roomButtonLabel}
           />
         </div>

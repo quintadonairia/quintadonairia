@@ -6,6 +6,7 @@
   "roomTitle1": "Superior Room",
   "roomPrice1": "90€ / night",
   "roomDescription1": "Our best double rooms, with stunning views over the olive grove, garden and pool.",
+  "roomBookingLink": "mailto:hello@quintadonairia.com?subject=Reservation Request | Hotel Quinta Dona Iria&body=Hello!%0A%0AThank you for choosing Quinta Dona Iria.%0A%0AInformation we need for booking:%0A%0A- Check-in date%0A- Check-out date%0A- Number of guests%0A- Reservation name%0A- Preferred room (Superior or Standard)",
   "roomImageAlt2": "A bedroom with a large bed, tv, table and windows.",
   "roomTitle2": "Standard Room",
   "roomPrice2": "80€ / night",
