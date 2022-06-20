@@ -1,5 +1,3 @@
-import React from "react";
-
 const Button = ({ children, size, variant, mode, desktop, mobile }) => {
   const sizes = {
     sm: "text-xs px-6 py-3",
