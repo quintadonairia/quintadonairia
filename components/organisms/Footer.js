@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-24">
           <Link href="/">
             <img
-              src="/graphics/wordmark-white.svg"
+              src="/graphics/donairia-wordmark-white.svg"
               alt="logo"
               className="w-28 lg:w-36 cursor-pointer"
             />
