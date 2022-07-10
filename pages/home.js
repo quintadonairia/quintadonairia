@@ -5,7 +5,7 @@ import pt from "../locales/pt/lodging.json";
 
 import SocialButton from "../components/atoms/SocialButton";
 
-const Links = () => {
+const Home = () => {
   const router = useRouter();
   const { locale } = router;
 
@@ -22,7 +22,7 @@ const Links = () => {
   return (
     <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden p-8 gap-6 bg-tan-50">
       <Head>
-        <title>Quinta Dona Iria - Enoturismo | Links</title>
+        <title>Quinta Dona Iria - Enoturismo | Home</title>
       </Head>
       <div className="flex flex-col items-center gap-2">
         <img
@@ -65,4 +65,4 @@ const Links = () => {
   );
 };
 
-export default Links;
+export default Home;
