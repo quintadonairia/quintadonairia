@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const { pathname } = router;
 
-  if (pathname === "/links") {
+  if (pathname === "/home") {
     return <Component {...pageProps} />;
   } else {
     return (
