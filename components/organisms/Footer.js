@@ -62,16 +62,20 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-center gap-8">
-          <img
-            src="/graphics/green-key-logo.svg"
-            alt="Green Key logo"
-            className="w-16"
-          />
-          <img
-            src="/graphics/clean-safe-logo.svg"
-            alt="Clean & Safe logo"
-            className="w-20"
-          />
+          <a href="https://greenkey.abae.pt/empreendimento/quinta-dona-iria/">
+            <img
+              src="/graphics/green-key-logo.svg"
+              alt="Green Key logo"
+              className="w-16"
+            />
+          </a>
+          <a href="https://portugalcleanandsafe.com/place/1654747">
+            <img
+              src="/graphics/clean-safe-logo.svg"
+              alt="Clean & Safe logo"
+              className="w-20"
+            />
+          </a>
         </div>
       </div>
 
