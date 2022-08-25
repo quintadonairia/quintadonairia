@@ -19,7 +19,7 @@ const Button = ({ children, size, variant, mode, desktop, mobile }) => {
   };
 
   return (
-    <a
+    <button
       className={`w-fit cursor-pointer uppercase flex flex-row items-center gap-1 font-bold tracking-widest ${
         variants[variant]
       } ${sizes[size]} ${modes[mode]} ${desktop && "hidden lg:block"} ${
@@ -27,7 +27,7 @@ const Button = ({ children, size, variant, mode, desktop, mobile }) => {
       }`}
     >
       {children}
-    </a>
+    </button>
   );
 };
 
