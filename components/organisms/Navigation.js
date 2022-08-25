@@ -49,7 +49,7 @@ const Navigation = () => {
           className="w-28 lg:w-36 cursor-pointer absolute left-1/2 -translate-x-1/2"
         />
       </Link>
-      <a href="mailto:hello@quintadonairia.com?subject=Pedido de Reserva&body=Olá!%0A%0AObrigado por escolher a Quinta Dona Iria.%0A%0AInformações que precisamos para a reserva:%0A%0A- Dias da estadia%0A- Nº de pessoas%0A- Nome da reserva%0A- Quarto pretendido (Quarto Vista Olival ou Quarto Vista Serra)">
+      <a href={t.bookingLink}>
         <Button variant="secondary" size="sm" desktop>
           {t.ctaLabel}
         </Button>
