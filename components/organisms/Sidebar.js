@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import en from "../../locales/en/Sidebar.json";
-import pt from "../../locales/pt/Sidebar.json";
+import en from "../../locales/en/components/Sidebar.json";
+import pt from "../../locales/pt/components/Sidebar.json";
 
 import Link from "next/link";
 import { RiMenuLine } from "react-icons/ri";

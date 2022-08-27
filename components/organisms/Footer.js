@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import en from "../../locales/en/Footer.json";
-import pt from "../../locales/pt/Footer.json";
+import en from "../../locales/en/components/Footer.json";
+import pt from "../../locales/pt/components/Footer.json";
 
 import Link from "next/link";
 

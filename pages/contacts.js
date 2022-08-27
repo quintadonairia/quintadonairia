@@ -1,8 +1,9 @@
 import { useRouter } from "next/router";
-import en from "../locales/en/contacts.json";
-import pt from "../locales/pt/contacts.json";
-
 import Head from "next/head";
+
+import en from "../locales/en/pages/contacts.json";
+import pt from "../locales/pt/pages/contacts.json";
+
 import Hero from "../components/organisms/Hero";
 
 import { RiFacebookCircleFill, RiInstagramLine } from "react-icons/ri";
