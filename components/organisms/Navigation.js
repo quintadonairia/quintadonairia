@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import en from "../../locales/en/Navigation.json";
-import pt from "../../locales/pt/Navigation.json";
+import en from "../../locales/en/components/Navigation.json";
+import pt from "../../locales/pt/components/Navigation.json";
 
 import { useState, useEffect } from "react";
 

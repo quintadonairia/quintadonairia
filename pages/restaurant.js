@@ -1,10 +1,11 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import en from "../locales/en/restaurant.json";
-import pt from "../locales/pt/restaurant.json";
 
-import Hero from "../components/organisms/Hero";
+import en from "../locales/en/pages/restaurant.json";
+import pt from "../locales/pt/pages/restaurant.json";
+
 import Header from "../components/molecules/Header";
+import Hero from "../components/organisms/Hero";
 import Container from "../components/layouts/Container";
 
 const Restaurant = () => {

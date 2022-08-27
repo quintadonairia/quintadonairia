@@ -1,14 +1,15 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import en from "../locales/en/lodging.json";
-import pt from "../locales/pt/lodging.json";
 
-import Split from "../components/layouts/Split";
+import en from "../locales/en/pages/lodging.json";
+import pt from "../locales/pt/pages/lodging.json";
+
 import Room from "../components/molecules/Room";
-import Hero from "../components/organisms/Hero";
-import Container from "../components/layouts/Container";
 import Block from "../components/molecules/Block";
 import Header from "../components/molecules/Header";
+import Hero from "../components/organisms/Hero";
+import Split from "../components/layouts/Split";
+import Container from "../components/layouts/Container";
 
 import {
   RiDropLine,
