@@ -1,14 +1,14 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import en from "../locales/en/experiences.json";
-import pt from "../locales/pt/experiences.json";
 
-import Hero from "../components/organisms/Hero";
+import en from "../locales/en/pages/experiences.json";
+import pt from "../locales/pt/pages/experiences.json";
 
-import Split from "../components/layouts/Split";
 import Header from "../components/molecules/Header";
-import Container from "../components/layouts/Container";
 import Block from "../components/molecules/Block";
+import Hero from "../components/organisms/Hero";
+import Container from "../components/layouts/Container";
+import Split from "../components/layouts/Split";
 
 const Experiences = () => {
   const router = useRouter();
