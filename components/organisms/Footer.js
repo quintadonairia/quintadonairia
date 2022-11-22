@@ -52,7 +52,7 @@ const Footer = () => {
                 {t.link2}
               </a>
               <a
-                href="tel:+351966923278"
+                href="tel:+351924733556"
                 className="flex items-center gap-1 hover:gap-2 duration-200 text-sm"
               >
                 <RiArrowRightLine className="text-white" />

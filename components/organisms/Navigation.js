@@ -55,7 +55,7 @@ const Navigation = () => {
         </Button>
       </a>
       <Icon variant="primary" size="xl" mode="dark" mobile>
-        <a href="tel:+351966923278">
+        <a href="tel:+351924733556">
           <RiPhoneFill className="text-white" />
         </a>
       </Icon>
