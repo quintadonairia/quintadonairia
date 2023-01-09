@@ -4,6 +4,7 @@ import Head from "next/head";
 import en from "../locales/en/pages/contacts.json";
 import pt from "../locales/pt/pages/contacts.json";
 
+import Tooltip from "../components/atoms/Tooltip";
 import Hero from "../components/organisms/Hero";
 
 import { RiFacebookCircleFill, RiInstagramLine } from "react-icons/ri";
