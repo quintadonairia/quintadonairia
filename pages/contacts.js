@@ -68,7 +68,12 @@ const Contacts = () => {
               <small className="uppercase tracking-wider text-xs font-semibold text-olive-500">
                 {t.contactsPhone}
               </small>
-              <p className="text-sm">+351 966 923 278</p>
+              <div className="flex items-center gap-2">
+                <p className="text-sm">+351 924 733 556</p>
+                <Tooltip text={t.contactsPhoneDisclaimer}>
+                  <RiInformationLine className="text-neutral-400" />
+                </Tooltip>
+              </div>
             </div>
           </div>
           <ul className="flex gap-4">
