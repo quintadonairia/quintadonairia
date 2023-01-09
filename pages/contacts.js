@@ -7,7 +7,11 @@ import pt from "../locales/pt/pages/contacts.json";
 import Tooltip from "../components/atoms/Tooltip";
 import Hero from "../components/organisms/Hero";
 
-import { RiFacebookCircleFill, RiInstagramLine } from "react-icons/ri";
+import {
+  RiFacebookCircleFill,
+  RiInformationLine,
+  RiInstagramLine,
+} from "react-icons/ri";
 
 const Contacts = () => {
   const router = useRouter();
