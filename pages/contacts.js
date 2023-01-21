@@ -1,17 +1,14 @@
-import { useRouter } from "next/router";
 import Head from "next/head";
-
-import pt from "../locales/pt/pages/contacts.json";
-import en from "../locales/en/pages/contacts.json";
-
-import Tooltip from "../components/atoms/Tooltip";
-import Hero from "../components/organisms/Hero";
-
+import { useRouter } from "next/router";
 import {
   RiFacebookCircleFill,
   RiInformationLine,
   RiInstagramLine,
 } from "react-icons/ri";
+import Tooltip from "../components/atoms/Tooltip";
+import Hero from "../components/organisms/Hero";
+import en from "../locales/en/pages/contacts.json";
+import pt from "../locales/pt/pages/contacts.json";
 
 const Contacts = () => {
   const router = useRouter();

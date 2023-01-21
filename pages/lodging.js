@@ -1,23 +1,21 @@
-import { useRouter } from "next/router";
 import Head from "next/head";
-
-import pt from "../locales/pt/pages/lodging.json";
-import en from "../locales/en/pages/lodging.json";
-
-import Room from "../components/molecules/Room";
+import { useRouter } from "next/router";
+import Container from "../components/layouts/Container";
+import Split from "../components/layouts/Split";
 import Block from "../components/molecules/Block";
 import Header from "../components/molecules/Header";
+import Room from "../components/molecules/Room";
 import Hero from "../components/organisms/Hero";
-import Split from "../components/layouts/Split";
-import Container from "../components/layouts/Container";
+import en from "../locales/en/pages/lodging.json";
+import pt from "../locales/pt/pages/lodging.json";
 
 import {
+  RiCellphoneLine,
   RiDropLine,
   RiHotelBedLine,
-  RiWifiLine,
   RiTvLine,
+  RiWifiLine,
   RiWindyLine,
-  RiCellphoneLine,
 } from "react-icons/ri";
 
 const Lodging = () => {

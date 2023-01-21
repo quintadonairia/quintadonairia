@@ -1,6 +1,8 @@
-import { RiInstagramLine } from "react-icons/ri";
-import { RiFacebookCircleFill } from "react-icons/ri";
-import { RiHomeWifiLine } from "react-icons/ri";
+import {
+  RiFacebookCircleFill,
+  RiHomeWifiLine,
+  RiInstagramLine,
+} from "react-icons/ri";
 import { TbBrandAirbnb } from "react-icons/tb";
 
 const SocialButton = ({ href, theme, label, icon }) => {
