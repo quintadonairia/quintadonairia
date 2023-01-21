@@ -1,7 +1,6 @@
+import { RiArrowRightLine } from "react-icons/ri";
 import Button from "../atoms/Button";
 import Icon from "../atoms/Icon";
-
-import { RiArrowRightLine } from "react-icons/ri";
 
 const Room2 = ({
   imageSrc,

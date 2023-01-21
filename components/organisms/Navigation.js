@@ -1,14 +1,12 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { RiPhoneFill } from "react-icons/ri";
 import en from "../../locales/en/components/Navigation.json";
 import pt from "../../locales/pt/components/Navigation.json";
-
-import { useState, useEffect } from "react";
-
-import Link from "next/link";
 import Button from "../atoms/Button";
-import Sidebar from "./Sidebar";
-import { RiPhoneFill } from "react-icons/ri";
 import Icon from "../atoms/Icon";
+import Sidebar from "./Sidebar";
 
 const Navigation = () => {
   const router = useRouter();
