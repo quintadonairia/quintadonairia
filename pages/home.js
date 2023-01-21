@@ -1,10 +1,8 @@
-import { useRouter } from "next/router";
 import Head from "next/head";
-
-import pt from "../locales/pt/pages/lodging.json";
-import en from "../locales/en/pages/lodging.json";
-
+import { useRouter } from "next/router";
 import SocialButton from "../components/atoms/SocialButton";
+import en from "../locales/en/pages/lodging.json";
+import pt from "../locales/pt/pages/lodging.json";
 
 const Home = () => {
   const router = useRouter();

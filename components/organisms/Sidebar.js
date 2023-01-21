@@ -1,12 +1,9 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
+import { RiCloseLine, RiMenuLine } from "react-icons/ri";
 import en from "../../locales/en/components/Sidebar.json";
 import pt from "../../locales/pt/components/Sidebar.json";
-
-import Link from "next/link";
-import { RiMenuLine } from "react-icons/ri";
-import { RiCloseLine } from "react-icons/ri";
-import { useState } from "react";
-
 import Icon from "../atoms/Icon";
 
 const Sidebar = () => {

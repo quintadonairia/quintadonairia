@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
-
-import Navigation from "../organisms/Navigation";
 import Footer from "../organisms/Footer";
+import Navigation from "../organisms/Navigation";
 
 export default function Layout({ children }) {
   const router = useRouter();

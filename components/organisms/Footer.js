@@ -1,10 +1,8 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
+import { RiArrowRightLine } from "react-icons/ri";
 import en from "../../locales/en/components/Footer.json";
 import pt from "../../locales/pt/components/Footer.json";
-
-import Link from "next/link";
-
-import { RiArrowRightLine } from "react-icons/ri";
 
 const Footer = () => {
   const router = useRouter();

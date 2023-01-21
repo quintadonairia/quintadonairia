@@ -1,15 +1,13 @@
-import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
-
-import pt from "../locales/pt/pages/index.json";
-import en from "../locales/en/pages/index.json";
-
+import { useRouter } from "next/router";
 import Button from "../components/atoms/Button";
 import Banner from "../components/molecules/Banner";
 import Header from "../components/molecules/Header";
 import Gallery from "../components/organisms/Gallery";
 import Hero from "../components/organisms/Hero";
+import en from "../locales/en/pages/index.json";
+import pt from "../locales/pt/pages/index.json";
 
 const Home = () => {
   const router = useRouter();
