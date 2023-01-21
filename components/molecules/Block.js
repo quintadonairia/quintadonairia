@@ -1,5 +1,3 @@
-import React from "react";
-
 import Button from "../atoms/Button";
 
 const Block = ({ title, text, action, label }) => {
