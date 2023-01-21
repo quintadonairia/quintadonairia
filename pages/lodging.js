@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-import en from "../locales/en/pages/lodging.json";
 import pt from "../locales/pt/pages/lodging.json";
+import en from "../locales/en/pages/lodging.json";
 
 import Room from "../components/molecules/Room";
 import Block from "../components/molecules/Block";

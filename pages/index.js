@@ -2,8 +2,8 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 
-import en from "../locales/en/pages/index.json";
 import pt from "../locales/pt/pages/index.json";
+import en from "../locales/en/pages/index.json";
 
 import Button from "../components/atoms/Button";
 import Banner from "../components/molecules/Banner";
