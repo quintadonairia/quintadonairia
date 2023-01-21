@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-import en from "../locales/en/pages/experiences.json";
 import pt from "../locales/pt/pages/experiences.json";
+import en from "../locales/en/pages/experiences.json";
 
 import Header from "../components/molecules/Header";
 import Block from "../components/molecules/Block";

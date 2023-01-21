@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-import en from "../locales/en/pages/restaurant.json";
 import pt from "../locales/pt/pages/restaurant.json";
+import en from "../locales/en/pages/restaurant.json";
 
 import Header from "../components/molecules/Header";
 import Hero from "../components/organisms/Hero";
