@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const Hero = ({ title, image }) => {
   return (
     <header
@@ -8,14 +6,9 @@ const Hero = ({ title, image }) => {
         backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ${image}`,
       }}
     >
-      <motion.h1
-        initial={{ x: "-4rem", opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="text-white font-serif text-3xl px-8 leading-snug lg:text-5xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight"
-      >
+      <h1 className="text-white font-serif text-3xl px-8 leading-snug lg:text-5xl max-w-screen-md lg:max-w-screen-lg lg:leading-tight">
         {title}
-      </motion.h1>
+      </h1>
     </header>
   );
 };
