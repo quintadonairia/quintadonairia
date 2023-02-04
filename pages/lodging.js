@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import Container from "../components/layouts/Container";
 import Split from "../components/layouts/Split";
 import Block from "../components/molecules/Block";
-import Header from "../components/molecules/Header";
 import Room from "../components/molecules/Room";
+import SectionHeader from "../components/molecules/SectionHeader";
 import Hero from "../components/organisms/Hero";
 import en from "../locales/en/pages/lodging.json";
 import pt from "../locales/pt/pages/lodging.json";
@@ -42,7 +42,10 @@ const Lodging = () => {
         image="url(/images/20220410-donairia-004.jpg)"
       />
       <Container>
-        <Header heading={t.headerHeading} subheading={t.headerSubheading} />
+        <SectionHeader
+          heading={t.headerHeading}
+          subheading={t.headerSubheading}
+        />
       </Container>
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

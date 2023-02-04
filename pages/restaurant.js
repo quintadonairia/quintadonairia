@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Container from "../components/layouts/Container";
-import Header from "../components/molecules/Header";
+import SectionHeader from "../components/molecules/SectionHeader";
 import Hero from "../components/organisms/Hero";
 import en from "../locales/en/pages/restaurant.json";
 import pt from "../locales/pt/pages/restaurant.json";
@@ -33,7 +33,10 @@ const Restaurant = () => {
       {/* Reservation Form */}
       <section>
         <Container>
-          <Header heading={t.headerHeading} subheading={t.headerSubheading} />
+          <SectionHeader
+            heading={t.headerHeading}
+            subheading={t.headerSubheading}
+          />
         </Container>
         <div className="grid grid-flow-col auto-cols-[80%] lg:auto-cols-[40%] gap-8 overflow-x-auto snap-mandatory snap-x no-scrollbar pb-12">
           <div className="snap-start lg:max-w-lg">
