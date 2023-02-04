@@ -1,4 +1,4 @@
-const Header = ({ kicker, heading, subheading }) => {
+const SectionHeader = ({ kicker, heading, subheading }) => {
   return (
     <header className="flex flex-col items-center gap-6 text-center">
       <small className="text-xs lg:text-sm uppercase tracking-widest font-semibold">
@@ -12,4 +12,4 @@ const Header = ({ kicker, heading, subheading }) => {
   );
 };
 
-export default Header;
+export default SectionHeader;
