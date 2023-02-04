@@ -20,39 +20,39 @@ const Sidebar = () => {
       break;
   }
 
-  const [sidebar, setSidebar] = useState(false);
+  const [isSidebarActive, setIsSidebarActive] = useState(false);
 
-  const handleClick = () => {
-    setSidebar(!sidebar);
+  const handleSidebarToggle = () => {
+    setIsSidebarActive(!isSidebarActive);
   };
 
   return (
     <div>
       <div
         className={`z-20 flex p-8 bg-tan-50 shadow-xl min-h-screen w-full sm:w-1/4 items-start justify-between text-gray-900 fixed top-0 left-0 transition-all duration-700 ${
-          sidebar ? "translate-x-0" : "-translate-x-full"
+          isSidebarActive ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <ul className="flex flex-col gap-8 text-3xl cursor-pointer font-serif text-olive-900">
           <Link href="/lodging">
-            <li onClick={handleClick}>{t.page1}</li>
+            <li onClick={handleSidebarToggle}>{t.page1}</li>
           </Link>
           <Link href="/experiences">
-            <li onClick={handleClick}>{t.page2}</li>
+            <li onClick={handleSidebarToggle}>{t.page2}</li>
           </Link>
           <Link href="/restaurant">
-            <li onClick={handleClick}>{t.page3}</li>
+            <li onClick={handleSidebarToggle}>{t.page3}</li>
           </Link>
           <Link href="/contacts">
-            <li onClick={handleClick}>{t.page6}</li>
+            <li onClick={handleSidebarToggle}>{t.page6}</li>
           </Link>
         </ul>
         <Icon size="xl" mode="light">
-          <RiCloseLine onClick={handleClick} />
+          <RiCloseLine onClick={handleSidebarToggle} />
         </Icon>
       </div>
       <Icon size="xl" mode="dark">
-        <RiMenuLine onClick={handleClick} />
+        <RiMenuLine onClick={handleSidebarToggle} />
       </Icon>
     </div>
   );
