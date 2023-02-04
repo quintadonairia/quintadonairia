@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Button from "../components/atoms/Button";
 import Banner from "../components/molecules/Banner";
-import Header from "../components/molecules/Header";
+import SectionHeader from "../components/molecules/SectionHeader";
 import Gallery from "../components/organisms/Gallery";
 import Hero from "../components/organisms/Hero";
 import en from "../locales/en/pages/index.json";
@@ -32,7 +32,7 @@ const Home = () => {
       <Hero title={t.heroTitle} image="url(images/20211013-donairia-004.jpg)" />
 
       <section className="flex flex-col items-center gap-8 lg:gap-12 px-6 py-16 lg:p-32">
-        <Header kicker={t.lodgingKicker} heading={t.lodgingHeading} />
+        <SectionHeader kicker={t.lodgingKicker} heading={t.lodgingHeading} />
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-24">
           <img
             src="/images/20220410-donairia-004.jpg"
@@ -59,7 +59,10 @@ const Home = () => {
       </section>
 
       <section className="flex flex-col items-center px-6 py-16 gap-6 lg:gap-12">
-        <Header kicker={t.experiencesKicker} heading={t.experiencesHeading} />
+        <SectionHeader
+          kicker={t.experiencesKicker}
+          heading={t.experiencesHeading}
+        />
         <Gallery />
         <Link href="/experiences" passHref>
           <a>
@@ -71,7 +74,10 @@ const Home = () => {
       </section>
 
       <section className="flex flex-col items-center gap-8 lg:gap-12 px-6 py-16 lg:p-32">
-        <Header kicker={t.restaurantKicker} heading={t.restaurantHeading} />
+        <SectionHeader
+          kicker={t.restaurantKicker}
+          heading={t.restaurantHeading}
+        />
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-24">
           <img
             src="images/20211003-donairia-050.jpg"

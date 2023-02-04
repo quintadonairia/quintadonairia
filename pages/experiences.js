@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Container from "../components/layouts/Container";
 import Split from "../components/layouts/Split";
 import Block from "../components/molecules/Block";
-import Header from "../components/molecules/Header";
+import SectionHeader from "../components/molecules/SectionHeader";
 import Hero from "../components/organisms/Hero";
 import en from "../locales/en/pages/experiences.json";
 import pt from "../locales/pt/pages/experiences.json";
@@ -32,7 +32,7 @@ const Experiences = () => {
         image="url(/images/20211003-donairia-024.jpg)"
       />
       <Container>
-        <Header heading={t.heading} subheading={t.subheading} />
+        <SectionHeader heading={t.heading} subheading={t.subheading} />
       </Container>
       <Split direction="reverse">
         <img
