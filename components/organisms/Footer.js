@@ -59,27 +59,47 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-8">
-          <a href="https://greenkey.abae.pt/empreendimento/quinta-dona-iria/">
+        <div className="flex flex-col gap-16">
+          <div className="flex items-center gap-8">
+            <a
+              href="https://greenkey.abae.pt/empreendimento/quinta-dona-iria/"
+              target="_blank"
+            >
+              <img
+                src="/graphics/green-key-logo.svg"
+                alt="Green Key logo"
+                className="w-16"
+              />
+            </a>
+            <a
+              href="https://portugalcleanandsafe.com/place/1654747"
+              target="_blank"
+            >
+              <img
+                src="/graphics/clean-safe-logo.svg"
+                alt="Clean & Safe logo"
+                className="w-20"
+              />
+            </a>
+          </div>
+          <a href="https://www.centerofportugal.com/" target="_blank">
             <img
-              src="/graphics/green-key-logo.svg"
-              alt="Green Key logo"
-              className="w-16"
-            />
-          </a>
-          <a href="https://portugalcleanandsafe.com/place/1654747">
-            <img
-              src="/graphics/clean-safe-logo.svg"
-              alt="Clean & Safe logo"
-              className="w-20"
+              src="/images/visit-center-of-portugal.png"
+              alt="Center of Portugal logo"
+              className="w-64"
             />
           </a>
         </div>
       </div>
-
       <div className="w-full flex flex-col gap-12 lg:items-start lg:gap-0 lg:flex-row lg:justify-between text-sm">
         <div className="flex flex-col gap-2">
           <p>© {year} Quinta Dona Iria</p>
+          <a
+            href="https://rnt.turismodeportugal.pt/RNT/RNET.aspx?nr=10101"
+            target="_blank"
+          >
+            RNET - 10101
+          </a>
           <ul className="flex gap-2">
             <li>{t.legalTerms}</li>
             <li>{t.legalPrivacy}</li>
