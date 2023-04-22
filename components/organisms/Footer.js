@@ -1,22 +1,9 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { RiArrowRightLine } from "react-icons/ri";
-import en from "../../locales/en/components/Footer.json";
-import pt from "../../locales/pt/components/Footer.json";
+import { useTranslation } from "../../contexts/TranslationContext";
 
 const Footer = () => {
-  const router = useRouter();
-  const { locale } = router;
-
-  let t;
-  switch (locale) {
-    case "en":
-      t = en;
-      break;
-    case "pt":
-      t = pt;
-      break;
-  }
+  const t = useTranslation();
 
   const currentDate = new Date();
   const year = currentDate.getFullYear();
