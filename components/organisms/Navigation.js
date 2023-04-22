@@ -42,7 +42,7 @@ const Navigation = () => {
       <Sidebar />
       <Link href="/">
         <img
-          src="/graphics/donairia-wordmark-white.svg"
+          src="/graphics/donairia-wordmark-light.svg"
           alt="logo"
           className="w-28 lg:w-36 cursor-pointer absolute left-1/2 -translate-x-1/2"
         />
