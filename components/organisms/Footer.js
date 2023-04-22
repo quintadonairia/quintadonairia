@@ -28,7 +28,7 @@ const Footer = () => {
           <div className="flex flex-col gap-16">
             <Link href="/">
               <img
-                src="/graphics/donairia-wordmark-white.svg"
+                src="/graphics/donairia-wordmark-light.svg"
                 alt="logo"
                 className="w-32 lg:w-36 cursor-pointer"
               />
