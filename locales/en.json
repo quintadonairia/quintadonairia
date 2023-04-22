@@ -1,0 +1,119 @@
+{
+  "contacts": {
+    "address": "Address",
+    "email": "Email",
+    "heading": "Ready to indulge yourself?",
+    "phone": "Phone",
+    "phoneDisclaimer": "Call to national mobile network",
+    "subheading": "Get in touch with us to discuss your next getaway.",
+    "title": "Contacts"
+  },
+  "experiences": {
+    "heading": "Far more than just a stopping point",
+    "property": {
+      "description": "Our property includes all sorts of on-site amenities for whatever you seek out when getting away from it all. Take a dip in the pool, stroll through the gardens, or just contemplate the nature surrounding us.",
+      "title": "Property amenities"
+    },
+    "rooms": {
+      "description": "At our reception we help you customize your room services, as well as plan excursions to places of interest around us.",
+      "title": "Custom and curated experiences and in-room amenities"
+    },
+    "subheading": "Quinta Dona Iria may be a great place to stay, but it is far more than just a stopping point. From our onsite amenities like our pool and gardens, to the stunning vineyards and olive tree fields, to our custom planned trips and excursions - there is always something to experience at our place.",
+    "tastings": {
+      "description": "Taste the wine and olive oil produced in our farm. To accompany the tasting, savor the best of our local Portuguese gastronomy.",
+      "title": "Wine and olive oil tastings"
+    },
+    "title": "Experiences"
+  },
+  "footer": {
+    "emailLink": "Email us",
+    "legalComplaintsBook": "Complaints Book",
+    "legalPrivacy": "Privacy",
+    "legalTerms": "Terms",
+    "mapsLink": "Get directions",
+    "signature": "Made with 🍷 by"
+  },
+  "global": {
+    "booking": "Book Now"
+  },
+  "home": {
+    "banner": {
+      "description": "Share your memories with #quintadonairia",
+      "heading": "Stay connected with us",
+      "kicker": "Social"
+    },
+    "experiences": {
+      "action": "Discover Experiences",
+      "heading": "There is always something to enjoy and experience at our place",
+      "kicker": "Experiences"
+    },
+    "lodging": {
+      "action": "View Lodging",
+      "description": "Indulge yourself in the rustic, comfortable environment of our small hotel. With stunning views over the nearby fields and mountains, we want to offer you moments of rest and leisure in the 8 rooms equipped with WC, air conditioning, Wi-Fi and TV.",
+      "heading": "Enveloped in nature and inspired by a passion for hospitality.",
+      "kicker": "Lodging",
+      "subheading": "Stay with us"
+    },
+    "restaurant": {
+      "action": "Visit Restaurant",
+      "description": "In the Safra Restaurant, we explore new tastes and sensations, intersecting tradition and modernity. Whether you are staying in, or just visiting us for the day, we want to offer you a unique and memorable dining experience, rooted on our local and sustainable products.",
+      "heading": "Taste the Portuguese traditional cuisine.",
+      "kicker": "Restaurant",
+      "subheading": "Dine with us"
+    },
+    "title": "A wellness haven, combining wine and olive oil with the rich Portuguese cuisine"
+  },
+  "lodging": {
+    "heading": "Indulge yourself with a stay in one of our 8 modern and cozy bedrooms.",
+    "rooms": {
+      "amenities": {
+        "accessibility": {
+          "description": "Our rooms are prepared to accommodate guests with disabilities. If you have any questions, you can call or email us. We are happy to make special arrangements for you, and some advanced notice will help us have everything ready for your arrival.",
+          "title": "Accessible Accommodations"
+        },
+        "family": {
+          "description": "Making it a family affair? Get in touch to find out about our family friendly room styles and options for when you're bringing the children along.",
+          "title": "Family Friendly"
+        }
+      },
+      "bookingLink": "mailto:hello@quintadonairia.com?subject=Reservation Request | Hotel Quinta Dona Iria&body=Hello!%0A%0AThank you for choosing Quinta Dona Iria.%0A%0AInformation we need for booking:%0A%0A- Check-in date%0A- Check-out date%0A- Number of guests%0A- Reservation name%0A- Preferred room (Superior or Standard)",
+      "features": {
+        "airConditioning": "Air Conditioning",
+        "bathroom": "Bathroom",
+        "beds": "Double beds",
+        "telephone": "Telephone",
+        "television": "Television",
+        "title": "All our rooms are equipped with",
+        "wiFi": "Wi-Fi Network"
+      },
+      "standard": {
+        "description": "Elegant and comfortable double rooms, with stunning views over the surrounding mountains.",
+        "image": "A bedroom with a large bed, tv, table and windows.",
+        "price": "80€ / night",
+        "title": "Standard Room"
+      },
+      "superior": {
+        "description": "Our best doubles, with stunning views over the olive grove, garden and pool.",
+        "image": "A bedroom with a large bed and modern decoration.",
+        "price": "90€ / night",
+        "title": "Superior Room"
+      }
+    },
+    "subheading": "Boasting stunning views coupled with contemporary elegant interiors, there is one room to suit everyone. Relax in our comfortable beds, luxuriate in our stylish bathrooms and enjoy our personal touches of Portuguese hospitality.",
+    "title": "Lodging"
+  },
+  "menu": {
+    "contacts": "Contacts",
+    "experiences": "Experiences",
+    "lodging": "Lodging",
+    "restaurant": "Restaurant"
+  },
+  "navigation": {
+    "menu": "Menu"
+  },
+  "restaurant": {
+    "heading": "A modern touch on the traditional Portuguese cuisine",
+    "subheading": "Inspired by the tradition of Portuguese cuisine, the Safra intends to add a modern touch, with gastronomic proposals rooted on the quality of our local products.",
+    "title": "Restaurant"
+  }
+}
