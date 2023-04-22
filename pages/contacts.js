@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import {
   RiFacebookCircleFill,
   RiInformationLine,
@@ -7,22 +6,10 @@ import {
 } from "react-icons/ri";
 import Tooltip from "../components/atoms/Tooltip";
 import Hero from "../components/organisms/Hero";
-import en from "../locales/en/pages/contacts.json";
-import pt from "../locales/pt/pages/contacts.json";
+import { useTranslation } from "../contexts/TranslationContext";
 
 const Contacts = () => {
-  const router = useRouter();
-  const { locale } = router;
-
-  let t;
-  switch (locale) {
-    case "en":
-      t = en;
-      break;
-    case "pt":
-      t = pt;
-      break;
-  }
+  const t = useTranslation();
 
   return (
     <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
