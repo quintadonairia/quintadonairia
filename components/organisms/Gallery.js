@@ -44,11 +44,11 @@ const Gallery = () => {
               ></img>
               <div className="flex flex-row justify-between px-6 text-white lg:text-neutral-900 text-2xl lg:text-4xl">
                 <BsArrowLeft
-                  className="absolute left-6 lg:left-12 top-1/2 hover:scale-110 duration-200 hover:text-olive-500 cursor-pointer"
+                  className="absolute left-6 lg:left-12 top-1/2 hover:scale-110 duration-200 hover:text-olive cursor-pointer"
                   onClick={prevSlide}
                 />
                 <BsArrowRight
-                  className="absolute right-6 lg:right-12 top-1/2 hover:scale-110 duration-200 hover:text-olive-500 cursor-pointer"
+                  className="absolute right-6 lg:right-12 top-1/2 hover:scale-110 duration-200 hover:text-olive cursor-pointer"
                   onClick={nextSlide}
                 />
               </div>
