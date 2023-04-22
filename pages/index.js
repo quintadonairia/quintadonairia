@@ -1,27 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useTranslation } from "../../contexts/TranslationContext";
 import Button from "../components/atoms/Button";
 import Banner from "../components/molecules/Banner";
 import SectionHeader from "../components/molecules/SectionHeader";
 import Gallery from "../components/organisms/Gallery";
 import Hero from "../components/organisms/Hero";
-import en from "../locales/en/pages/index.json";
-import pt from "../locales/pt/pages/index.json";
 
 const Home = () => {
-  const router = useRouter();
-  const { locale } = router;
-
-  let t;
-  switch (locale) {
-    case "en":
-      t = en;
-      break;
-    case "pt":
-      t = pt;
-      break;
-  }
+  const t = useTranslation();
 
   return (
     <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
@@ -99,8 +86,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Social Banner */}
       <Banner
         kicker={t.bannerKicker}
         heading={t.bannerHeading}

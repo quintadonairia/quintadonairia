@@ -1,13 +1,11 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import Container from "../components/layouts/Container";
 import Split from "../components/layouts/Split";
 import Block from "../components/molecules/Block";
 import Room from "../components/molecules/Room";
 import SectionHeader from "../components/molecules/SectionHeader";
 import Hero from "../components/organisms/Hero";
-import en from "../locales/en/pages/lodging.json";
-import pt from "../locales/pt/pages/lodging.json";
+import { useTranslation } from "../contexts/TranslationContext";
 
 import {
   RiCellphoneLine,
@@ -19,18 +17,7 @@ import {
 } from "react-icons/ri";
 
 const Lodging = () => {
-  const router = useRouter();
-  const { locale } = router;
-
-  let t;
-  switch (locale) {
-    case "en":
-      t = en;
-      break;
-    case "pt":
-      t = pt;
-      break;
-  }
+  const t = useTranslation();
 
   return (
     <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">

@@ -1,26 +1,13 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import Container from "../components/layouts/Container";
 import Split from "../components/layouts/Split";
 import Block from "../components/molecules/Block";
 import SectionHeader from "../components/molecules/SectionHeader";
 import Hero from "../components/organisms/Hero";
-import en from "../locales/en/pages/experiences.json";
-import pt from "../locales/pt/pages/experiences.json";
+import { useTranslation } from "../contexts/TranslationContext";
 
 const Experiences = () => {
-  const router = useRouter();
-  const { locale } = router;
-
-  let t;
-  switch (locale) {
-    case "en":
-      t = en;
-      break;
-    case "pt":
-      t = pt;
-      break;
-  }
+  const t = useTranslation();
 
   return (
     <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
