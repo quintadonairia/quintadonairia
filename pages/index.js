@@ -40,7 +40,7 @@ const Home = () => {
           />
           <div className="flex flex-col gap-8 lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <h2 className="font-serif text-olive-500 text-3xl lg:text-4xl">
+              <h2 className="font-serif text-olive text-3xl lg:text-4xl">
                 {t.lodgingSubheading}
               </h2>
               <p className="leading-relaxed lg:max-w-prose">
@@ -86,7 +86,7 @@ const Home = () => {
           />
           <div className="flex flex-col gap-8 lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <h2 className="font-serif text-olive-500 text-3xl lg:text-4xl">
+              <h2 className="font-serif text-olive text-3xl lg:text-4xl">
                 {t.restaurantSubheading}
               </h2>
               <p className="leading-relaxed lg:max-w-prose">
