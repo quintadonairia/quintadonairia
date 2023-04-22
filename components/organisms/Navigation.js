@@ -36,7 +36,7 @@ const Navigation = () => {
   return (
     <nav
       className={`flex items-center justify-between z-10 p-6 fixed top-0 left-0 right-0 ${
-        background && "bg-neutral-800 opacity-95 duration-500"
+        background && "bg-stone-900 opacity-95 duration-500"
       }`}
     >
       <Sidebar />
