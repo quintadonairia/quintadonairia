@@ -22,7 +22,7 @@ const Footer = () => {
   const year = currentDate.getFullYear();
 
   return (
-    <footer className="flex flex-col items-start gap-24 py-12 px-8 lg:py-16 lg:px-32 bg-olive-900 text-white">
+    <footer className="flex flex-col items-start gap-24 py-12 px-8 lg:py-16 lg:px-32 bg-stone-900 text-white">
       <div className="w-full flex flex-col gap-16 lg:gap-0 lg:flex-row lg:items-start lg:justify-between">
         <div className="flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-24">
           <div className="flex flex-col gap-16">
