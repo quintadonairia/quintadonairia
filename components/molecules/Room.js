@@ -23,7 +23,7 @@ const Room2 = ({
         <div className="bg-olive text-light py-2 px-4 rounded-full uppercase text-xs tracking-widest">
           {price}
         </div>
-        <h4 className="text-neutral-600 leading-relaxed">{description}</h4>
+        <h4 className="text-stone-600 leading-relaxed">{description}</h4>
         <a href={bookingLink}>
           <Button size="lg" variant="link" mode="light">
             <Icon size="md">

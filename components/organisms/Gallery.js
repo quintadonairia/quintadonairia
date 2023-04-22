@@ -42,7 +42,7 @@ const Gallery = () => {
                 src={slide.image}
                 className="aspect-[5/4] lg:aspect-[2/1] object-cover lg:max-w-screen-lg"
               ></img>
-              <div className="flex flex-row justify-between px-6 text-white lg:text-neutral-900 text-2xl lg:text-4xl">
+              <div className="flex flex-row justify-between px-6 text-white lg:text-stone-900 text-2xl lg:text-4xl">
                 <BsArrowLeft
                   className="absolute left-6 lg:left-12 top-1/2 hover:scale-110 duration-200 hover:text-olive cursor-pointer"
                   onClick={prevSlide}

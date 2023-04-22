@@ -68,7 +68,7 @@ const Contacts = () => {
               <div className="flex items-center gap-2">
                 <p className="text-sm">+351 924 733 556</p>
                 <Tooltip text={t.contactsPhoneDisclaimer}>
-                  <RiInformationLine className="text-neutral-400" />
+                  <RiInformationLine className="text-stone-400" />
                 </Tooltip>
               </div>
             </div>

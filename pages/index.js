@@ -28,9 +28,7 @@ const Home = () => {
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Home</title>
       </Head>
-
       <Hero title={t.heroTitle} image="url(images/20211013-donairia-004.jpg)" />
-
       <section className="flex flex-col items-center gap-8 lg:gap-12 px-6 py-16 lg:p-32">
         <SectionHeader kicker={t.lodgingKicker} heading={t.lodgingHeading} />
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-24">
@@ -57,7 +55,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="flex flex-col items-center px-6 py-16 gap-6 lg:gap-12">
         <SectionHeader
           kicker={t.experiencesKicker}
@@ -72,7 +69,6 @@ const Home = () => {
           </a>
         </Link>
       </section>
-
       <section className="flex flex-col items-center gap-8 lg:gap-12 px-6 py-16 lg:p-32">
         <SectionHeader
           kicker={t.restaurantKicker}

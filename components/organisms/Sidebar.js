@@ -29,7 +29,7 @@ const Sidebar = () => {
   return (
     <div>
       <div
-        className={`z-20 flex p-8 bg-light shadow-xl min-h-screen w-full sm:w-1/4 items-start justify-between text-gray-900 fixed top-0 left-0 transition-all duration-700 ${
+        className={`z-20 flex p-8 bg-light shadow-xl min-h-screen w-full sm:w-1/4 items-start justify-between text-stone-900 fixed top-0 left-0 transition-all duration-700 ${
           isSidebarActive ? "translate-x-0" : "-translate-x-full"
         }`}
       >
