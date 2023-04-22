@@ -40,14 +40,14 @@ const Contacts = () => {
       <section className="flex flex-col lg:flex-row items-center gap-16 px-6 py-16 lg:p-24">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-2">
-            <h1 className="font-serif text-3xl lg:text-4xl text-olive-500">
+            <h1 className="font-serif text-3xl lg:text-4xl text-olive">
               {t.contactsHeading}
             </h1>
             <p>{t.contactsSubheading}</p>
           </div>
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">
-              <small className="uppercase tracking-wider text-xs font-semibold text-olive-500">
+              <small className="uppercase tracking-wider text-xs font-semibold text-olive">
                 {t.contactsAddress}
               </small>
               <p className="text-sm">
@@ -56,13 +56,13 @@ const Contacts = () => {
               <p className="text-sm">3220-336 Coimbra</p>
             </div>
             <div className="flex flex-col gap-1">
-              <small className="uppercase tracking-wider text-xs font-semibold text-olive-500">
+              <small className="uppercase tracking-wider text-xs font-semibold text-olive">
                 {t.contactsEmail}
               </small>
               <p className="text-sm">hello@quintadonairia.com</p>
             </div>
             <div className="flex flex-col gap-1">
-              <small className="uppercase tracking-wider text-xs font-semibold text-olive-500">
+              <small className="uppercase tracking-wider text-xs font-semibold text-olive">
                 {t.contactsPhone}
               </small>
               <div className="flex items-center gap-2">
@@ -75,10 +75,10 @@ const Contacts = () => {
           </div>
           <ul className="flex gap-4">
             <a href="https://www.facebook.com/quintadonairia" target="_blank">
-              <RiFacebookCircleFill className="text-xl lg:text-2xl hover:text-olive-500 duration-200" />
+              <RiFacebookCircleFill className="text-xl lg:text-2xl hover:text-olive duration-200" />
             </a>
             <a href="https://www.instagram.com/quintadonairia/" target="_blank">
-              <RiInstagramLine className="text-xl lg:text-2xl hover:text-olive-500 duration-200" />
+              <RiInstagramLine className="text-xl lg:text-2xl hover:text-olive duration-200" />
             </a>
           </ul>
         </div>

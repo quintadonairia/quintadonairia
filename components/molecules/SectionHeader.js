@@ -4,7 +4,7 @@ const SectionHeader = ({ kicker, heading, subheading }) => {
       <small className="text-xs lg:text-sm uppercase tracking-widest font-semibold">
         {kicker}
       </small>
-      <h1 className="text-4xl lg:text-5xl font-serif text-olive-500 lg:max-w-screen-md">
+      <h1 className="text-4xl lg:text-5xl font-serif text-olive lg:max-w-screen-md">
         {heading}
       </h1>
       <p className="leading-relaxed lg:max-w-prose">{subheading}</p>

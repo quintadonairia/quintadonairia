@@ -7,7 +7,7 @@ const Button = ({ children, size, variant, mode, desktop, mobile }) => {
 
   const variants = {
     primary:
-      "bg-transparent border-2 text-olive-500 border-olive-500 hover:bg-olive-500 hover:text-white duration-300 ",
+      "bg-transparent border-2 text-olive border-olive hover:bg-olive hover:text-white duration-300 ",
     secondary:
       "bg-transparent border-2 text-white border-white hover:bg-white hover:text-black duration-300 ",
     link: "bg-transparent hover:gap-2 duration-200",
