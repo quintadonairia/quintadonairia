@@ -1,22 +1,9 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { RiArrowRightLine } from "react-icons/ri";
-import en from "../../locales/en/components/Footer.json";
-import pt from "../../locales/pt/components/Footer.json";
+import { useTranslation } from "../../contexts/TranslationContext";
 
 const Footer = () => {
-  const router = useRouter();
-  const { locale } = router;
-
-  let t;
-  switch (locale) {
-    case "en":
-      t = en;
-      break;
-    case "pt":
-      t = pt;
-      break;
-  }
+  const t = useTranslation();
 
   const currentDate = new Date();
   const year = currentDate.getFullYear();
@@ -40,21 +27,14 @@ const Footer = () => {
                 className="flex items-center gap-1 hover:gap-2 duration-200 text-sm"
               >
                 <RiArrowRightLine />
-                <p>{t.link1}</p>
+                <p>{t.footer.links.maps}</p>
               </a>
               <a
                 href="mailto:hello@quintadonairia.com"
                 className="flex items-center gap-1 hover:gap-2 duration-200 text-sm"
               >
                 <RiArrowRightLine />
-                {t.link2}
-              </a>
-              <a
-                href="tel:+351924733556"
-                className="flex items-center gap-1 hover:gap-2 duration-200 text-sm"
-              >
-                <RiArrowRightLine className="text-white" />
-                {t.link3}
+                {t.footer.links.email}
               </a>
             </div>
           </div>
@@ -101,18 +81,21 @@ const Footer = () => {
             RNET - 10101
           </a>
           <ul className="flex gap-2">
-            <li>{t.legalTerms}</li>
-            <li>{t.legalPrivacy}</li>
+            <li>{t.footer.legal.terms}</li>
+            <li>{t.footer.legal.privacy}</li>
             <li>
               <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao">
-                {t.legalComplaintsBook}
+                {t.footer.legal.complaintsBook}
               </a>
             </li>
           </ul>
         </div>
         <p>
-          {t.signature}
-          <a> Gonçalo Dias</a>
+          {t.footer.signature}
+          <a href="https://read.cv/zalo" target="_blank">
+            {" "}
+            Gonçalo Dias
+          </a>
         </p>
       </div>
     </footer>

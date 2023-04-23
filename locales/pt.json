@@ -1,0 +1,125 @@
+{
+  "contacts": {
+    "address": "Morada",
+    "email": "Email",
+    "heading": "Pronto para relaxar?",
+    "phone": "Telemóvel",
+    "phoneDisclaimer": "Chamada para rede móvel nacional",
+    "subheading": "Entre em contacto para conversarmos sobre a sua próxima estadia.",
+    "title": "Contactos"
+  },
+  "experiences": {
+    "heading": "Muito mais do que apenas um ponto de paragem",
+    "property": {
+      "description": "A nossa propriedade inclui todos os tipos de comodidades no local para que relaxe e saia da rotina. Dê um mergulho na piscina, passeie pelos jardins ou simplesmente contemple a natureza que nos rodeia.",
+      "title": "Espaços e atividades"
+    },
+    "rooms": {
+      "description": "Na nossa recepção auxiliamos a personalizar os seus serviços de quarto, bem como planear excursões para locais de interesse ao nosso redor.",
+      "title": "Experiências personalizadas e comodidades de quarto"
+    },
+    "subheading": "A Quinta Dona Iria pode ser um ótimo local para ficar, mas é muito mais do que apenas um ponto de paragem. Desde as nossas comodidades, como a nossa piscina e jardins, aos deslumbrantes terrenos da vinha e olival, até às nossas viagens e excursões personalizadas - há sempre algo para desfrutar e experienciar na Quinta.",
+    "tastings": {
+      "description": "Prove o vinho e o azeite produzidos na nossa Quinta. Para acompanhar a degustação, saboreie o melhor da nossa gastronomia local portuguesa.",
+      "title": "Provas de vinho e azeite"
+    },
+    "title": "Experiências"
+  },
+  "footer": {
+    "legal": {
+      "complaintsBook": "Livro de Reclamações",
+      "privacy": "Privacidade",
+      "terms": "Termos"
+    },
+    "links": {
+      "email": "Enviar email",
+      "maps": "Obter direções"
+    },
+    "signature": "Feito com 🍷 por"
+  },
+  "global": {
+    "booking": {
+      "link": "mailto:hello@quintadonairia.com?subject=Pedido de Reserva | Hotel Quinta Dona Iria&body=Olá!%0A%0AObrigado por escolher a Quinta Dona Iria.%0A%0AInformações que precisamos para a reserva:%0A%0A- Data de check-in%0A- Data de check-out%0A- Número de hóspedes%0A- Nome da reserva%0A- Quarto pretendido (Quarto Superior ou Standard)",
+      "text": "Reserve já"
+    }
+  },
+  "home": {
+    "banner": {
+      "description": "Partilhe as suas memórias com #quintadonairia",
+      "heading": "Fique ligado a nós",
+      "kicker": "Social"
+    },
+    "experiences": {
+      "action": "Descobrir Experiências",
+      "heading": "Há sempre algo para desfrutar e experienciar na Quinta",
+      "kicker": "Experiências"
+    },
+    "lodging": {
+      "action": "Ver Alojamento",
+      "description": "Relaxe no ambiente rústico e confortável do nosso pequeno hotel. Com vistas deslumbrantes sobre a quinta e serras próximas, queremos oferecer-lhe momentos de descanso e lazer nos 8 quartos equipados com WC, ar condicionado, Wi-Fi, TV.",
+      "heading": "Envolvidos na natureza e inspirados pela paixão da hospitalidade",
+      "kicker": "Alojamento",
+      "subheading": "Fique connosco"
+    },
+    "restaurant": {
+      "action": "Visitar Restaurante",
+      "description": "No Restaurante Safra, exploramos novos sabores e sensações, cruzando tradição e modernidade. Esteja hospedado ou apenas de visita, queremos oferecer uma experiência gastronómica única e memorável, enraizada nos nossos produtos locais e sustentáveis.",
+      "heading": "Saboreie a cozinha tradicional Portuguesa",
+      "kicker": "Restaurante",
+      "subheading": "Faça uma refeição connosco"
+    },
+    "title": "Um refúgio de bem-estar, aliando o vinho e o azeite à rica gastronomia portuguesa"
+  },
+  "lodging": {
+    "amenities": {
+      "accessibility": {
+        "description": "Os nossos quartos estão preparados para receber hóspedes com mobilidade reduzida. Se tiver alguma dúvida, não hesite contactar via telemóvel ou e-mail. Estamos felizes em fazer arranjos especiais para si, e um aviso prévio ajuda-nos a ter tudo pronto para a sua chegada.",
+        "title": "Acomodações Acessíveis"
+      },
+      "family": {
+        "description": "Vontade de passar umas férias em família? Entre em contacto para saber mais sobre os nossos estilos de quartos para famílias e opções para quando quiser trazer as crianças.",
+        "title": "Para Famílias"
+      }
+    },
+    "features": {
+      "airConditioning": "Ar Condicionado",
+      "bathroom": "Casa de banho",
+      "beds": "Camas duplas",
+      "telephone": "Telefone",
+      "television": "Televisão",
+      "title": "Todos os nossos quartos estão equipados com",
+      "wiFi": "Wi-Fi"
+    },
+    "heading": "Relaxe com uma estadia num dos nossos 8 quartos modernos e acolhedores",
+    "rooms": {
+      "standard": {
+        "description": "Quartos duplos elegantes e confortáveis, com vistas deslumbrantes sobre a serra.",
+        "image": "Um quarto com uma cama grande, tv, mesa e janelas.",
+        "price": "80€ / noite",
+        "title": "Quarto Standard"
+      },
+      "superior": {
+        "description": "Os nossos melhores quartos duplos, com vistas deslumbrantes sobre o olival, jardim e piscina.",
+        "image": "Um quarto com uma cama grande e decoração moderna.",
+        "price": "90€ / noite",
+        "title": "Quarto Superior"
+      }
+    },
+    "subheading": "Com vistas deslumbrantes e interiores contemporâneos, há um quarto para todos os gostos. Relaxe nas nossas camas confortáveis, deleite-se nas nossas casas de banho elegantes e desfrute dos nossos toques pessoais da hospitalidade portuguesa.",
+    "title": "Alojamento"
+  },
+  "menu": {
+    "contacts": "Contactos",
+    "experiences": "Experiências",
+    "lodging": "Alojamento",
+    "restaurant": "Restaurante"
+  },
+  "navigation": {
+    "menu": "Menu"
+  },
+  "restaurant": {
+    "heading": "Um toque moderno na cozinha tradicional Portuguesa",
+    "subheading": "Inspirado na tradição da cozinha Portuguesa, o Safra pretende acrescentar um toque moderno, com propostas gastronómicas assentes na qualidade dos nossos produtos locais.",
+    "title": "Restaurante"
+  }
+}

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import {
   RiFacebookCircleFill,
   RiInformationLine,
@@ -7,48 +6,32 @@ import {
 } from "react-icons/ri";
 import Tooltip from "../components/atoms/Tooltip";
 import Hero from "../components/organisms/Hero";
-import en from "../locales/en/pages/contacts.json";
-import pt from "../locales/pt/pages/contacts.json";
+import { useTranslation } from "../contexts/TranslationContext";
 
 const Contacts = () => {
-  const router = useRouter();
-  const { locale } = router;
-
-  let t;
-  switch (locale) {
-    case "en":
-      t = en;
-      break;
-    case "pt":
-      t = pt;
-      break;
-  }
+  const t = useTranslation();
 
   return (
     <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Contacts</title>
       </Head>
-
-      {/* Hero Section */}
       <Hero
-        title={t.heroTitle}
+        title={t.contacts.title}
         image="url(/images/20210903-donairia-003.jpg)"
       />
-
-      {/* Contacts Section */}
       <section className="flex flex-col lg:flex-row items-center gap-16 px-6 py-16 lg:p-24">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-2">
             <h1 className="font-serif text-3xl lg:text-4xl text-olive">
-              {t.contactsHeading}
+              {t.contacts.heading}
             </h1>
-            <p>{t.contactsSubheading}</p>
+            <p>{t.contacts.subheading}</p>
           </div>
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">
               <small className="uppercase tracking-wider text-xs font-semibold text-olive">
-                {t.contactsAddress}
+                {t.contacts.address}
               </small>
               <p className="text-sm">
                 Rua Central nº35, Rio de Vide, Miranda do Corvo
@@ -57,17 +40,17 @@ const Contacts = () => {
             </div>
             <div className="flex flex-col gap-1">
               <small className="uppercase tracking-wider text-xs font-semibold text-olive">
-                {t.contactsEmail}
+                {t.contacts.email}
               </small>
               <p className="text-sm">hello@quintadonairia.com</p>
             </div>
             <div className="flex flex-col gap-1">
               <small className="uppercase tracking-wider text-xs font-semibold text-olive">
-                {t.contactsPhone}
+                {t.contacts.phone}
               </small>
               <div className="flex items-center gap-2">
                 <p className="text-sm">+351 924 733 556</p>
-                <Tooltip text={t.contactsPhoneDisclaimer}>
+                <Tooltip text={t.contacts.phoneDisclaimer}>
                   <RiInformationLine className="text-stone-400" />
                 </Tooltip>
               </div>

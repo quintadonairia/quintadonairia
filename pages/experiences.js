@@ -1,26 +1,13 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import Container from "../components/layouts/Container";
 import Split from "../components/layouts/Split";
 import Block from "../components/molecules/Block";
 import SectionHeader from "../components/molecules/SectionHeader";
 import Hero from "../components/organisms/Hero";
-import en from "../locales/en/pages/experiences.json";
-import pt from "../locales/pt/pages/experiences.json";
+import { useTranslation } from "../contexts/TranslationContext";
 
 const Experiences = () => {
-  const router = useRouter();
-  const { locale } = router;
-
-  let t;
-  switch (locale) {
-    case "en":
-      t = en;
-      break;
-    case "pt":
-      t = pt;
-      break;
-  }
+  const t = useTranslation();
 
   return (
     <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
@@ -28,11 +15,14 @@ const Experiences = () => {
         <title>Quinta Dona Iria - Enoturismo | Experiences</title>
       </Head>
       <Hero
-        title={t.heroTitle}
+        title={t.experiences.title}
         image="url(/images/20211003-donairia-024.jpg)"
       />
       <Container>
-        <SectionHeader heading={t.heading} subheading={t.subheading} />
+        <SectionHeader
+          heading={t.experiences.heading}
+          subheading={t.experiences.subheading}
+        />
       </Container>
       <Split direction="reverse">
         <img
@@ -40,7 +30,10 @@ const Experiences = () => {
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
-        <Block title={t.experienceTitle1} text={t.experienceDescription1} />
+        <Block
+          title={t.experiences.property.title}
+          text={t.experiences.property.description}
+        />
       </Split>
       <Split direction="normal">
         <img
@@ -48,7 +41,10 @@ const Experiences = () => {
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
-        <Block title={t.experienceTitle2} text={t.experienceDescription2} />
+        <Block
+          title={t.experiences.tastings.title}
+          text={t.experiences.tastings.description}
+        />
       </Split>
       <Split direction="reverse">
         <img
@@ -56,7 +52,10 @@ const Experiences = () => {
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
-        <Block title={t.experienceTitle3} text={t.experienceDescription3} />
+        <Block
+          title={t.experiences.rooms.title}
+          text={t.experiences.rooms.description}
+        />
       </Split>
     </div>
   );

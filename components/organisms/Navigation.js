@@ -1,26 +1,13 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { RiPhoneFill } from "react-icons/ri";
-import en from "../../locales/en/components/Navigation.json";
-import pt from "../../locales/pt/components/Navigation.json";
+import { useTranslation } from "../../contexts/TranslationContext";
 import Button from "../atoms/Button";
 import Icon from "../atoms/Icon";
 import Sidebar from "./Sidebar";
 
 const Navigation = () => {
-  const router = useRouter();
-  const { locale } = router;
-
-  let t;
-  switch (locale) {
-    case "en":
-      t = en;
-      break;
-    case "pt":
-      t = pt;
-      break;
-  }
+  const t = useTranslation();
 
   const [background, setBackground] = useState(false);
 
@@ -47,9 +34,9 @@ const Navigation = () => {
           className="w-28 lg:w-36 cursor-pointer absolute left-1/2 -translate-x-1/2"
         />
       </Link>
-      <a href={t.bookingLink}>
+      <a href={t.global.booking.link}>
         <Button variant="secondary" size="sm" desktop>
-          {t.ctaLabel}
+          {t.global.booking.text}
         </Button>
       </a>
       <Icon variant="primary" size="xl" mode="dark" mobile>
