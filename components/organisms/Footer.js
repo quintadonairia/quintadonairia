@@ -27,21 +27,14 @@ const Footer = () => {
                 className="flex items-center gap-1 hover:gap-2 duration-200 text-sm"
               >
                 <RiArrowRightLine />
-                <p>{t.link1}</p>
+                <p>{t.footer.links.maps}</p>
               </a>
               <a
                 href="mailto:hello@quintadonairia.com"
                 className="flex items-center gap-1 hover:gap-2 duration-200 text-sm"
               >
                 <RiArrowRightLine />
-                {t.link2}
-              </a>
-              <a
-                href="tel:+351924733556"
-                className="flex items-center gap-1 hover:gap-2 duration-200 text-sm"
-              >
-                <RiArrowRightLine className="text-white" />
-                {t.link3}
+                {t.footer.links.email}
               </a>
             </div>
           </div>
@@ -88,16 +81,17 @@ const Footer = () => {
             RNET - 10101
           </a>
           <ul className="flex gap-2">
-            <li>{t.legalTerms}</li>
-            <li>{t.legalPrivacy}</li>
+            <li>{t.footer.legal.terms}</li>
+            <li>{t.footer.legal.privacy}</li>
             <li>
               <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao">
-                {t.legalComplaintsBook}
+                {t.footer.legal.complaintsBook}
               </a>
             </li>
           </ul>
         </div>
         <p>
+          {t.footer.signature}
           {t.signature}
           <a> Gonçalo Dias</a>
         </p>
