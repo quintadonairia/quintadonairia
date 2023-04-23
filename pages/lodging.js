@@ -61,30 +61,18 @@ const Lodging = () => {
         <section className="flex flex-col gap-8 items-center">
           <div>{t.featuresTitle}</div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg">
-            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive">
-              <RiHotelBedLine className="text-3xl" />
-              <p>{t.feature1}</p>
-            </div>
-            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive">
-              <RiDropLine className="text-3xl" />
-              <p>{t.feature2}</p>
-            </div>
-            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive">
-              <RiWifiLine className="text-3xl" />
-              <p>{t.feature3}</p>
-            </div>
-            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive">
-              <RiWindyLine className="text-3xl" />
-              <p>{t.feature4}</p>
-            </div>
-            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive">
-              <RiTvLine className="text-3xl" />
-              <p>{t.feature5}</p>
-            </div>
-            <div className="flex flex-col items-center text-center gap-2 font-serif text-xl text-olive">
-              <RiCellphoneLine className="text-3xl" />
-              <p>{t.feature6}</p>
-            </div>
+            <RoomFeature icon={RiHotelBedLine} text={t.lodging.features.beds} />
+            <RoomFeature icon={RiDropLine} text={t.lodging.features.bathroom} />
+            <RoomFeature icon={RiWifiLine} text={t.lodging.features.wiFi} />
+            <RoomFeature
+              icon={RiWindyLine}
+              text={t.lodging.features.airConditioning}
+            />
+            <RoomFeature icon={RiTvLine} text={t.lodging.features.television} />
+            <RoomFeature
+              icon={RiCellphoneLine}
+              text={t.lodging.features.telephone}
+            />
           </div>
         </section>
       </Container>
