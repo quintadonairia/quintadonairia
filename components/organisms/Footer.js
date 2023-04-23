@@ -92,8 +92,10 @@ const Footer = () => {
         </div>
         <p>
           {t.footer.signature}
-          {t.signature}
-          <a> Gonçalo Dias</a>
+          <a href="https://read.cv/zalo" target="_blank">
+            {" "}
+            Gonçalo Dias
+          </a>
         </p>
       </div>
     </footer>
