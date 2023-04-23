@@ -22,16 +22,16 @@ const Sidebar = () => {
       >
         <ul className="flex flex-col gap-8 text-3xl cursor-pointer font-serif text-olive-900">
           <Link href="/lodging">
-            <li onClick={handleSidebarToggle}>{t.page1}</li>
+            <li onClick={handleSidebarToggle}>{t.menu.lodging}</li>
           </Link>
           <Link href="/experiences">
-            <li onClick={handleSidebarToggle}>{t.page2}</li>
+            <li onClick={handleSidebarToggle}>{t.menu.experiences}</li>
           </Link>
           <Link href="/restaurant">
-            <li onClick={handleSidebarToggle}>{t.page3}</li>
+            <li onClick={handleSidebarToggle}>{t.menu.restaurant}</li>
           </Link>
           <Link href="/contacts">
-            <li onClick={handleSidebarToggle}>{t.page6}</li>
+            <li onClick={handleSidebarToggle}>{t.menu.contacts}</li>
           </Link>
         </ul>
         <Icon size="xl" mode="light">

@@ -1,12 +1,4 @@
 import Head from "next/head";
-import Container from "../components/layouts/Container";
-import Split from "../components/layouts/Split";
-import Block from "../components/molecules/Block";
-import Room from "../components/molecules/Room";
-import SectionHeader from "../components/molecules/SectionHeader";
-import Hero from "../components/organisms/Hero";
-import { useTranslation } from "../contexts/TranslationContext";
-
 import {
   RiCellphoneLine,
   RiDropLine,
@@ -15,6 +7,14 @@ import {
   RiWifiLine,
   RiWindyLine,
 } from "react-icons/ri";
+import Container from "../components/layouts/Container";
+import Split from "../components/layouts/Split";
+import Block from "../components/molecules/Block";
+import Room from "../components/molecules/Room";
+import RoomFeature from "../components/molecules/RoomFeature";
+import SectionHeader from "../components/molecules/SectionHeader";
+import Hero from "../components/organisms/Hero";
+import { useTranslation } from "../contexts/TranslationContext";
 
 const Lodging = () => {
   const t = useTranslation();
@@ -25,41 +25,40 @@ const Lodging = () => {
         <title>Quinta Dona Iria - Enoturismo | Lodging</title>
       </Head>
       <Hero
-        title={t.heroTitle}
+        title={t.lodging.title}
         image="url(/images/20220410-donairia-004.jpg)"
       />
       <Container>
         <SectionHeader
-          heading={t.headerHeading}
-          subheading={t.headerSubheading}
+          heading={t.lodging.heading}
+          subheading={t.lodging.subheading}
         />
       </Container>
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <Room
             imageSrc="/images/20220410-donairia-006.jpg"
-            imageAlt={t.roomImageAlt1}
-            title={t.roomTitle1}
-            price={t.roomPrice1}
-            description={t.roomDescription1}
-            bookingLink={t.roomBookingLink}
-            buttonLabel={t.roomButtonLabel}
+            imageAlt={t.lodging.rooms.standard.image}
+            title={t.lodging.rooms.standard.title}
+            price={t.lodging.rooms.standard.price}
+            description={t.lodging.rooms.standard.description}
+            bookingLink={t.global.booking.link}
+            buttonLabel={t.global.booking.text}
           />
           <Room
             imageSrc="/images/20220410-donairia-010.jpg"
-            imageAlt={t.roomImageAlt2}
-            title={t.roomTitle2}
-            price={t.roomPrice2}
-            description={t.roomDescription2}
-            bookingLink={t.roomBookingLink}
-            buttonLabel={t.roomButtonLabel}
+            imageAlt={t.lodging.rooms.superior.image}
+            title={t.lodging.rooms.superior.title}
+            price={t.lodging.rooms.superior.price}
+            description={t.lodging.rooms.superior.description}
+            bookingLink={t.global.booking.link}
+            buttonLabel={t.global.booking.text}
           />
         </div>
       </Container>
-      {/* Room Features and Amenities */}
       <Container>
         <section className="flex flex-col gap-8 items-center">
-          <div>{t.featuresTitle}</div>
+          <div>{t.lodging.features.title}</div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg">
             <RoomFeature icon={RiHotelBedLine} text={t.lodging.features.beds} />
             <RoomFeature icon={RiDropLine} text={t.lodging.features.bathroom} />
@@ -82,7 +81,10 @@ const Lodging = () => {
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
-        <Block title={t.amenitiesTitle1} text={t.amenitiesDescription1} />
+        <Block
+          title={t.lodging.amenities.family.title}
+          text={t.lodging.amenities.family.description}
+        />
       </Split>
       <Split direction="reverse">
         <img
@@ -90,7 +92,10 @@ const Lodging = () => {
           alt=""
           className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
         />
-        <Block title={t.amenitiesTitle2} text={t.amenitiesDescription2} />
+        <Block
+          title={t.lodging.amenities.accessibility.title}
+          text={t.lodging.amenities.accessibility.description}
+        />
       </Split>
     </div>
   );
