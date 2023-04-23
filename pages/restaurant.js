@@ -13,16 +13,14 @@ const Restaurant = () => {
         <title>Quinta Dona Iria - Enoturismo | Restaurant</title>
       </Head>
       <Hero
-        title={t.heroTitle}
+        title={t.restaurant.title}
         image="url(/images/20220423-donairia-004.jpg)"
       />
-
-      {/* Reservation Form */}
       <section>
         <Container>
           <SectionHeader
-            heading={t.headerHeading}
-            subheading={t.headerSubheading}
+            heading={t.restaurant.heading}
+            subheading={t.restaurant.subheading}
           />
         </Container>
         <div className="grid grid-flow-col auto-cols-[80%] lg:auto-cols-[40%] gap-8 overflow-x-auto snap-mandatory snap-x no-scrollbar pb-12">

@@ -34,9 +34,9 @@ const Navigation = () => {
           className="w-28 lg:w-36 cursor-pointer absolute left-1/2 -translate-x-1/2"
         />
       </Link>
-      <a href={t.bookingLink}>
+      <a href={t.global.booking.link}>
         <Button variant="secondary" size="sm" desktop>
-          {t.ctaLabel}
+          {t.global.booking.text}
         </Button>
       </a>
       <Icon variant="primary" size="xl" mode="dark" mobile>
