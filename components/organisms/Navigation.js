@@ -22,7 +22,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`flex items-center justify-between z-10 p-6 fixed top-0 left-0 right-0 ${
+      className={`fixed top-0 left-0 right-0 z-10 flex items-center justify-between p-6 ${
         background && "bg-stone-900 opacity-95 duration-500"
       }`}
     >
@@ -31,7 +31,7 @@ const Navigation = () => {
         <img
           src="/graphics/donairia-wordmark-light.svg"
           alt="logo"
-          className="w-28 lg:w-36 cursor-pointer absolute left-1/2 -translate-x-1/2"
+          className="absolute left-1/2 w-28 -translate-x-1/2 cursor-pointer lg:w-36"
         />
       </Link>
       <a href={t.global.booking.link}>
