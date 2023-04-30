@@ -2,7 +2,7 @@ import Link from "next/link";
 import { forwardRef } from "react";
 
 const Button = forwardRef(
-  ({ children, href, size, variant, mode, desktop, mobile }, ref) => {
+  ({ children, className, href, size, variant }, ref) => {
     const sizes = {
       sm: "px-6 py-3 text-xs",
       md: "px-8 py-4 text-xs",
@@ -11,26 +11,16 @@ const Button = forwardRef(
 
     const variants = {
       primary:
-        "bg-transparent border-2 text-olive border-olive hover:bg-olive hover:text-white duration-300 ",
+        "border-2 text-olive border-olive hover:bg-olive hover:text-white duration-300 ",
       secondary:
-        "bg-transparent border-2 text-white border-white hover:bg-white hover:text-black duration-300 ",
-      link: "bg-transparent hover:gap-2 duration-200",
-    };
-
-    const modes = {
-      light: "text-black border-black",
-      dark: "text-white border-white",
+        "border-2 text-white border-white hover:bg-white hover:text-black duration-300 ",
     };
 
     if (href) {
       return (
         <Link href={href} passHref>
           <a
-            className={`flex w-fit cursor-pointer flex-row items-center gap-1 font-bold uppercase tracking-widest ${
-              variants[variant]
-            } ${sizes[size]} ${modes[mode]} ${desktop && "hidden lg:block"} ${
-              mobile && "block lg:hidden"
-            }`}
+            className={`inline-flex w-fit cursor-pointer items-center gap-1 font-bold uppercase tracking-widest duration-200 hover:gap-2 ${variants[variant]} ${sizes[size]} ${className}`}
             ref={ref}
           >
             {children}
@@ -41,11 +31,7 @@ const Button = forwardRef(
 
     return (
       <button
-        className={`flex w-fit cursor-pointer flex-row items-center gap-1 font-bold uppercase tracking-widest ${
-          variants[variant]
-        } ${sizes[size]} ${modes[mode]} ${desktop && "hidden lg:block"} ${
-          mobile && "block lg:hidden"
-        }`}
+        className={`inline-flex cursor-pointer items-center gap-1 font-bold uppercase tracking-widest duration-200 hover:gap-2 ${variants[variant]} ${sizes[size]} ${className}`}
       >
         {children}
       </button>
