@@ -40,15 +40,15 @@ const Gallery = () => {
             >
               <img
                 src={slide.image}
-                className="aspect-[5/4] lg:aspect-[2/1] object-cover lg:max-w-screen-lg"
+                className="aspect-[5/4] object-cover lg:aspect-[2/1] lg:max-w-screen-lg"
               ></img>
-              <div className="flex flex-row justify-between px-6 text-white lg:text-stone-900 text-2xl lg:text-4xl">
+              <div className="flex flex-row justify-between px-6 text-2xl text-white lg:text-4xl lg:text-stone-900">
                 <BsArrowLeft
-                  className="absolute left-6 lg:left-12 top-1/2 hover:scale-110 duration-200 hover:text-olive cursor-pointer"
+                  className="absolute left-6 top-1/2 cursor-pointer duration-200 hover:scale-110 hover:text-olive lg:left-12"
                   onClick={prevSlide}
                 />
                 <BsArrowRight
-                  className="absolute right-6 lg:right-12 top-1/2 hover:scale-110 duration-200 hover:text-olive cursor-pointer"
+                  className="absolute right-6 top-1/2 cursor-pointer duration-200 hover:scale-110 hover:text-olive lg:right-12"
                   onClick={nextSlide}
                 />
               </div>

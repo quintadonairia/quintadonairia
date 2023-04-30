@@ -12,18 +12,18 @@ const Room2 = ({
   buttonLabel,
 }) => {
   return (
-    <article className="flex flex-col gap-8 items-center">
+    <article className="flex flex-col items-center gap-8">
       <img
         src={imageSrc}
         alt={imageAlt}
-        className="aspect-[4/3] object-cover w-[32rem]"
+        className="aspect-[4/3] w-[32rem] object-cover"
       />
-      <div className="flex flex-col gap-4 items-center text-center lg:px-16">
+      <div className="flex flex-col items-center gap-4 text-center lg:px-16">
         <h1 className="font-serif text-3xl text-olive">{title}</h1>
-        <div className="bg-olive text-light py-2 px-4 rounded-full uppercase text-xs tracking-widest">
+        <div className="rounded-full bg-olive py-2 px-4 text-xs uppercase tracking-widest text-light">
           {price}
         </div>
-        <h4 className="text-stone-600 leading-relaxed">{description}</h4>
+        <h4 className="leading-relaxed text-stone-600">{description}</h4>
         <a href={bookingLink}>
           <Button size="lg" variant="link" mode="light">
             <Icon size="md">

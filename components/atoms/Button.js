@@ -20,7 +20,7 @@ const Button = ({ children, size, variant, mode, desktop, mobile }) => {
 
   return (
     <button
-      className={`w-fit cursor-pointer uppercase flex flex-row items-center gap-1 font-bold tracking-widest ${
+      className={`flex w-fit cursor-pointer flex-row items-center gap-1 font-bold uppercase tracking-widest ${
         variants[variant]
       } ${sizes[size]} ${modes[mode]} ${desktop && "hidden lg:block"} ${
         mobile && "block lg:hidden"

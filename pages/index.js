@@ -11,7 +11,7 @@ const Home = () => {
   const t = useTranslation();
 
   return (
-    <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
+    <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Home</title>
       </Head>
@@ -19,19 +19,19 @@ const Home = () => {
         title={t.home.title}
         image="url(images/20211013-donairia-004.jpg)"
       />
-      <section className="flex flex-col items-center gap-8 lg:gap-12 px-6 py-16 lg:p-32">
+      <section className="flex flex-col items-center gap-8 px-6 py-16 lg:gap-12 lg:p-32">
         <SectionHeader
           kicker={t.home.lodging.kicker}
           heading={t.home.lodging.heading}
         />
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-24">
+        <div className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24">
           <img
             src="/images/20220410-donairia-004.jpg"
-            className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
+            className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
           />
           <div className="flex flex-col gap-8 lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <h2 className="font-serif text-olive text-3xl lg:text-4xl">
+              <h2 className="font-serif text-3xl text-olive lg:text-4xl">
                 {t.home.lodging.subheading}
               </h2>
               <p className="leading-relaxed lg:max-w-prose">
@@ -48,7 +48,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center px-6 py-16 gap-6 lg:gap-12">
+      <section className="flex flex-col items-center gap-6 px-6 py-16 lg:gap-12">
         <SectionHeader
           kicker={t.home.experiences.kicker}
           heading={t.home.experiences.heading}
@@ -62,20 +62,20 @@ const Home = () => {
           </a>
         </Link>
       </section>
-      <section className="flex flex-col items-center gap-8 lg:gap-12 px-6 py-16 lg:p-32">
+      <section className="flex flex-col items-center gap-8 px-6 py-16 lg:gap-12 lg:p-32">
         <SectionHeader
           kicker={t.home.restaurant.kicker}
           heading={t.home.restaurant.heading}
         />
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-24">
+        <div className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24">
           <img
             src="images/20211003-donairia-050.jpg"
             alt="A restaurant full of people dining in a cozy environment"
-            className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
+            className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
           />
           <div className="flex flex-col gap-8 lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <h2 className="font-serif text-olive text-3xl lg:text-4xl">
+              <h2 className="font-serif text-3xl text-olive lg:text-4xl">
                 {t.home.restaurant.subheading}
               </h2>
               <p className="leading-relaxed lg:max-w-prose">
