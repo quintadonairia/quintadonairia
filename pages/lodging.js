@@ -20,7 +20,7 @@ const Lodging = () => {
   const t = useTranslation();
 
   return (
-    <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
+    <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Lodging</title>
       </Head>
@@ -35,7 +35,7 @@ const Lodging = () => {
         />
       </Container>
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <Room
             imageSrc="/images/20220410-donairia-006.jpg"
             imageAlt={t.lodging.rooms.standard.image}
@@ -57,9 +57,9 @@ const Lodging = () => {
         </div>
       </Container>
       <Container>
-        <section className="flex flex-col gap-8 items-center">
+        <section className="flex flex-col items-center gap-8">
           <div>{t.lodging.features.title}</div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg">
+          <div className="grid max-w-screen-lg grid-cols-2 gap-16 lg:grid-cols-3">
             <RoomFeature icon={RiHotelBedLine} text={t.lodging.features.beds} />
             <RoomFeature icon={RiDropLine} text={t.lodging.features.bathroom} />
             <RoomFeature icon={RiWifiLine} text={t.lodging.features.wiFi} />
@@ -79,7 +79,7 @@ const Lodging = () => {
         <img
           src="/images/senjuti-kundu-GCI8dqi4uWM-unsplash.jpg"
           alt=""
-          className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
+          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
         />
         <Block
           title={t.lodging.amenities.family.title}
@@ -90,7 +90,7 @@ const Lodging = () => {
         <img
           src="/images/20220410-donairia-017.jpg"
           alt=""
-          className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
+          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
         />
         <Block
           title={t.lodging.amenities.accessibility.title}
