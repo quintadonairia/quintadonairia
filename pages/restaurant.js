@@ -8,7 +8,7 @@ const Restaurant = () => {
   const t = useTranslation();
 
   return (
-    <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
+    <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Restaurant</title>
       </Head>
@@ -23,7 +23,7 @@ const Restaurant = () => {
             subheading={t.restaurant.subheading}
           />
         </Container>
-        <div className="grid grid-flow-col auto-cols-[80%] lg:auto-cols-[40%] gap-8 overflow-x-auto snap-mandatory snap-x no-scrollbar pb-12">
+        <div className="no-scrollbar grid snap-x snap-mandatory auto-cols-[80%] grid-flow-col gap-8 overflow-x-auto pb-12 lg:auto-cols-[40%]">
           <div className="snap-start lg:max-w-lg">
             <img src="/images/20220423-donairia-001.jpg" />
           </div>

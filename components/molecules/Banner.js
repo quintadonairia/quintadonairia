@@ -3,17 +3,17 @@ import { RiFacebookCircleFill, RiInstagramLine } from "react-icons/ri";
 const Banner = ({ kicker, heading, description }) => {
   return (
     <div
-      className="w-full text-white flex flex-col items-center p-8 lg:p-16 gap-8 lg:gap-12"
+      className="flex w-full flex-col items-center gap-8 p-8 text-white lg:gap-12 lg:p-16"
       style={{
         backgroundImage:
           "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
       }}
     >
       <div className="flex flex-col items-center">
-        <small className="uppercase tracking-widest pb-2 text-sm font-bold">
+        <small className="pb-2 text-sm font-bold uppercase tracking-widest">
           {kicker}
         </small>
-        <div className="flex flex-col gap-4 items-center text-center">
+        <div className="flex flex-col items-center gap-4 text-center">
           <h1 className="font-serif text-3xl lg:text-5xl">{heading}</h1>
           <p className="text-sm lg:text-base">{description}</p>
         </div>
