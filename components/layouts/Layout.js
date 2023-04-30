@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   const router = useRouter();
 
   return (
-    <div className="bg-light flex flex-col">
+    <div className="flex flex-col bg-light">
       <Navigation />
       <main>{children}</main>
       <Footer />

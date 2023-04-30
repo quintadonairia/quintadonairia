@@ -6,7 +6,7 @@ const Split = ({ children, direction }) => {
 
   return (
     <section
-      className={`flex items-center justify-between gap-8 lg:gap-24 px-6 py-16 lg:px-12 max-w-screen-xl ${directions[direction]}`}
+      className={`flex max-w-screen-xl items-center justify-between gap-8 px-6 py-16 lg:gap-24 lg:px-12 ${directions[direction]}`}
     >
       {children}
     </section>

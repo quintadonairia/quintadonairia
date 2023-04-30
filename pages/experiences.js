@@ -10,7 +10,7 @@ const Experiences = () => {
   const t = useTranslation();
 
   return (
-    <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden">
+    <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
       <Head>
         <title>Quinta Dona Iria - Enoturismo | Experiences</title>
       </Head>
@@ -28,7 +28,7 @@ const Experiences = () => {
         <img
           src="/images/20220306-donairia-001.jpg"
           alt=""
-          className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
+          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
         />
         <Block
           title={t.experiences.property.title}
@@ -39,7 +39,7 @@ const Experiences = () => {
         <img
           src="/images/20211003-donairia-022.jpg"
           alt=""
-          className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
+          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
         />
         <Block
           title={t.experiences.tastings.title}
@@ -50,7 +50,7 @@ const Experiences = () => {
         <img
           src="/images/20220319-donairia-006.jpg"
           alt=""
-          className="w-full lg:w-[36rem] aspect-[5/4] lg:aspect-[5/4] object-cover"
+          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
         />
         <Block
           title={t.experiences.rooms.title}
