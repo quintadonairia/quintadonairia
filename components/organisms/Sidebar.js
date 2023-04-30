@@ -1,8 +1,7 @@
+import { List, X } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useState } from "react";
-import { RiCloseLine, RiMenuLine } from "react-icons/ri";
 import { useTranslation } from "../../contexts/TranslationContext";
-import Icon from "../atoms/Icon";
 
 const Sidebar = () => {
   const t = useTranslation();
@@ -34,13 +33,13 @@ const Sidebar = () => {
             <li onClick={handleSidebarToggle}>{t.menu.contacts}</li>
           </Link>
         </ul>
-        <Icon size="xl" mode="light">
-          <RiCloseLine onClick={handleSidebarToggle} />
-        </Icon>
+        <button onClick={handleSidebarToggle}>
+          <X size={20} />
+        </button>
       </div>
-      <Icon size="xl" mode="dark">
-        <RiMenuLine onClick={handleSidebarToggle} />
-      </Icon>
+      <button onClick={handleSidebarToggle}>
+        <List className="text-light" size={20} />
+      </button>
     </div>
   );
 };
