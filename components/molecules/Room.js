@@ -1,6 +1,5 @@
-import { RiArrowRightLine } from "react-icons/ri";
+import { ArrowRight } from "@phosphor-icons/react";
 import Button from "../atoms/Button";
-import Icon from "../atoms/Icon";
 
 const Room2 = ({
   imageSrc,
@@ -25,10 +24,8 @@ const Room2 = ({
         </div>
         <h4 className="leading-relaxed text-stone-600">{description}</h4>
         <a href={bookingLink}>
-          <Button size="lg" variant="link" mode="light">
-            <Icon size="md">
-              <RiArrowRightLine />
-            </Icon>
+          <Button size="lg">
+            <ArrowRight size={20} />
             {buttonLabel}
           </Button>
         </a>
