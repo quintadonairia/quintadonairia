@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Button from "../components/atoms/Button";
 import Banner from "../components/molecules/Banner";
 import SectionHeader from "../components/molecules/SectionHeader";
@@ -38,13 +37,9 @@ const Home = () => {
                 {t.home.lodging.description}
               </p>
             </div>
-            <Link href="/lodging" passHref>
-              <a>
-                <Button variant="primary" size="lg">
-                  {t.home.lodging.action}
-                </Button>
-              </a>
-            </Link>
+            <Button href="/lodging" size="lg" variant="primary">
+              {t.home.lodging.action}
+            </Button>
           </div>
         </div>
       </section>
@@ -54,13 +49,9 @@ const Home = () => {
           heading={t.home.experiences.heading}
         />
         <Gallery />
-        <Link href="/experiences" passHref>
-          <a>
-            <Button variant="primary" size="lg">
-              {t.home.experiences.action}
-            </Button>
-          </a>
-        </Link>
+        <Button href="/experiences" size="lg" variant="primary">
+          {t.home.experiences.action}
+        </Button>
       </section>
       <section className="flex flex-col items-center gap-8 px-6 py-16 lg:gap-12 lg:p-32">
         <SectionHeader
@@ -82,13 +73,9 @@ const Home = () => {
                 {t.home.restaurant.description}
               </p>
             </div>
-            <Link href="/restaurant" passHref>
-              <a>
-                <Button variant="primary" size="lg">
-                  {t.home.restaurant.action}
-                </Button>
-              </a>
-            </Link>
+            <Button href="/restaurant" size="lg" variant="primary">
+              {t.home.restaurant.action}
+            </Button>
           </div>
         </div>
       </section>
