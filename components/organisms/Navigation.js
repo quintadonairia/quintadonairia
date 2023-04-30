@@ -1,9 +1,8 @@
+import { CallBell } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { RiPhoneFill } from "react-icons/ri";
 import { useTranslation } from "../../contexts/TranslationContext";
 import Button from "../atoms/Button";
-import Icon from "../atoms/Icon";
 import Sidebar from "./Sidebar";
 
 const Navigation = () => {
@@ -34,16 +33,17 @@ const Navigation = () => {
           className="absolute left-1/2 w-28 -translate-x-1/2 cursor-pointer lg:w-36"
         />
       </Link>
-      <a href={t.global.booking.link}>
-        <Button variant="secondary" size="sm" desktop>
-          {t.global.booking.text}
-        </Button>
+      <Button
+        className="hidden md:inline-flex"
+        href={t.global.booking.link}
+        size="sm"
+        variant="secondary"
+      >
+        {t.global.booking.text}
+      </Button>
+      <a className="text-light md:hidden" href={t.global.booking.link}>
+        <CallBell size={20} />
       </a>
-      <Icon variant="primary" size="xl" mode="dark" mobile>
-        <a href="tel:+351924733556">
-          <RiPhoneFill className="text-white" />
-        </a>
-      </Icon>
     </nav>
   );
 };

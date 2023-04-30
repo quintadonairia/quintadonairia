@@ -1,12 +1,12 @@
-import Head from "next/head";
 import {
-  RiCellphoneLine,
-  RiDropLine,
-  RiHotelBedLine,
-  RiTvLine,
-  RiWifiLine,
-  RiWindyLine,
-} from "react-icons/ri";
+  Bed,
+  Fan,
+  PhoneDisconnect,
+  Shower,
+  TelevisionSimple,
+  WifiHigh,
+} from "@phosphor-icons/react";
+import Head from "next/head";
 import Container from "../components/layouts/Container";
 import Split from "../components/layouts/Split";
 import Block from "../components/molecules/Block";
@@ -60,16 +60,16 @@ const Lodging = () => {
         <section className="flex flex-col items-center gap-8">
           <div>{t.lodging.features.title}</div>
           <div className="grid max-w-screen-lg grid-cols-2 gap-16 lg:grid-cols-3">
-            <RoomFeature icon={RiHotelBedLine} text={t.lodging.features.beds} />
-            <RoomFeature icon={RiDropLine} text={t.lodging.features.bathroom} />
-            <RoomFeature icon={RiWifiLine} text={t.lodging.features.wiFi} />
+            <RoomFeature icon={Bed} text={t.lodging.features.beds} />
+            <RoomFeature icon={Shower} text={t.lodging.features.bathroom} />
+            <RoomFeature icon={WifiHigh} text={t.lodging.features.wiFi} />
+            <RoomFeature icon={Fan} text={t.lodging.features.airConditioning} />
             <RoomFeature
-              icon={RiWindyLine}
-              text={t.lodging.features.airConditioning}
+              icon={TelevisionSimple}
+              text={t.lodging.features.television}
             />
-            <RoomFeature icon={RiTvLine} text={t.lodging.features.television} />
             <RoomFeature
-              icon={RiCellphoneLine}
+              icon={PhoneDisconnect}
               text={t.lodging.features.telephone}
             />
           </div>
