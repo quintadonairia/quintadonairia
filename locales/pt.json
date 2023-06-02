@@ -95,13 +95,13 @@
       "standard": {
         "description": "Quartos duplos elegantes e confortáveis, com vistas deslumbrantes sobre a serra.",
         "image": "Um quarto com uma cama grande, tv, mesa e janelas.",
-        "price": "80€ / noite",
+        "price": "90€ / noite",
         "title": "Quarto Standard"
       },
       "superior": {
         "description": "Os nossos melhores quartos duplos, com vistas deslumbrantes sobre o olival, jardim e piscina.",
         "image": "Um quarto com uma cama grande e decoração moderna.",
-        "price": "90€ / noite",
+        "price": "100€ / noite",
         "title": "Quarto Superior"
       }
     },

@@ -95,13 +95,13 @@
       "standard": {
         "description": "Elegant and comfortable double rooms, with stunning views over the surrounding mountains.",
         "image": "A bedroom with a large bed, tv, table and windows.",
-        "price": "80€ / night",
+        "price": "90€ / night",
         "title": "Standard Room"
       },
       "superior": {
         "description": "Our best doubles, with stunning views over the olive grove, garden and pool.",
         "image": "A bedroom with a large bed and modern decoration.",
-        "price": "90€ / night",
+        "price": "100€ / night",
         "title": "Superior Room"
       }
     },
