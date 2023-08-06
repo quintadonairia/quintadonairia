@@ -1,4 +1,4 @@
-import { CallBell, List } from "@phosphor-icons/react";
+import { CallBell, List, X } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/TranslationContext";
@@ -32,7 +32,19 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
         scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
       } ${background ? "bg-stone-900" : "bg-transparent"}`}
     >
-      <List className="text-light" size={20} />
+      {isMenuActive ? (
+        <X
+          className="cursor-pointer text-light"
+          onClick={handleMenuIsActive}
+          size={24}
+        />
+      ) : (
+        <List
+          className="cursor-pointer text-light"
+          onClick={handleMenuIsActive}
+          size={24}
+        />
+      )}
       <Link href="/">
         <img
           src="/graphics/donairia-wordmark-light.svg"
