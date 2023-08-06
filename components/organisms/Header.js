@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/TranslationContext";
 import useScrollDirection from "../../hooks/useScrollDirection";
 
-const Header = () => {
+export default function Header({ handleMenuIsActive, isMenuActive }) {
   const t = useTranslation();
   const scrollDirection = useScrollDirection();
 
@@ -45,5 +45,4 @@ const Header = () => {
       </a>
     </header>
   );
-};
-export default Header;
+}
