@@ -30,7 +30,7 @@ export default function Menu({ handleMenuIsActive, isMenuActive }) {
       }`}
       inert={isMenuActive ? null : ""}
     >
-      <ul className="flex cursor-pointer flex-col gap-8 text-center font-serif text-4xl">
+      <ul className="flex cursor-pointer flex-col gap-8 text-center font-serif text-3xl md:gap-12 md:text-5xl">
         {routes.map((route) => (
           <Link href={route.href} key={route.href}>
             <a
