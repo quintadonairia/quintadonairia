@@ -28,7 +28,7 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-10 flex items-center justify-between p-6 transition-all duration-500 ${
+      className={`fixed inset-x-0 top-0 z-20 flex items-center justify-between p-6 transition-all duration-500 ${
         scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
       } ${background ? "bg-stone-900" : "bg-transparent"}`}
     >
