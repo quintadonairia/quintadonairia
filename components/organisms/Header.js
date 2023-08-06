@@ -12,7 +12,7 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
 
   useEffect(() => {
     const updateBackground = () => {
-      const scrollThreshold = 80;
+      const scrollThreshold = 200;
 
       window.scrollY >= scrollThreshold
         ? setBackground(true)
