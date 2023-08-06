@@ -41,7 +41,7 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
         />
       </Link>
       <a href={t.global.booking.link}>
-        <CallBell className="text-light" size={20} />
+        <CallBell className="text-light" size={24} />
       </a>
     </header>
   );
