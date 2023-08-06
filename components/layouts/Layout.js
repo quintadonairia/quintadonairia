@@ -1,13 +1,25 @@
-import { useRouter } from "next/router";
+import { useState } from "react";
 import Footer from "../organisms/Footer";
-import Navigation from "../organisms/Navigation";
+import Header from "../organisms/Header";
+import Menu from "../organisms/Menu";
 
 export default function Layout({ children }) {
-  const router = useRouter();
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
+  const handleMenuIsActive = () => {
+    setIsMenuActive(!isMenuActive);
+  };
 
   return (
     <div className="flex flex-col bg-light">
-      <Navigation />
+      <Header
+        handleMenuIsActive={handleMenuIsActive}
+        isMenuActive={isMenuActive}
+      />
+      <Menu
+        handleMenuIsActive={handleMenuIsActive}
+        isMenuActive={isMenuActive}
+      />
       <main>{children}</main>
       <Footer />
     </div>
