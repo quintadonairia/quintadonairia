@@ -6,19 +6,19 @@ export default function Menu({ handleMenuIsActive, isMenuActive }) {
 
   const routes = [
     {
-      name: t.menu.lodging,
+      name: t.navigation.lodging,
       href: "/lodging",
     },
     {
-      name: t.menu.experiences,
+      name: t.navigation.experiences,
       href: "/experiences",
     },
     {
-      name: t.menu.restaurant,
+      name: t.navigation.restaurant,
       href: "/restaurant",
     },
     {
-      name: t.menu.contacts,
+      name: t.navigation.contacts,
       href: "/contacts",
     },
   ];
