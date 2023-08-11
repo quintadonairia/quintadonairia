@@ -12,7 +12,7 @@ const Experiences = () => {
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
       <Head>
-        <title>Quinta Dona Iria - Enoturismo | Experiences</title>
+        <title>Quinta Dona Iria | {t.navigation.experiences}</title>
       </Head>
       <Hero
         title={t.experiences.title}
