@@ -108,14 +108,12 @@
     "subheading": "Boasting stunning views coupled with contemporary elegant interiors, there is one room to suit everyone. Relax in our comfortable beds, luxuriate in our stylish bathrooms and enjoy our personal touches of Portuguese hospitality.",
     "title": "Lodging"
   },
-  "menu": {
+  "navigation": {
     "contacts": "Contacts",
     "experiences": "Experiences",
+    "home": "Home",
     "lodging": "Lodging",
     "restaurant": "Restaurant"
-  },
-  "navigation": {
-    "menu": "Menu"
   },
   "restaurant": {
     "heading": "A modern touch on the traditional Portuguese cuisine",
