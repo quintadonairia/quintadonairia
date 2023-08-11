@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { forwardRef } from "react";
+import { twMerge } from "tailwind-merge";
+
 const styles = {
   base: "inline-flex w-fit cursor-pointer items-center gap-1 font-bold uppercase tracking-widest duration-200 hover:gap-2",
   size: {
@@ -21,7 +23,10 @@ const Button = forwardRef(
       return (
         <Link href={href} passHref>
           <a
-            className={`inline-flex w-fit cursor-pointer items-center gap-1 font-bold uppercase tracking-widest duration-200 hover:gap-2 ${variants[variant]} ${sizes[size]} ${className}`}
+            className={twMerge(
+              `${styles.base} ${styles.variant[variant]} ${styles.size[size]}`,
+              `${className}`
+            )}
             ref={ref}
           >
             {children}
@@ -32,7 +37,10 @@ const Button = forwardRef(
 
     return (
       <button
-        className={`inline-flex cursor-pointer items-center gap-1 font-bold uppercase tracking-widest duration-200 hover:gap-2 ${variants[variant]} ${sizes[size]} ${className}`}
+        className={twMerge(
+          `${styles.base} ${styles.variant[variant]} ${styles.size[size]}`,
+          `${className}`
+        )}
       >
         {children}
       </button>
