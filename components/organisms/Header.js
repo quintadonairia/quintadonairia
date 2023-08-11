@@ -52,9 +52,17 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
           className="w-28 cursor-pointer lg:w-36"
         />
       </Link>
-      <a href={t.global.booking.link}>
+      <a className="md:hidden" href={t.global.booking.link}>
         <CallBell className="text-light" size={24} />
       </a>
+      <Button
+        className="hidden md:inline-flex"
+        variant="neutral"
+        size="small"
+        href={t.global.booking.link}
+      >
+        {t.global.booking.text}
+      </Button>
     </header>
   );
 }
