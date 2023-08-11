@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/TranslationContext";
 import useScrollDirection from "../../hooks/useScrollDirection";
+import Button from "../atoms/Button";
 
 export default function Header({ handleMenuIsActive, isMenuActive }) {
   const t = useTranslation();
@@ -49,12 +50,20 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
         <img
           src="/graphics/donairia-wordmark-light.svg"
           alt="logo"
-          className="w-28 cursor-pointer lg:w-36"
+          className="absolute left-1/2 w-28 -translate-x-1/2 cursor-pointer md:w-32 lg:w-36"
         />
       </Link>
-      <a href={t.global.booking.link}>
+      <a className="md:hidden" href={t.global.booking.link}>
         <CallBell className="text-light" size={24} />
       </a>
+      <Button
+        className="hidden md:inline-flex"
+        variant="neutral"
+        size="small"
+        href={t.global.booking.link}
+      >
+        {t.global.booking.text}
+      </Button>
     </header>
   );
 }
