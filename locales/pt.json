@@ -108,14 +108,12 @@
     "subheading": "Com vistas deslumbrantes e interiores contemporâneos, há um quarto para todos os gostos. Relaxe nas nossas camas confortáveis, deleite-se nas nossas casas de banho elegantes e desfrute dos nossos toques pessoais da hospitalidade portuguesa.",
     "title": "Alojamento"
   },
-  "menu": {
+  "navigation": {
     "contacts": "Contactos",
     "experiences": "Experiências",
+    "home": "Home",
     "lodging": "Alojamento",
     "restaurant": "Restaurante"
-  },
-  "navigation": {
-    "menu": "Menu"
   },
   "restaurant": {
     "heading": "Um toque moderno na cozinha tradicional Portuguesa",
