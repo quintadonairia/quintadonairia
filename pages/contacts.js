@@ -14,7 +14,7 @@ const Contacts = () => {
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
       <Head>
-        <title>Quinta Dona Iria - Enoturismo | Contacts</title>
+        <title>Quinta Dona Iria | {t.navigation.contacts}</title>
       </Head>
       <Hero
         title={t.contacts.title}
