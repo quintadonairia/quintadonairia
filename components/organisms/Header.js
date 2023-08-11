@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../../contexts/TranslationContext";
 import useScrollDirection from "../../hooks/useScrollDirection";
+import Button from "../atoms/Button";
 
 export default function Header({ handleMenuIsActive, isMenuActive }) {
   const t = useTranslation();
