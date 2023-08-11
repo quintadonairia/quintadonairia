@@ -50,7 +50,7 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
         <img
           src="/graphics/donairia-wordmark-light.svg"
           alt="logo"
-          className="w-28 cursor-pointer lg:w-36"
+          className="absolute left-1/2 w-28 -translate-x-1/2 cursor-pointer md:w-32 lg:w-36"
         />
       </Link>
       <a className="md:hidden" href={t.global.booking.link}>
