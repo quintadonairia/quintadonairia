@@ -10,7 +10,7 @@ const Restaurant = () => {
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
       <Head>
-        <title>Quinta Dona Iria - Enoturismo | Restaurant</title>
+        <title>Quinta Dona Iria | {t.navigation.restaurant}</title>
       </Head>
       <Hero
         title={t.restaurant.title}
