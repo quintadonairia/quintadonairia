@@ -8,11 +8,12 @@ import { useTranslation } from "../contexts/TranslationContext";
 
 const Home = () => {
   const t = useTranslation();
+  const pageTitle = `${t.global.brand} | ${t.navigation.home}`;
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
       <Head>
-        <title>Quinta Dona Iria | {t.navigation.home}</title>
+        <title>{pageTitle}</title>
       </Head>
       <Hero
         title={t.home.title}
