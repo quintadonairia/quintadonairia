@@ -16,7 +16,7 @@ import SectionHeader from "../components/molecules/SectionHeader";
 import Hero from "../components/organisms/Hero";
 import { useTranslation } from "../contexts/TranslationContext";
 
-const Lodging = () => {
+export default function Lodging() {
   const t = useTranslation();
   const pageTitle = `${t.global.brand} | ${t.navigation.lodging}`;
 
@@ -100,6 +100,4 @@ const Lodging = () => {
       </Split>
     </div>
   );
-};
-
-export default Lodging;
+}
