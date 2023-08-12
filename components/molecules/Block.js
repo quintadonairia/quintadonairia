@@ -8,7 +8,7 @@ const Block = ({ title, text, action, label }) => {
         <p className="leading-relaxed lg:max-w-prose">{text}</p>
       </div>
       {action && (
-        <Button variant="primary" size="lg">
+        <Button variant="brand" size="large">
           {label}
         </Button>
       )}
