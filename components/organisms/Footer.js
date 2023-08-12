@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RiArrowRightLine } from "react-icons/ri";
+import { ArrowRight } from "@phosphor-icons/react";
 import { useTranslation } from "../../contexts/TranslationContext";
 
 const Footer = () => {
@@ -26,14 +26,14 @@ const Footer = () => {
                 target="_blank"
                 className="flex items-center gap-1 text-sm duration-200 hover:gap-2"
               >
-                <RiArrowRightLine />
+                <ArrowRight />
                 <p>{t.footer.links.maps}</p>
               </a>
               <a
                 href="mailto:hello@quintadonairia.com"
                 className="flex items-center gap-1 text-sm duration-200 hover:gap-2"
               >
-                <RiArrowRightLine />
+                <ArrowRight />
                 {t.footer.links.email}
               </a>
             </div>
