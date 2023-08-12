@@ -4,7 +4,7 @@ import SectionHeader from "../components/molecules/SectionHeader";
 import Hero from "../components/organisms/Hero";
 import { useTranslation } from "../contexts/TranslationContext";
 
-const Restaurant = () => {
+export default function Restaurant() {
   const t = useTranslation();
   const pageTitle = `${t.global.brand} | ${t.navigation.restaurant}`;
 
@@ -47,6 +47,4 @@ const Restaurant = () => {
       </section>
     </div>
   );
-};
-
-export default Restaurant;
+}

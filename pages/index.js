@@ -6,7 +6,7 @@ import Gallery from "../components/organisms/Gallery";
 import Hero from "../components/organisms/Hero";
 import { useTranslation } from "../contexts/TranslationContext";
 
-const Home = () => {
+export default function Home() {
   const t = useTranslation();
   const pageTitle = `${t.global.brand} | ${t.navigation.home}`;
 
@@ -87,6 +87,4 @@ const Home = () => {
       />
     </div>
   );
-};
-
-export default Home;
+}

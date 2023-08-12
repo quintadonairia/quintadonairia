@@ -4,7 +4,7 @@ import Tooltip from "../components/atoms/Tooltip";
 import Hero from "../components/organisms/Hero";
 import { useTranslation } from "../contexts/TranslationContext";
 
-const Contacts = () => {
+export default function Contacts() {
   const t = useTranslation();
   const pageTitle = `${t.global.brand} | ${t.navigation.contacts}`;
 
@@ -73,6 +73,4 @@ const Contacts = () => {
       </section>
     </div>
   );
-};
-
-export default Contacts;
+}

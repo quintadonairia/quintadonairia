@@ -6,7 +6,7 @@ import SectionHeader from "../components/molecules/SectionHeader";
 import Hero from "../components/organisms/Hero";
 import { useTranslation } from "../contexts/TranslationContext";
 
-const Experiences = () => {
+export default function Experiences() {
   const t = useTranslation();
   const pageTitle = `${t.global.brand} | ${t.navigation.experiences}`;
 
@@ -60,6 +60,4 @@ const Experiences = () => {
       </Split>
     </div>
   );
-};
-
-export default Experiences;
+}
