@@ -1,8 +1,8 @@
+import { FacebookLogo, Info, InstagramLogo } from "@phosphor-icons/react";
 import Head from "next/head";
 import Tooltip from "../components/atoms/Tooltip";
 import Hero from "../components/organisms/Hero";
 import { useTranslation } from "../contexts/TranslationContext";
-import { FacebookLogo, InstagramLogo, Info } from "@phosphor-icons/react";
 
 const Contacts = () => {
   const t = useTranslation();
