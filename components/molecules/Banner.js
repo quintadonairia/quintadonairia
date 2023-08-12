@@ -1,4 +1,4 @@
-import { RiFacebookCircleFill, RiInstagramLine } from "react-icons/ri";
+import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react";
 
 const Banner = ({ kicker, heading, description }) => {
   return (
@@ -20,10 +20,10 @@ const Banner = ({ kicker, heading, description }) => {
       </div>
       <ul className="flex items-center gap-8">
         <a href="https://www.facebook.com/quintadonairia" target="_blank">
-          <RiFacebookCircleFill className="text-3xl lg:text-4xl" />
+          <FacebookLogo className="text-3xl lg:text-4xl" />
         </a>
         <a href="https://www.instagram.com/quintadonairia/" target="_blank">
-          <RiInstagramLine className="text-3xl lg:text-4xl" />
+          <InstagramLogo className="text-3xl lg:text-4xl" />
         </a>
       </ul>
     </div>

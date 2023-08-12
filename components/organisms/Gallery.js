@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
 
 const Gallery = () => {
   const slides = [
@@ -43,11 +43,11 @@ const Gallery = () => {
                 className="aspect-[5/4] object-cover lg:aspect-[2/1] lg:max-w-screen-lg"
               ></img>
               <div className="flex flex-row justify-between px-6 text-2xl text-white lg:text-4xl lg:text-stone-900">
-                <BsArrowLeft
+                <ArrowLeft
                   className="absolute left-6 top-1/2 cursor-pointer duration-200 hover:scale-110 hover:text-olive lg:left-12"
                   onClick={prevSlide}
                 />
-                <BsArrowRight
+                <ArrowRight
                   className="absolute right-6 top-1/2 cursor-pointer duration-200 hover:scale-110 hover:text-olive lg:right-12"
                   onClick={nextSlide}
                 />
