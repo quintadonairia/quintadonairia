@@ -1,12 +1,8 @@
 import Head from "next/head";
-import {
-  RiFacebookCircleFill,
-  RiInformationLine,
-  RiInstagramLine,
-} from "react-icons/ri";
 import Tooltip from "../components/atoms/Tooltip";
 import Hero from "../components/organisms/Hero";
 import { useTranslation } from "../contexts/TranslationContext";
+import { FacebookLogo, InstagramLogo, Info } from "@phosphor-icons/react";
 
 const Contacts = () => {
   const t = useTranslation();
@@ -51,17 +47,17 @@ const Contacts = () => {
               <div className="flex items-center gap-2">
                 <p className="text-sm">+351 924 733 556</p>
                 <Tooltip text={t.contacts.phoneDisclaimer}>
-                  <RiInformationLine className="text-stone-400" />
+                  <Info className="text-stone-400" />
                 </Tooltip>
               </div>
             </div>
           </div>
           <ul className="flex gap-4">
             <a href="https://www.facebook.com/quintadonairia" target="_blank">
-              <RiFacebookCircleFill className="text-xl duration-200 hover:text-olive lg:text-2xl" />
+              <FacebookLogo className="text-xl duration-200 hover:text-olive lg:text-2xl" />
             </a>
             <a href="https://www.instagram.com/quintadonairia/" target="_blank">
-              <RiInstagramLine className="text-xl duration-200 hover:text-olive lg:text-2xl" />
+              <InstagramLogo className="text-xl duration-200 hover:text-olive lg:text-2xl" />
             </a>
           </ul>
         </div>
