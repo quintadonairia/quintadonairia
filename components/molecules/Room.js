@@ -24,7 +24,7 @@ const Room2 = ({
         </div>
         <h4 className="leading-relaxed text-stone-600">{description}</h4>
         <a href={bookingLink}>
-          <Button size="lg">
+          <Button size="large">
             <ArrowRight size={20} />
             {buttonLabel}
           </Button>

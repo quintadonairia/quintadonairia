@@ -37,7 +37,7 @@ const Home = () => {
                 {t.home.lodging.description}
               </p>
             </div>
-            <Button href="/lodging" size="lg" variant="primary">
+            <Button href="/lodging" size="large" variant="brand">
               {t.home.lodging.action}
             </Button>
           </div>
@@ -49,7 +49,7 @@ const Home = () => {
           heading={t.home.experiences.heading}
         />
         <Gallery />
-        <Button href="/experiences" size="lg" variant="primary">
+        <Button href="/experiences" size="large" variant="brand">
           {t.home.experiences.action}
         </Button>
       </section>
@@ -73,7 +73,7 @@ const Home = () => {
                 {t.home.restaurant.description}
               </p>
             </div>
-            <Button href="/restaurant" size="lg" variant="primary">
+            <Button href="/restaurant" size="large" variant="brand">
               {t.home.restaurant.action}
             </Button>
           </div>
