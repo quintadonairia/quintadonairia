@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
+import { useState } from "react";
 
 const Gallery = () => {
   const slides = [
