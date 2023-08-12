@@ -6,11 +6,12 @@ import { useTranslation } from "../contexts/TranslationContext";
 
 const Restaurant = () => {
   const t = useTranslation();
+  const pageTitle = `${t.global.brand} | ${t.navigation.restaurant}`;
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
       <Head>
-        <title>Quinta Dona Iria | {t.navigation.restaurant}</title>
+        <title>{pageTitle}</title>
       </Head>
       <Hero
         title={t.restaurant.title}
