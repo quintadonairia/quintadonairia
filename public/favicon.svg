@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .background {
+        fill: #151414;
+      }
+      .foreground {
+        fill: #faf6f0;
+      }
+    }
+  </style>
+  <rect class="background" width="32" height="32" fill="#faf6f0" rx="8" />
+  <path
+    class="foreground"
+    fill="#151414"
+    d="M15 14.999a6 6 0 0 0-6-6H8v6a6 6 0 0 0 6 6h1v-6ZM16 14.999a6 6 0 0 1 6-6h2v10a6 6 0 0 1-6 6h-2v-10Z"
+  />
+</svg>
