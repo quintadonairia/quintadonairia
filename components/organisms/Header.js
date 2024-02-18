@@ -48,7 +48,7 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
       )}
       <Link href="/">
         <img
-          src="/graphics/donairia-wordmark-light.svg"
+          src="/graphics/donairia-wordmark-dark.svg"
           alt="logo"
           className="absolute left-1/2 w-28 -translate-x-1/2 cursor-pointer md:w-32 lg:w-36"
         />
