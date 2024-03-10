@@ -46,11 +46,14 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
           size={24}
         />
       )}
-      <Link href="/">
+      <Link
+        className="absolute left-1/2 -translate-x-1/2 cursor-pointer"
+        href="/"
+      >
         <img
-          src="/graphics/donairia-wordmark-dark.svg"
           alt="logo"
-          className="absolute left-1/2 w-28 -translate-x-1/2 cursor-pointer md:w-32 lg:w-36"
+          className="w-28 md:w-32 lg:w-36"
+          src="/graphics/donairia-wordmark-dark.svg"
         />
       </Link>
       <a className="md:hidden" href={t.global.booking.link}>

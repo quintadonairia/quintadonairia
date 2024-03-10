@@ -13,11 +13,11 @@ const Footer = () => {
       <div className="flex w-full flex-col gap-16 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-24">
           <div className="flex flex-col gap-16">
-            <Link href="/">
+            <Link className="cursor-pointer" href="/">
               <img
                 src="/graphics/donairia-wordmark-dark.svg"
                 alt="logo"
-                className="w-32 cursor-pointer lg:w-36"
+                className="w-32 lg:w-36"
               />
             </Link>
             <div className="flex flex-col items-start justify-start gap-4">

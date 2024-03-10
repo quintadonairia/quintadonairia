@@ -32,15 +32,15 @@ export default function Menu({ handleMenuIsActive, isMenuActive }) {
     >
       <ul className="flex cursor-pointer flex-col gap-8 text-center font-serif text-3xl md:gap-12 md:text-5xl">
         {routes.map((route) => (
-          <Link href={route.href} key={route.href}>
-            <a
-              className={`transition-transform duration-[480ms] ${
-                isMenuActive ? "translate-y-0" : "-translate-y-4"
-              }`}
-              onClick={handleMenuIsActive}
-            >
-              {route.name}
-            </a>
+          <Link
+            className={`transition-transform duration-[480ms] ${
+              isMenuActive ? "translate-y-0" : "-translate-y-4"
+            }`}
+            href={route.href}
+            key={route.href}
+            onClick={handleMenuIsActive}
+          >
+            {route.name}
           </Link>
         ))}
       </ul>
