@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { forwardRef } from "react";
 import { twMerge } from "tailwind-merge";
 
 const styles = {
@@ -17,35 +16,31 @@ const styles = {
   },
 };
 
-const Button = forwardRef(
-  ({ children, className, href, size, variant }, ref) => {
-    if (href) {
-      return (
-        <Link href={href} passHref>
-          <a
-            className={twMerge(
-              `${styles.base} ${styles.variant[variant]} ${styles.size[size]}`,
-              `${className}`
-            )}
-            ref={ref}
-          >
-            {children}
-          </a>
-        </Link>
-      );
-    }
-
+const Button = ({ children, className, href, size, variant }) => {
+  if (href) {
     return (
-      <button
+      <Link
+        href={href}
         className={twMerge(
           `${styles.base} ${styles.variant[variant]} ${styles.size[size]}`,
           `${className}`
         )}
       >
         {children}
-      </button>
+      </Link>
     );
   }
-);
+
+  return (
+    <button
+      className={twMerge(
+        `${styles.base} ${styles.variant[variant]} ${styles.size[size]}`,
+        `${className}`
+      )}
+    >
+      {children}
+    </button>
+  );
+};
 
 export default Button;
