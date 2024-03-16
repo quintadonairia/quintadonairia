@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        display: "Fraunces",
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
         serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
       },
