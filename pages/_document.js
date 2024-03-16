@@ -9,6 +9,12 @@ export default function Document() {
           content="A wellness haven, combining wine and olive oil with the rich Portuguese cuisine"
         />
         <meta name="theme-color" content="#faf6f0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
