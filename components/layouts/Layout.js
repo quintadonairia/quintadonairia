@@ -1,3 +1,4 @@
+import BookingForm from "@/components/booking/BookingForm";
 import { useState } from "react";
 import Footer from "../organisms/Footer";
 import Header from "../organisms/Header";
@@ -22,6 +23,7 @@ export default function Layout({ children }) {
       />
       <main>{children}</main>
       <Footer />
+      <BookingForm />
     </div>
   );
 }
