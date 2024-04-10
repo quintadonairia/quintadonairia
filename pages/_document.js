@@ -32,7 +32,7 @@ export default function Document() {
         />
         <link rel="manifest" href="/manifest.webmanifest" />
       </Head>
-      <body>
+      <body className="antialiased">
         <Main />
         <NextScript />
       </body>
