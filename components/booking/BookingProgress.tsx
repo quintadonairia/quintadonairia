@@ -1,11 +1,11 @@
 import { ArrowLeft } from "@phosphor-icons/react";
-import { useRouter } from "next/router";
 
-export default function BookingProgress() {
-  const router = useRouter();
-
+export default function BookingProgress({
+  activeStepIndex,
+  setActiveStepIndex,
+}) {
   const navigateToPreviousStep = () => {
-    router.back();
+    setActiveStepIndex(activeStepIndex - 1);
   };
 
   return (
