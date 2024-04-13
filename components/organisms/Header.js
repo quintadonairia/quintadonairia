@@ -63,7 +63,7 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
         className="hidden md:inline-flex"
         variant="neutral"
         size="small"
-        href={t.global.booking.link}
+        href="/booking"
       >
         {t.global.booking.text}
       </Button>

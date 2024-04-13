@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useTranslation } from "@/contexts/TranslationContext";
+import { booking } from "@/data/booking";
 import { useRef, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
@@ -13,43 +14,13 @@ type FormFields = {
   datesCheckOut: string;
   guestsAdults: number;
   guestsChildren: number;
+  rooms: string;
   email: string;
   fullName: string;
 };
 
-const formSteps = [
-  {
-    name: "Dates",
-    fields: [],
-  },
-  {
-    name: "Guests",
-    fields: [],
-  },
-  {
-    name: "Room Type",
-    fields: [],
-  },
-  {
-    name: "Parking Spot",
-    fields: [],
-  },
-  {
-    name: "Reservation Name",
-    fields: [],
-  },
-  {
-    name: "Email",
-    fields: [],
-  },
-  {
-    name: "Confirmation",
-    fields: [],
-  },
-];
-
 export default function BookingForm() {
-  const [activeStepIndex, setActiveStepIndex] = useState(2);
+  const [activeStepIndex, setActiveStepIndex] = useState(0);
 
   const formData = useRef({});
 
@@ -71,7 +42,7 @@ export default function BookingForm() {
       ...data,
     };
 
-    if (activeStepIndex === formSteps.length - 1) {
+    if (activeStepIndex === booking.length - 2) {
       handleFormSubmit(formData.current);
     } else {
       setActiveStepIndex(
@@ -83,7 +54,10 @@ export default function BookingForm() {
   return (
     <div className="fixed inset-0 bg-background-default z-20">
       <div className="h-full flex flex-col gap-10 max-w-screen-lg mx-auto p-5 md:p-10">
-        <BookingProgress />
+        <BookingProgress
+          activeStepIndex={activeStepIndex}
+          setActiveStepIndex={setActiveStepIndex}
+        />
         <form
           className="h-full md:justify-center flex flex-col gap-10"
           onSubmit={handleSubmit(onSubmit)}
@@ -99,12 +73,22 @@ export default function BookingForm() {
                 })}
                 type="date"
               />
+              {errors.datesCheckIn && (
+                <div className="text-red-500">
+                  {errors.datesCheckIn.message}
+                </div>
+              )}
               <Input
                 {...register("datesCheckOut", {
                   required: t.booking.dates.errorMessage,
                 })}
                 type="date"
               />
+              {errors.datesCheckOut && (
+                <div className="text-red-500">
+                  {errors.datesCheckOut.message}
+                </div>
+              )}
             </BookingStep>
           )}
           {activeStepIndex === 1 && (
@@ -116,6 +100,11 @@ export default function BookingForm() {
                 type="number"
                 placeholder="Adultos"
               />
+              {errors.guestsAdults && (
+                <div className="text-red-500">
+                  {errors.guestsAdults.message}
+                </div>
+              )}
               <Input
                 {...register("guestsChildren", {
                   required: t.booking.guests.errorMessage,
@@ -123,6 +112,11 @@ export default function BookingForm() {
                 type="number"
                 placeholder="Crianças"
               />
+              {errors.guestsChildren && (
+                <div className="text-red-500">
+                  {errors.guestsChildren.message}
+                </div>
+              )}
             </BookingStep>
           )}
           {activeStepIndex === 2 && (
@@ -161,44 +155,6 @@ export default function BookingForm() {
             </BookingStep>
           )}
           {activeStepIndex === 3 && (
-            <BookingStep
-              title={t.booking.parking.title}
-              subtitle={t.booking.parking.subtitle}
-            >
-              <RadioGroup className="flex flex-col gap-5">
-                <div>
-                  <RadioGroupItem
-                    value="yes"
-                    id="yes"
-                    className="peer sr-only"
-                    aria-label="Sim"
-                  />
-                  <Label
-                    htmlFor="yes"
-                    className="flex flex-col items-center justify-between rounded-md border-2 border-border-subtle bg-transparent p-4 hover:bg-background-subtle peer-data-[state=checked]:border-border-inverse [&:has([data-state=checked])]:border-border-inverse"
-                  >
-                    Sim
-                  </Label>
-                </div>
-
-                <div>
-                  <RadioGroupItem
-                    value="no"
-                    id="no"
-                    className="peer sr-only"
-                    aria-label="Não"
-                  />
-                  <Label
-                    htmlFor="no"
-                    className="flex flex-col items-center justify-between rounded-md border-2 border-border-subtle bg-transparent p-4 hover:bg-background-subtle peer-data-[state=checked]:border-border-inverse [&:has([data-state=checked])]:border-border-inverse"
-                  >
-                    Não
-                  </Label>
-                </div>
-              </RadioGroup>
-            </BookingStep>
-          )}
-          {activeStepIndex === 4 && (
             <BookingStep title={t.booking.fullName.title}>
               <Input
                 {...register("fullName", {
@@ -212,18 +168,24 @@ export default function BookingForm() {
               )}
             </BookingStep>
           )}
-          {activeStepIndex === 5 && (
+          {activeStepIndex === 4 && (
             <BookingStep
               title={t.booking.email.title}
               subtitle={t.booking.email.subtitle}
             >
               <Input
-                {...(register("email"), { required: true })}
-                type="text"
+                {...register("email", {
+                  required: t.booking.email.errorMessage,
+                })}
+                type="email"
                 placeholder={t.booking.email.placeholder}
               />
+              {errors.email && (
+                <div className="text-red-500">{errors.email.message}</div>
+              )}
             </BookingStep>
           )}
+          {activeStepIndex === 5 && <div>está feito</div>}
           <div>
             <Button
               className="fixed inset-x-5 bottom-5 md:relative md:bottom-0 md:inset-x-auto"
