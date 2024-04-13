@@ -217,7 +217,7 @@ export default function BookingForm() {
               title={t.booking.email.title}
               subtitle={t.booking.email.subtitle}
             >
-              <input
+              <Input
                 {...(register("email"), { required: true })}
                 type="text"
                 placeholder={t.booking.email.placeholder}
