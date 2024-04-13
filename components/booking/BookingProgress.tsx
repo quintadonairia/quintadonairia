@@ -1,3 +1,4 @@
+import { booking } from "@/data/booking";
 import { ArrowLeft } from "@phosphor-icons/react";
 
 export default function BookingProgress({
@@ -17,7 +18,12 @@ export default function BookingProgress({
         <ArrowLeft></ArrowLeft>
       </button>
       <div className="bg-stone-900/5 h-1 flex-grow rounded-full">
-        <div className="bg-stone-900 w-1/2 h-full rounded-full" />
+        <div
+          className="bg-stone-900 w-1/2 h-full rounded-full transition-all duration-200"
+          style={{
+            width: `${((activeStepIndex + 1) / booking.length) * 100}%`,
+          }}
+        />
       </div>
     </nav>
   );
