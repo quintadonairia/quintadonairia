@@ -79,10 +79,13 @@ export default function BookingForm() {
   };
 
   return (
-    <div className="fixed inset-0 bg-stone-50 z-20">
-      <div className="flex flex-col gap-10 max-w-screen-lg mx-auto p-5">
+    <div className="fixed inset-0 bg-background-default z-20">
+      <div className="h-full flex flex-col gap-10 max-w-screen-lg mx-auto p-5 md:p-10">
         <BookingProgress />
-        <form className="flex flex-col gap-5" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          className="h-full md:justify-center flex flex-col gap-10"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           {activeStepIndex === 0 && (
             <BookingStep
               title={t.booking.dates.title}
