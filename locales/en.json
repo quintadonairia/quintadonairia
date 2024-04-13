@@ -8,15 +8,26 @@
     "guests": {
       "title": "Qual o número de hóspedes?"
     },
-    "email": {
-      "title": "Qual o seu email de contacto?",
-      "subtitle": "Iremos contactar para confirmação e pagamento, no prazo de 24 horas",
-      "placeholder": "Email pessoal"
+    "rooms": {
+      "title": "Qual a tipologia de quarto que pretende?"
+    },
+    "parking": {
+      "title": "Deseja um lugar de estacionamento?",
+      "subtitle": "O estacionamento é gratuito e válido durante toda a estadia."
     },
     "fullName": {
       "title": "Em que nome fica o pedido de reserva?",
       "placeholder": "Primeiro e último nome",
       "errorMessage": "O nome é obrigatório para efetuar o pedido"
+    },
+    "email": {
+      "title": "Qual o seu email de contacto?",
+      "subtitle": "Iremos contactar para confirmação e pagamento, no prazo de 24 horas",
+      "placeholder": "Email pessoal"
+    },
+    "confirmation": {
+      "title": "O seu pedido de reserva foi efetuado!",
+      "subtitle": "Vamos confirmar disponibilidade para a sua estadia, e entramos em contacto consigo no prazo de 24 horas"
     }
   },
   "contacts": {
