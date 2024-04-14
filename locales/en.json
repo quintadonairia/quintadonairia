@@ -11,6 +11,10 @@
     },
     "guests": {
       "title": "Qual o número de hóspedes?",
+      "placeholder": {
+        "adults": "Número de adultos",
+        "children": "Número de crianças"
+      },
       "errorMessage": "O número de hóspedes é obrigatório"
     },
     "rooms": {

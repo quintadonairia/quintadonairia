@@ -149,7 +149,6 @@ export default function BookingForm() {
                     Quarto Standard
                   </Label>
                 </div>
-
                 <div>
                   <RadioGroupItem
                     value="superior"
