@@ -28,6 +28,7 @@ export default function BookingForm() {
 
   const {
     register,
+    getValues,
     handleSubmit,
     formState: { errors },
   } = useForm<FormFields>();
@@ -69,23 +70,35 @@ export default function BookingForm() {
             >
               <Input
                 {...register("datesCheckIn", {
-                  required: t.booking.dates.errorMessage,
+                  required: t.booking.dates.errorMessages.required,
+                  validate: (value) => {
+                    return new Date(value) < new Date()
+                      ? t.booking.dates.errorMessages.checkIn
+                      : true;
+                  },
                 })}
                 type="date"
+                error={!!errors.datesCheckIn}
               />
               {errors.datesCheckIn && (
-                <div className="text-red-500">
+                <div className="text-foreground-negative">
                   {errors.datesCheckIn.message}
                 </div>
               )}
               <Input
                 {...register("datesCheckOut", {
-                  required: t.booking.dates.errorMessage,
+                  required: t.booking.dates.errorMessages.required,
+                  validate: (value) => {
+                    return new Date(value) < new Date(getValues("datesCheckIn"))
+                      ? t.booking.dates.errorMessages.checkOut
+                      : true;
+                  },
                 })}
                 type="date"
+                error={!!errors.datesCheckOut}
               />
               {errors.datesCheckOut && (
-                <div className="text-red-500">
+                <div className="text-foreground-negative">
                   {errors.datesCheckOut.message}
                 </div>
               )}
