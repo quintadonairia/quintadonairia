@@ -3,10 +3,19 @@
     "dates": {
       "title": "Quais as datas para a sua estadia?",
       "subtitle": "Selecione o dia de check-in e check-out",
-      "errorMessage": "A data é obrigatória"
+      "errorMessages": {
+        "required": "A data é obrigatória",
+        "checkIn": "O dia de check-in deve ser posterior ao dia atual",
+        "checkOut": "O dia de check-out deve ser posterior ao dia de check-in"
+      }
     },
     "guests": {
-      "title": "Qual o número de hóspedes?"
+      "title": "Qual o número de hóspedes?",
+      "placeholder": {
+        "adults": "Número de adultos",
+        "children": "Número de crianças"
+      },
+      "errorMessage": "O número de hóspedes é obrigatório"
     },
     "rooms": {
       "title": "Qual a tipologia de quarto que pretende?"
@@ -23,7 +32,8 @@
     "email": {
       "title": "Qual o seu email de contacto?",
       "subtitle": "Iremos contactar para confirmação e pagamento, no prazo de 24 horas",
-      "placeholder": "Email pessoal"
+      "placeholder": "Email pessoal",
+      "errorMessage": "O email é obrigatório"
     },
     "confirmation": {
       "title": "O seu pedido de reserva foi efetuado!",
