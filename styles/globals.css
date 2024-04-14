@@ -36,8 +36,8 @@
     --color-neutral-700: var(--hue) 8% 16%;
     --color-neutral-800: var(--hue) 8% 12%;
     --color-neutral-900: var(--hue) 8% 8%;
-
     --color-brand-500: var(--hue) 96% 48%;
+    --color-negative-500: 4 72% 48%;
   }
 
   :root {
@@ -54,11 +54,13 @@
     --color-foreground-strong: var(--color-neutral-800);
     --color-foreground-subtle: var(--color-neutral-600);
     --color-foreground-brand: var(--color-brand-500);
+    --color-foreground-negative: var(--color-negative-500);
 
     --color-border-default: var(--color-neutral-200);
     --color-border-inverse: var(--color-neutral-900);
     --color-border-strong: var(--color-neutral-300);
     --color-border-subtle: var(--color-neutral-100);
     --color-border-brand: var(--color-brand-500);
+    --color-border-negative: var(--color-negative-500);
   }
 }

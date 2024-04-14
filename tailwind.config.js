@@ -26,6 +26,7 @@ module.exports = {
           strong: "hsl(var(--color-foreground-strong))",
           subtle: "hsl(var(--color-foreground-subtle))",
           brand: "hsl(var(--color-foreground-brand))",
+          negative: "hsl(var(--color-foreground-negative))",
         },
         border: {
           default: "hsl(var(--color-border-default))",
@@ -33,6 +34,7 @@ module.exports = {
           strong: "hsl(var(--color-border-strong))",
           subtle: "hsl(var(--color-border-subtle))",
           brand: "hsl(var(--color-border-brand))",
+          negative: "hsl(var(--color-border-negative))",
         },
         light: "#FCFAF8",
         dark: "#151414",
