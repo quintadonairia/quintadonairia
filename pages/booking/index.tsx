@@ -113,9 +113,10 @@ export default function BookingForm() {
                 type="number"
                 min={1}
                 placeholder={t.booking.guests.placeholder.adults}
+                error={!!errors.guestsAdults}
               />
               {errors.guestsAdults && (
-                <div className="text-red-500">
+                <div className="text-foreground-negative">
                   {errors.guestsAdults.message}
                 </div>
               )}
@@ -124,9 +125,10 @@ export default function BookingForm() {
                 type="number"
                 min={0}
                 placeholder={t.booking.guests.placeholder.children}
+                error={!!errors.guestsChildren}
               />
               {errors.guestsChildren && (
-                <div className="text-red-500">
+                <div className="text-foreground-negative">
                   {errors.guestsChildren.message}
                 </div>
               )}
