@@ -18,7 +18,12 @@
       "errorMessage": "O número de hóspedes é obrigatório"
     },
     "rooms": {
-      "title": "Qual a tipologia de quarto que pretende?"
+      "title": "Qual a tipologia de quarto que pretende?",
+      "label": {
+        "standard": "Quarto Standard",
+        "superior": "Quarto Superior"
+      },
+      "errorMessage": "Escolha uma das tipologias de quarto"
     },
     "parking": {
       "title": "Deseja um lugar de estacionamento?",
