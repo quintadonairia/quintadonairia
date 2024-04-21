@@ -1,50 +1,95 @@
 import BookingProgress from "@/components/booking/BookingProgress";
 import BookingStep from "@/components/booking/BookingStep";
 import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useTranslation } from "@/contexts/TranslationContext";
 import { booking } from "@/data/booking";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useRef, useState } from "react";
-import { SubmitHandler, useForm } from "react-hook-form";
-
-type FormFields = {
-  datesCheckIn: string;
-  datesCheckOut: string;
-  guestsAdults: number;
-  guestsChildren: number;
-  rooms: string;
-  email: string;
-  fullName: string;
-};
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 export default function BookingForm() {
   const [activeStepIndex, setActiveStepIndex] = useState(0);
 
-  const formData = useRef({});
-
   const t = useTranslation();
 
-  const {
-    register,
-    getValues,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormFields>();
+  const formData = useRef({});
 
-  const handleFormSubmit = (data) => {
-    console.log(data);
-  };
+  const DatesSchema = z
+    .object({
+      checkIn: z.coerce.date().refine((data) => data > new Date(), {
+        message: t.booking.dates.errorMessages.checkIn,
+      }),
+      checkOut: z.coerce.date(),
+    })
+    .refine((data) => data.checkOut > data.checkIn, {
+      message: t.booking.dates.errorMessages.checkOut,
+      path: ["checkOut"],
+    });
 
-  const onSubmit: SubmitHandler<FormFields> = (data) => {
+  const GuestsSchema = z.object({
+    guests: z.object({
+      adults: z.coerce.number().min(1, t.booking.guests.errorMessage),
+      children: z.coerce.number().optional(),
+    }),
+  });
+
+  const RoomsSchema = z.object({
+    rooms: z.enum(["standard", "superior"], {
+      required_error: t.booking.rooms.errorMessage,
+    }),
+  });
+
+  const FullNameSchema = z.object({
+    fullName: z.string({
+      required_error: t.booking.fullName.errorMessage,
+    }),
+  });
+
+  const EmailSchema = z.object({
+    email: z.string({
+      required_error: t.booking.email.errorMessage,
+    }),
+  });
+
+  const datesForm = useForm<z.infer<typeof DatesSchema>>({
+    resolver: zodResolver(DatesSchema),
+  });
+
+  const guestsForm = useForm<z.infer<typeof GuestsSchema>>({
+    resolver: zodResolver(GuestsSchema),
+  });
+
+  const roomsForm = useForm<z.infer<typeof RoomsSchema>>({
+    resolver: zodResolver(RoomsSchema),
+  });
+
+  const fullNameForm = useForm<z.infer<typeof FullNameSchema>>({
+    resolver: zodResolver(FullNameSchema),
+  });
+
+  const emailForm = useForm<z.infer<typeof EmailSchema>>({
+    resolver: zodResolver(EmailSchema),
+  });
+
+  const handleFormSubmit = (form: any) => (data: any) => {
     formData.current = {
       ...formData.current,
       ...data,
     };
 
     if (activeStepIndex === booking.length - 2) {
-      handleFormSubmit(formData.current);
+      console.log(formData.current);
     } else {
       setActiveStepIndex(
         (previousActiveStepIndex) => previousActiveStepIndex + 1
@@ -59,156 +104,247 @@ export default function BookingForm() {
           activeStepIndex={activeStepIndex}
           setActiveStepIndex={setActiveStepIndex}
         />
-        <form
-          className="h-full md:justify-center flex flex-col gap-10"
-          onSubmit={handleSubmit(onSubmit)}
-        >
-          {activeStepIndex === 0 && (
-            <BookingStep
-              title={t.booking.dates.title}
-              subtitle={t.booking.dates.subtitle}
+        {activeStepIndex === 0 && (
+          <Form {...datesForm}>
+            <form
+              className="h-full md:justify-center flex flex-col gap-10"
+              onSubmit={datesForm.handleSubmit(handleFormSubmit(datesForm))}
             >
-              <Input
-                {...register("datesCheckIn", {
-                  required: t.booking.dates.errorMessages.required,
-                  validate: (value) => {
-                    return new Date(value) < new Date()
-                      ? t.booking.dates.errorMessages.checkIn
-                      : true;
-                  },
-                })}
-                type="date"
-                error={!!errors.datesCheckIn}
-              />
-              {errors.datesCheckIn && (
-                <div className="text-foreground-negative">
-                  {errors.datesCheckIn.message}
-                </div>
-              )}
-              <Input
-                {...register("datesCheckOut", {
-                  required: t.booking.dates.errorMessages.required,
-                  validate: (value) => {
-                    return new Date(value) < new Date(getValues("datesCheckIn"))
-                      ? t.booking.dates.errorMessages.checkOut
-                      : true;
-                  },
-                })}
-                type="date"
-                error={!!errors.datesCheckOut}
-              />
-              {errors.datesCheckOut && (
-                <div className="text-foreground-negative">
-                  {errors.datesCheckOut.message}
-                </div>
-              )}
-            </BookingStep>
-          )}
-          {activeStepIndex === 1 && (
-            <BookingStep title={t.booking.guests.title}>
-              <Input
-                {...register("guestsAdults", {
-                  required: t.booking.guests.errorMessage,
-                })}
-                type="number"
-                min={1}
-                placeholder={t.booking.guests.placeholder.adults}
-                error={!!errors.guestsAdults}
-              />
-              {errors.guestsAdults && (
-                <div className="text-foreground-negative">
-                  {errors.guestsAdults.message}
-                </div>
-              )}
-              <Input
-                {...register("guestsChildren")}
-                type="number"
-                min={0}
-                placeholder={t.booking.guests.placeholder.children}
-                error={!!errors.guestsChildren}
-              />
-              {errors.guestsChildren && (
-                <div className="text-foreground-negative">
-                  {errors.guestsChildren.message}
-                </div>
-              )}
-            </BookingStep>
-          )}
-          {activeStepIndex === 2 && (
-            <BookingStep title={t.booking.rooms.title}>
-              <RadioGroup className="flex flex-col gap-5">
-                <div>
-                  <RadioGroupItem
-                    value="standard"
-                    id="standard"
-                    className="peer sr-only"
-                    aria-label="Quarto Standard"
-                  />
-                  <Label
-                    htmlFor="standard"
-                    className="flex flex-col items-center justify-between rounded-md border-2 border-border-subtle bg-transparent p-4 hover:bg-background-subtle peer-data-[state=checked]:border-border-inverse [&:has([data-state=checked])]:border-border-inverse"
-                  >
-                    Quarto Standard
-                  </Label>
-                </div>
-                <div>
-                  <RadioGroupItem
-                    value="superior"
-                    id="superior"
-                    className="peer sr-only"
-                    aria-label="Quarto Superior"
-                  />
-                  <Label
-                    htmlFor="superior"
-                    className="flex flex-col items-center justify-between rounded-md border-2 border-border-subtle bg-transparent p-4 hover:bg-background-subtle peer-data-[state=checked]:border-border-inverse [&:has([data-state=checked])]:border-border-inverse"
-                  >
-                    Quarto Superior
-                  </Label>
-                </div>
-              </RadioGroup>
-            </BookingStep>
-          )}
-          {activeStepIndex === 3 && (
-            <BookingStep title={t.booking.fullName.title}>
-              <Input
-                {...register("fullName", {
-                  required: t.booking.fullName.errorMessage,
-                })}
-                type="text"
-                placeholder={t.booking.fullName.placeholder}
-              />
-              {errors.fullName && (
-                <div className="text-red-500">{errors.fullName.message}</div>
-              )}
-            </BookingStep>
-          )}
-          {activeStepIndex === 4 && (
-            <BookingStep
-              title={t.booking.email.title}
-              subtitle={t.booking.email.subtitle}
+              <BookingStep
+                title={t.booking.dates.title}
+                subtitle={t.booking.dates.subtitle}
+              >
+                <FormField
+                  control={datesForm.control}
+                  name="checkIn"
+                  render={({ field }) => (
+                    <FormItem className="space-y-3">
+                      <FormControl>
+                        <Input type="date" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={datesForm.control}
+                  name="checkOut"
+                  render={({ field }) => (
+                    <FormItem className="space-y-3">
+                      <FormControl>
+                        <Input type="date" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </BookingStep>
+              <div>
+                <Button
+                  className="fixed inset-x-5 bottom-5 md:relative md:bottom-0 md:inset-x-auto"
+                  variant="default"
+                  type="submit"
+                >
+                  Continuar
+                </Button>
+              </div>
+            </form>
+          </Form>
+        )}
+        {activeStepIndex === 1 && (
+          <Form {...guestsForm}>
+            <form
+              className="h-full md:justify-center flex flex-col gap-10"
+              onSubmit={guestsForm.handleSubmit(handleFormSubmit(guestsForm))}
             >
-              <Input
-                {...register("email", {
-                  required: t.booking.email.errorMessage,
-                })}
-                type="email"
-                placeholder={t.booking.email.placeholder}
-              />
-              {errors.email && (
-                <div className="text-red-500">{errors.email.message}</div>
-              )}
-            </BookingStep>
-          )}
-          {activeStepIndex === 5 && <div>está feito</div>}
-          <div>
-            <Button
-              className="fixed inset-x-5 bottom-5 md:relative md:bottom-0 md:inset-x-auto"
-              variant="default"
+              <BookingStep title={t.booking.guests.title}>
+                <FormField
+                  control={guestsForm.control}
+                  name="guests.adults"
+                  render={({ field }) => (
+                    <FormItem className="space-y-3">
+                      <FormControl>
+                        <Input
+                          type="number"
+                          min={1}
+                          max={8}
+                          placeholder={t.booking.guests.placeholder.adults}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={guestsForm.control}
+                  name="guests.children"
+                  render={({ field }) => (
+                    <FormItem className="space-y-3">
+                      <FormControl>
+                        <Input
+                          type="number"
+                          min={0}
+                          placeholder={t.booking.guests.placeholder.children}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </BookingStep>
+              <div>
+                <Button
+                  className="fixed inset-x-5 bottom-5 md:relative md:bottom-0 md:inset-x-auto"
+                  variant="default"
+                  type="submit"
+                >
+                  Continuar
+                </Button>
+              </div>
+            </form>
+          </Form>
+        )}
+        {activeStepIndex === 2 && (
+          <Form {...roomsForm}>
+            <form
+              className="h-full md:justify-center flex flex-col gap-10"
+              onSubmit={roomsForm.handleSubmit(handleFormSubmit(roomsForm))}
             >
-              Continuar
-            </Button>
-          </div>
-        </form>
+              <BookingStep title={t.booking.rooms.title}>
+                <FormField
+                  control={roomsForm.control}
+                  name="rooms"
+                  render={({ field }) => (
+                    <FormItem className="space-y-3">
+                      <FormControl>
+                        <RadioGroup
+                          onValueChange={field.onChange}
+                          defaultValue={field.value}
+                          className="flex flex-col space-y-1"
+                        >
+                          <FormItem className="flex items-center space-x-3 space-y-0">
+                            <FormControl>
+                              <RadioGroupItem
+                                value="standard"
+                                className="peer sr-only"
+                                aria-label="Quarto Standard"
+                              />
+                            </FormControl>
+                            <FormLabel className="flex flex-col items-center justify-between rounded-md border-2 border-border-subtle bg-transparent p-4 hover:bg-background-subtle peer-data-[state=checked]:border-border-inverse [&:has([data-state=checked])]:border-border-inverse">
+                              {t.booking.rooms.label.standard}
+                            </FormLabel>
+                          </FormItem>
+                          <FormItem className="flex items-center space-x-3 space-y-0">
+                            <FormControl>
+                              <RadioGroupItem
+                                value="superior"
+                                className="peer sr-only"
+                                aria-label="Quarto Superior"
+                              />
+                            </FormControl>
+                            <FormLabel className="flex flex-col items-center justify-between rounded-md border-2 border-border-subtle bg-transparent p-4 hover:bg-background-subtle peer-data-[state=checked]:border-border-inverse [&:has([data-state=checked])]:border-border-inverse">
+                              {t.booking.rooms.label.superior}
+                            </FormLabel>
+                          </FormItem>
+                        </RadioGroup>
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </BookingStep>
+              <div>
+                <Button
+                  className="fixed inset-x-5 bottom-5 md:relative md:bottom-0 md:inset-x-auto"
+                  variant="default"
+                  type="submit"
+                >
+                  Continuar
+                </Button>
+              </div>
+            </form>
+          </Form>
+        )}
+        {activeStepIndex === 3 && (
+          <Form {...fullNameForm}>
+            <form
+              className="h-full md:justify-center flex flex-col gap-10"
+              onSubmit={fullNameForm.handleSubmit(
+                handleFormSubmit(fullNameForm)
+              )}
+            >
+              <BookingStep title={t.booking.fullName.title}>
+                <FormField
+                  control={fullNameForm.control}
+                  name="fullName"
+                  render={({ field }) => (
+                    <FormItem className="space-y-3">
+                      <FormControl>
+                        <Input
+                          type="text"
+                          placeholder={t.booking.fullName.placeholder}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </BookingStep>
+              <div>
+                <Button
+                  className="fixed inset-x-5 bottom-5 md:relative md:bottom-0 md:inset-x-auto"
+                  variant="default"
+                  type="submit"
+                >
+                  Continuar
+                </Button>
+              </div>
+            </form>
+          </Form>
+        )}
+        {activeStepIndex === 4 && (
+          <Form {...emailForm}>
+            <form
+              className="h-full md:justify-center flex flex-col gap-10"
+              onSubmit={emailForm.handleSubmit(handleFormSubmit(emailForm))}
+            >
+              <BookingStep
+                title={t.booking.email.title}
+                subtitle={t.booking.email.subtitle}
+              >
+                <FormField
+                  control={emailForm.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem className="space-y-3">
+                      <FormControl>
+                        <Input
+                          type="email"
+                          placeholder={t.booking.email.placeholder}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </BookingStep>
+              <div>
+                <Button
+                  className="fixed inset-x-5 bottom-5 md:relative md:bottom-0 md:inset-x-auto"
+                  variant="default"
+                  type="submit"
+                >
+                  Continuar
+                </Button>
+              </div>
+            </form>
+          </Form>
+        )}
+        <pre>{JSON.stringify(formData, null, 2)}</pre>
       </div>
     </div>
   );
