@@ -27,12 +27,15 @@ export default function BookingForm() {
 
   const DatesSchema = z
     .object({
-      checkIn: z.coerce.date().refine((data) => data > new Date(), {
-        message: t.booking.dates.errorMessages.checkIn,
-      }),
-      checkOut: z.coerce.date(),
+      checkIn: z
+        .string()
+        .date()
+        .refine((data) => new Date(data) > new Date(), {
+          message: t.booking.dates.errorMessages.checkIn,
+        }),
+      checkOut: z.string().date(),
     })
-    .refine((data) => data.checkOut > data.checkIn, {
+    .refine((data) => new Date(data.checkOut) > new Date(data.checkIn), {
       message: t.booking.dates.errorMessages.checkOut,
       path: ["checkOut"],
     });
