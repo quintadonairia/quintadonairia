@@ -1,17 +1,16 @@
 import BookingProgress from "@/components/booking/BookingProgress";
+
 import Dates from "@/components/booking/Dates";
 import Email from "@/components/booking/Email";
 import Guests from "@/components/booking/Guests";
 import Name from "@/components/booking/Name";
 import Rooms from "@/components/booking/Rooms";
-import { useTranslation } from "@/contexts/TranslationContext";
+
 import { booking } from "@/data/booking";
 import { useRef, useState } from "react";
 
 export default function BookingForm() {
   const [activeStepIndex, setActiveStepIndex] = useState(0);
-
-  const t = useTranslation();
 
   const formData = useRef({});
 
