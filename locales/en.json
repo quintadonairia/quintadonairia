@@ -29,7 +29,7 @@
       "title": "Deseja um lugar de estacionamento?",
       "subtitle": "O estacionamento é gratuito e válido durante toda a estadia."
     },
-    "fullName": {
+    "name": {
       "title": "Em que nome fica o pedido de reserva?",
       "placeholder": "Primeiro e último nome",
       "errorMessage": "O nome é obrigatório para efetuar o pedido"
