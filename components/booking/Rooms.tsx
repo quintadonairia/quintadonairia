@@ -22,7 +22,7 @@ export default function BookingFormDates({
   const t = useTranslation();
 
   const RoomsSchema = z.object({
-    rooms: z.enum(["standard", "superior"], {
+    rooms: z.enum(["Standard", "Superior"], {
       required_error: t.booking.rooms.errorMessage,
     }),
   });
@@ -52,7 +52,7 @@ export default function BookingFormDates({
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
                         <RadioGroupItem
-                          value="standard"
+                          value="Standard"
                           className="peer sr-only"
                           aria-label="Quarto Standard"
                         />
@@ -64,7 +64,7 @@ export default function BookingFormDates({
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
                         <RadioGroupItem
-                          value="superior"
+                          value="Superior"
                           className="peer sr-only"
                           aria-label="Quarto Superior"
                         />
