@@ -7,21 +7,33 @@ import Name from "@/components/booking/Name";
 import Rooms from "@/components/booking/Rooms";
 
 import { booking } from "@/data/booking";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 export default function BookingForm() {
   const [activeStepIndex, setActiveStepIndex] = useState(0);
+  const [formData, setFormData] = useState({});
 
-  const formData = useRef({});
-
-  const handleFormSubmit = (form: any) => (data: any) => {
-    formData.current = {
-      ...formData.current,
+  const handleFormSubmit = (form: any) => async (data: any) => {
+    setFormData((previousFormData) => ({
+      ...previousFormData,
       ...data,
-    };
+    }));
 
     if (activeStepIndex === booking.length - 2) {
-      console.log(formData.current);
+      try {
+        const response = await fetch("/api/booking", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
     } else {
       setActiveStepIndex(
         (previousActiveStepIndex) => previousActiveStepIndex + 1
