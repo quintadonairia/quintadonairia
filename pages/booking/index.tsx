@@ -55,7 +55,6 @@ export default function BookingForm() {
         {activeStepIndex === 2 && <Rooms handleFormSubmit={handleFormSubmit} />}
         {activeStepIndex === 3 && <Name handleFormSubmit={handleFormSubmit} />}
         {activeStepIndex === 4 && <Email handleFormSubmit={handleFormSubmit} />}
-        <pre>{JSON.stringify(formData, null, 2)}</pre>
       </div>
     </div>
   );
