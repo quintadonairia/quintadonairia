@@ -7,7 +7,7 @@ export default async function GoogleSheetsAuth() {
     projectId: credentials.project_id,
     credentials: {
       type: "service_account",
-      private_key: credentials.private_key,
+      private_key: credentials.private_key.replace(/\\n/g, "\n"),
       client_email: credentials.client_email,
       client_id: credentials.client_id,
       token_url: credentials.token_uri,
