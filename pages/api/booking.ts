@@ -17,7 +17,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
         email,
       } = req.body;
 
-      await sheets.spreadsheets.values.append({
+      const result = await sheets.spreadsheets.values.append({
         spreadsheetId: process.env.SPREADSHEET_ID,
         range: "Reservas!A:Z",
         valueInputOption: "USER_ENTERED",
@@ -25,17 +25,26 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
           values: [[name, checkIn, checkOut, adults, children, rooms, email]],
         },
       });
+
+      res.status(200).json({
+        message: "Data appended successfully",
+        success: true,
+        result: result.data,
+      });
     } catch (error) {
       console.error(error);
+      res
+        .status(500)
+        .json({ message: "Error processing the request", success: false });
     }
   } else {
     try {
-      const data = await sheets.spreadsheets.values.get({
+      const result = await sheets.spreadsheets.values.get({
         spreadsheetId: process.env.SPREADSHEET_ID,
         range: "Reservas!A:Z",
       });
 
-      return res.status(200).json(data.data.values);
+      return res.status(200).json(result.data.values);
     } catch (error) {
       console.error(error);
       return res
