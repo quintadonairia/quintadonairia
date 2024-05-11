@@ -1,7 +1,8 @@
-import credentials from "@/credentials.json";
 import { google } from "googleapis";
 
 export default async function GoogleSheetsAuth() {
+  const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+
   const auth = await google.auth.getClient({
     projectId: credentials.project_id,
     credentials: {
