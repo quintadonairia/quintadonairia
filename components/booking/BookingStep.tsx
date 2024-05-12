@@ -1,7 +1,7 @@
 type Props = {
   title: string;
   subtitle?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 const BookingStep = ({ title, subtitle, children }: Props) => {
