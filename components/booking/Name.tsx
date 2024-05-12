@@ -13,7 +13,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-export default function BookingFormDates({
+export default function Name({
   handleFormSubmit,
 }: {
   handleFormSubmit: (form: any) => (data: any) => void;
