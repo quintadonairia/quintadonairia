@@ -17,7 +17,7 @@
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailwind-merge": "^2.3.0",
+    "tailwind-merge": "^2.5.4",
     "tailwindcss": "^3.4.10"
   }
 }
