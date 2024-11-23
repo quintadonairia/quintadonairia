@@ -10,14 +10,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { useTranslation } from "@/contexts/TranslationContext";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader2 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-export default function BookingFormDates({
-  handleFormSubmit,
-}: {
+interface EmailProps {
   handleFormSubmit: (form: any) => (data: any) => void;
-}) {
+  isLoading: boolean;
+}
+
+export default function Email({ handleFormSubmit, isLoading }: EmailProps) {
   const t = useTranslation();
 
   const EmailSchema = z.object({
@@ -61,8 +63,9 @@ export default function BookingFormDates({
           className="fixed inset-x-5 bottom-5 md:relative md:bottom-0 md:inset-x-auto"
           variant="default"
           type="submit"
+          disabled={isLoading}
         >
-          Continuar
+          {isLoading ? <Loader2 className="animate-spin" /> : "Continuar"}
         </Button>
       </form>
     </Form>
