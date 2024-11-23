@@ -1,5 +1,6 @@
 import BookingProgress from "@/components/booking/BookingProgress";
 
+import Confirmation from "@/components/booking/Confirmation";
 import Dates from "@/components/booking/Dates";
 import Email from "@/components/booking/Email";
 import Guests from "@/components/booking/Guests";
@@ -10,16 +11,22 @@ import { booking } from "@/data/booking";
 import { useState } from "react";
 
 export default function BookingForm() {
-  const [activeStepIndex, setActiveStepIndex] = useState(0);
+  const [activeStepIndex, setActiveStepIndex] = useState(4);
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({});
 
   const handleFormSubmit = (form: any) => async (data: any) => {
-    setFormData((previousFormData) => ({
-      ...previousFormData,
+    const updatedFormData = {
+      ...formData,
       ...data,
-    }));
+    };
+
+    console.log("Submitting the following data to the API:", updatedFormData);
+
+    setFormData(updatedFormData);
 
     if (activeStepIndex === booking.length - 2) {
+      setIsLoading(true);
       try {
         const response = await fetch("/api/booking", {
           method: "POST",
@@ -31,8 +38,15 @@ export default function BookingForm() {
 
         const data = await response.json();
         console.log(data);
+        if (response.ok) {
+          setActiveStepIndex(booking.length - 1);
+        } else {
+          throw new Error("Failed to submit booking data");
+        }
       } catch (error) {
         console.error(error);
+      } finally {
+        setIsLoading(false);
       }
     } else {
       setActiveStepIndex(
@@ -54,7 +68,10 @@ export default function BookingForm() {
         )}
         {activeStepIndex === 2 && <Rooms handleFormSubmit={handleFormSubmit} />}
         {activeStepIndex === 3 && <Name handleFormSubmit={handleFormSubmit} />}
-        {activeStepIndex === 4 && <Email handleFormSubmit={handleFormSubmit} />}
+        {activeStepIndex === 4 && (
+          <Email handleFormSubmit={handleFormSubmit} isLoading={isLoading} />
+        )}
+        {activeStepIndex === 5 && <Confirmation />}
       </div>
     </div>
   );
