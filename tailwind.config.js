@@ -127,7 +127,7 @@ module.exports = {
           {
             lineHeight: "40px",
             fontWeight: "400",
-            letterSpacing: "-0.04em",
+            letterSpacing: "-0.02em",
           },
         ],
         "display-medium-strong": [
@@ -135,7 +135,7 @@ module.exports = {
           {
             lineHeight: "48px",
             fontWeight: "600",
-            letterSpacing: "-0.04em",
+            letterSpacing: "-0.02em",
           },
         ],
         "display-large-strong": [
@@ -143,7 +143,7 @@ module.exports = {
           {
             lineHeight: "56px",
             fontWeight: "600",
-            letterSpacing: "-0.04em",
+            letterSpacing: "-0.02em",
           },
         ],
       },
