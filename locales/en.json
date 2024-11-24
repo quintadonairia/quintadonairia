@@ -120,5 +120,30 @@
     "heading": "A modern touch on the traditional Portuguese cuisine",
     "subheading": "Inspired by the tradition of Portuguese cuisine, the Safra intends to add a modern touch, with gastronomic proposals rooted on the quality of our local products.",
     "title": "Restaurant"
+  },
+  "terms": {
+    "sections": {
+      "entity": {
+        "title": "Entity",
+        "description": "A Domingo na Aldeia - Lda, NIPC 513827579, is the entity manager and explorer of the Quinta Dona Iria, with social office at Rua Central 35, 3220-336 Rio de Vide, Miranda do Corvo, Coimbra, Portugal."
+      },
+      "schedule": {
+        "description": "The check-in and check-out times may vary according to the availability of the rooms. The possibility of check-in early and check-out tardy through reservation pre-approval and cost associated. The hotel has the right to refuse the check-in request early or check-out tardy in case of no availability. The minimum age for check-in at the hotel is 18 years. During check-in, the document identification will be requested for all the elements that comprise the reservation, so they should be followed.",
+        "title": "Check-in and Check-out"
+      },
+      "guarantee": {
+        "description": "The guarantee of the reservation implies the confirmation of liquidation of the same through credit in our account until the mentioned date. For reservations on the same day, it must be facultated the credit card data for debit of the value of the first night, which guarantees the reservation, being that this value is not refundable.",
+        "title": "Reservation Policy"
+      },
+      "cancellation": {
+        "title": "Cancellation Policy",
+        "description": "The reservations can be cancelled up to 3 days before the check-in date, without any penalty. It will be charged the equivalent of 1 night per room/bed, if the cancellation is done with less than 3 days before the arrival date. In cases omitted or not specified about the cancellation of reservations, the hotel reserves the right to apply the preceding clause."
+      },
+      "children": {
+        "description": "Children up to 3 years old, inclusive, have free stays. For children from 4 to 12 years old, inclusive, it will be charged 50% of the value. From 13 years old, it will be charged as an adult. For the placement of extra beds, it will be charged the value of 10€/night. The maximum capacity is 1 extra bed per room. Any type of extra bed or berth only is available through confirmation of the hotel.",
+        "title": "Children Policy"
+      },
+      "title": "Terms & Conditions"
+    }
   }
 }

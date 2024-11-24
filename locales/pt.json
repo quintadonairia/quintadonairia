@@ -120,5 +120,30 @@
     "heading": "Um toque moderno na cozinha tradicional Portuguesa",
     "subheading": "Inspirado na tradição da cozinha Portuguesa, o Safra pretende acrescentar um toque moderno, com propostas gastronómicas assentes na qualidade dos nossos produtos locais.",
     "title": "Restaurante"
+  },
+  "terms": {
+    "sections": {
+      "entity": {
+        "description": "A Domingo na Aldeia - Lda, NIPC 513827579, é a entidade gestora e exploradora da Quinta Dona Iria, com sede social na Rua Central 35, 3220-336 Rio de Vide, Miranda do Corvo, Coimbra, Portugal.",
+        "title": "Entidade"
+      },
+      "schedule": {
+        "description": "Os horários de check-in e check-out podem variar mediante disponibilidade do quartos. Possibilidade de check-in antecipado e check-out tardio mediante reserva prévia e custo associado. O hotel tem o direito de recusar o pedido de check-in antecipado ou check-out tardio no caso de não ter disponibilidade. A idade mínima para efetuar o check-in no hotel é de 18 anos. No check-in será solicitado o documento identificativo a todos os elementos que compõem a reserva, pelo que deverão fazer-se acompanhar do mesmo.",
+        "title": "Check-in e Check-out"
+      },
+      "guarantee": {
+        "description": "A garantia da reserva implica a confirmação da liquidação da mesma através de crédito na nossa conta até à data mencionada. Para reservas no próprio dia, deverá facultar os dados de cartão de crédito para débito do valor da primeira noite, que garante a reserva, sendo que esse valor é não reembolsável.",
+        "title": "Política de Reservas"
+      },
+      "cancellation": {
+        "description": "As reservas poderão ser canceladas até 3 dias antes da data de entrada, não havendo lugar à cobrança de qualquer penalidade. Será cobrado o equivalente a 1 noite por quarto/cama, caso o cancelamento seja feito com menos de 3 dias antes da data de chegada. Em casos omissos ou não tipificados sobre o cancelamento das reservas, o hotel reserva-se o direito de aplicar a cláusula anteriormente mencionada.",
+        "title": "Poiítica de Cancelamento"
+      },
+      "children": {
+        "description": "As crianças até aos 3 anos, inclusive, têm estadia gratuita. Para as crianças dos 4 aos 12 anos, inclusive, será cobrado 50% do valor. A partir dos 13 anos, terá o valor cobrado como adulto. Para a colocação de cama extra, será cobrado o valor de 10€/noite. A capacidade máxima é de 1 cama extra por quarto. Qualquer tipo de cama extra ou berço apenas está disponível mediante confirmação do hotel.",
+        "title": "Política de Crianças"
+      }
+    },
+    "title": "Termos e Condições"
   }
 }
