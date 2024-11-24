@@ -128,7 +128,7 @@
         "title": "Entidade"
       },
       "schedule": {
-        "description": "Os horários de check-in e check-out podem variar mediante disponibilidade do quartos. Possibilidade de check-in antecipado e check-out tardio mediante reserva prévia e custo associado. O hotel tem o direito de recusar o pedido de check-in antecipado ou check-out tardio no caso de não ter disponibilidade. A idade mínima para efetuar o check-in no hotel é de 18 anos. No check-in será solicitado o documento identificativo a todos os elementos que compõem a reserva, pelo que deverão fazer-se acompanhar do mesmo.",
+        "description": "Os horários de check-in e check-out podem variar mediante disponibilidade do quartos. Possibilidade de check-in antecipado e check-out tardio mediante reserva prévia e custo associado. O hotel tem o direito de recusar o pedido de check-in antecipado ou check-out tardio no caso de não ter disponibilidade. A idade mínima para efetuar o check-in no hotel é de 18 anos. No check-in será solicitado o documento identificativo a todos os hóspedes que compõem a reserva.",
         "title": "Check-in e Check-out"
       },
       "guarantee": {
