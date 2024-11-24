@@ -81,7 +81,7 @@ const Footer = () => {
             RNET - 10101
           </a>
           <ul className="flex gap-2">
-            <li>{t.footer.legal.terms}</li>
+            <Link href="/terms">{t.footer.legal.terms}</Link>
             <li>{t.footer.legal.privacy}</li>
             <li>
               <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao">
