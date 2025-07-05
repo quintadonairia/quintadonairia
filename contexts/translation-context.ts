@@ -6,7 +6,7 @@ import en from "../locales/en.json";
 
 type TranslationKeys = typeof en;
 
-const TranslationContext = createContext<TranslationKeys | null>(null);
+const TranslationContext = createContext<TranslationKeys | undefined>(undefined);
 
 interface TranslationProviderProps {
   children: ReactNode;
