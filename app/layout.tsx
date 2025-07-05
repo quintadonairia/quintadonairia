@@ -4,7 +4,7 @@ import { TranslationProvider } from "../contexts/TranslationContext";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Quintadonairia",
+  title: "Quinta Dona Iria",
   description:
     "A wellness haven, combining wine and olive oil with the rich Portuguese cuisine",
   themeColor: "#faf6f0",
