@@ -1,6 +1,105 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-display: Fraunces;
+  --font-sans: Montserrat, ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif: Playfair Display, ui-serif, Georgia, Cambria, 'Times New Roman',
+    Times, serif;
+
+  --color-transparent: transparent;
+
+  --color-background-default: hsl(var(--color-background-default));
+  --color-background-inverse: hsl(var(--color-background-inverse));
+  --color-background-strong: hsl(var(--color-background-strong));
+  --color-background-subtle: hsl(var(--color-background-subtle));
+  --color-background-brand: hsl(var(--color-background-brand));
+
+  --color-foreground-default: hsl(var(--color-foreground-default));
+  --color-foreground-inverse: hsl(var(--color-foreground-inverse));
+  --color-foreground-strong: hsl(var(--color-foreground-strong));
+  --color-foreground-subtle: hsl(var(--color-foreground-subtle));
+  --color-foreground-brand: hsl(var(--color-foreground-brand));
+
+  --color-border-default: hsl(var(--color-border-default));
+  --color-border-inverse: hsl(var(--color-border-inverse));
+  --color-border-strong: hsl(var(--color-border-strong));
+  --color-border-subtle: hsl(var(--color-border-subtle));
+  --color-border-brand: hsl(var(--color-border-brand));
+
+  --color-light: #fcfaf8;
+  --color-dark: #151414;
+  --color-olive: #6e6e0c;
+  --color-burgundy: #810e2b;
+  --color-gold: #b88f14;
+
+  --text-body-small-default: 12px;
+  --text-body-small-default--line-height: 16px;
+  --text-body-small-default--font-weight: 400;
+  --text-body-small-subtle: 12px;
+  --text-body-small-subtle--line-height: 16px;
+  --text-body-small-subtle--font-weight: 500;
+  --text-body-medium-default: 14px;
+  --text-body-medium-default--line-height: 20px;
+  --text-body-medium-default--font-weight: 400;
+  --text-body-medium-subtle: 14px;
+  --text-body-medium-subtle--line-height: 20px;
+  --text-body-medium-subtle--font-weight: 500;
+  --text-body-medium-strong: 14px;
+  --text-body-medium-strong--line-height: 20px;
+  --text-body-medium-strong--font-weight: 600;
+  --text-body-large-default: 16px;
+  --text-body-large-default--line-height: 24px;
+  --text-body-large-default--font-weight: 400;
+  --text-body-large-subtle: 16px;
+  --text-body-large-subtle--line-height: 24px;
+  --text-body-large-subtle--font-weight: 500;
+  --text-body-large-strong: 16px;
+  --text-body-large-strong--line-height: 24px;
+  --text-body-large-strong--font-weight: 600;
+  --text-title-small-strong: 18px;
+  --text-title-small-strong--line-height: 26px;
+  --text-title-small-strong--font-weight: 600;
+  --text-title-small-strong--letter-spacing: -0.02em;
+  --text-title-medium-strong: 20px;
+  --text-title-medium-strong--line-height: 28px;
+  --text-title-medium-strong--font-weight: 600;
+  --text-title-medium-strong--letter-spacing: -0.02em;
+  --text-title-large-strong: 24px;
+  --text-title-large-strong--line-height: 32px;
+  --text-title-large-strong--font-weight: 600;
+  --text-title-large-strong--letter-spacing: -0.02em;
+  --text-display-small-regular: 32px;
+  --text-display-small-regular--line-height: 40px;
+  --text-display-small-regular--font-weight: 400;
+  --text-display-small-regular--letter-spacing: -0.02em;
+  --text-display-medium-strong: 40px;
+  --text-display-medium-strong--line-height: 48px;
+  --text-display-medium-strong--font-weight: 600;
+  --text-display-medium-strong--letter-spacing: -0.02em;
+  --text-display-large-strong: 48px;
+  --text-display-large-strong--line-height: 56px;
+  --text-display-large-strong--font-weight: 600;
+  --text-display-large-strong--letter-spacing: -0.02em;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 @layer default {
   html {
