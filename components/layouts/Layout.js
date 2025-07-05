@@ -1,7 +1,7 @@
-import { useState } from "react";
-import Footer from "../organisms/Footer";
-import Header from "../organisms/Header";
-import Menu from "../organisms/Menu";
+import { useState } from 'react';
+import Footer from '../organisms/Footer';
+import Header from '../organisms/Header';
+import Menu from '../organisms/Menu';
 
 export default function Layout({ children }) {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -11,7 +11,7 @@ export default function Layout({ children }) {
   };
 
   return (
-    <div className="flex flex-col bg-light">
+    <div className="bg-light flex flex-col">
       <Header
         handleMenuIsActive={handleMenuIsActive}
         isMenuActive={isMenuActive}

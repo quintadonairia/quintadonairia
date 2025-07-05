@@ -40,7 +40,7 @@ const Gallery = () => {
             >
               <img
                 src={slide.image}
-                className="aspect-[5/4] object-cover lg:aspect-[2/1] lg:max-w-screen-lg"
+                className="aspect-5/4 object-cover lg:aspect-2/1 lg:max-w-(--breakpoint-lg)"
               ></img>
               <div className="flex flex-row justify-between px-6 text-2xl text-white lg:text-4xl lg:text-stone-900">
                 <ArrowLeft
