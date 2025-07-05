@@ -3,7 +3,7 @@ import { FacebookLogo, InstagramLogo } from '@phosphor-icons/react';
 const Banner = ({ kicker, heading, description }) => {
   return (
     <div
-      className="flex w-full flex-col items-center gap-8 p-8 text-white lg:gap-12 lg:p-16"
+      className="text-light flex w-full flex-col items-center gap-8 p-8 lg:gap-12 lg:p-16"
       style={{
         backgroundImage:
           'linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)',
