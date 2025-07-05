@@ -12,7 +12,7 @@ export default function Terms() {
   const t = useTranslation();
   const pageTitle = `${t.global.brand} | ${t.terms.title}`;
 
-  const sections = Object.values(t.terms.sections);
+  const sections: Section[] = Object.values(t.terms.sections);
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
