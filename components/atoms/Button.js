@@ -1,18 +1,18 @@
+import { mergeTailwindClassNames } from '@/lib/utils';
 import Link from 'next/link';
-import { twMerge } from 'tailwind-merge';
 
 const styles = {
-  base: 'inline-flex w-fit cursor-pointer items-center gap-1 font-bold uppercase tracking-widest duration-200 hover:gap-2',
+  base: 'inline-flex w-fit cursor-pointer items-center gap-1 text-body-medium font-semibold uppercase tracking-widest duration-200 hover:gap-2',
   size: {
-    small: 'px-6 py-3 text-sm',
-    medium: 'px-8 py-4 text-sm',
-    large: 'px-10 py-5 text-sm',
+    small: 'px-6 py-3',
+    medium: 'px-8 py-4',
+    large: 'px-10 py-5',
   },
   variant: {
     brand:
-      'border-2 text-olive border-olive hover:bg-olive hover:text-light duration-300',
+      'border-2 text-foreground-brand-default border-border-brand-default hover:bg-background-brand-default hover:text-foreground-neutral-inverse duration-300',
     neutral:
-      'border-2 text-light border-light hover:bg-light hover:text-black duration-300',
+      'border-2 text-foreground-neutral-inverse border-border-neutral-default hover:bg-background-neutral-default hover:text-foreground-neutral-default duration-300',
   },
 };
 
@@ -21,7 +21,7 @@ const Button = ({ children, className, href, size, variant }) => {
     return (
       <Link
         href={href}
-        className={twMerge(
+        className={mergeTailwindClassNames(
           `${styles.base} ${styles.variant[variant]} ${styles.size[size]}`,
           `${className}`,
         )}
@@ -33,7 +33,7 @@ const Button = ({ children, className, href, size, variant }) => {
 
   return (
     <button
-      className={twMerge(
+      className={mergeTailwindClassNames(
         `${styles.base} ${styles.variant[variant]} ${styles.size[size]}`,
         `${className}`,
       )}
