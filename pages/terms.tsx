@@ -1,7 +1,7 @@
-import Head from "next/head";
-import Container from "../components/layouts/Container";
-import Hero from "../components/organisms/Hero";
-import { useTranslation } from "../contexts/TranslationContext";
+import Head from 'next/head';
+import Container from '../components/layouts/Container';
+import Hero from '../components/organisms/Hero';
+import { useTranslation } from '../contexts/TranslationContext';
 
 interface Section {
   title: string;
@@ -27,7 +27,7 @@ export default function Terms() {
         <section className="flex flex-col items-center gap-8 px-6 py-16 lg:gap-12 lg:p-32">
           {sections.map((section: Section, index) => (
             <section key={index} className="flex flex-col gap-4">
-              <h1 className="font-display text-display-small-regular tracking-tight text-foreground-default">
+              <h1 className="font-display text-display-small-regular text-foreground-default tracking-tight">
                 {section.title}
               </h1>
               <div className="text-foreground-strong">

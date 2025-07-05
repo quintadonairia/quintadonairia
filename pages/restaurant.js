@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Container from "../components/layouts/Container";
-import SectionHeader from "../components/molecules/SectionHeader";
-import Hero from "../components/organisms/Hero";
-import { useTranslation } from "../contexts/TranslationContext";
+import Head from 'next/head';
+import Container from '../components/layouts/Container';
+import SectionHeader from '../components/molecules/SectionHeader';
+import Hero from '../components/organisms/Hero';
+import { useTranslation } from '../contexts/TranslationContext';
 
 export default function Restaurant() {
   const t = useTranslation();

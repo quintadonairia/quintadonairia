@@ -1,4 +1,4 @@
-import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react";
+import { FacebookLogo, InstagramLogo } from '@phosphor-icons/react';
 
 const Banner = ({ kicker, heading, description }) => {
   return (
@@ -6,11 +6,11 @@ const Banner = ({ kicker, heading, description }) => {
       className="flex w-full flex-col items-center gap-8 p-8 text-white lg:gap-12 lg:p-16"
       style={{
         backgroundImage:
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)",
+          'linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/20211013-donairia-004.jpg)',
       }}
     >
       <div className="flex flex-col items-center">
-        <small className="pb-2 text-sm font-bold uppercase tracking-widest">
+        <small className="pb-2 text-sm font-bold tracking-widest uppercase">
           {kicker}
         </small>
         <div className="flex flex-col items-center gap-4 text-center">

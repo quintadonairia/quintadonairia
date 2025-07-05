@@ -15,7 +15,7 @@ const Room2 = ({
       <img
         src={imageSrc}
         alt={imageAlt}
-        className="aspect-[4/3] w-[32rem] object-cover"
+        className="aspect-4/3 w-lg object-cover"
       />
       <div className="flex flex-col items-center gap-4 text-center lg:px-16">
         <h1 className="font-serif text-3xl text-olive">{title}</h1>

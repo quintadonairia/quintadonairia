@@ -1,6 +1,6 @@
-import { ArrowRight } from "@phosphor-icons/react";
-import Link from "next/link";
-import { useTranslation } from "../../contexts/TranslationContext";
+import { ArrowRight } from '@phosphor-icons/react';
+import Link from 'next/link';
+import { useTranslation } from '../../contexts/TranslationContext';
 
 const Footer = () => {
   const t = useTranslation();
@@ -9,7 +9,7 @@ const Footer = () => {
   const year = currentDate.getFullYear();
 
   return (
-    <footer className="flex flex-col items-start gap-24 bg-stone-900 py-12 px-8 text-white lg:py-16 lg:px-32">
+    <footer className="text-light flex flex-col items-start gap-24 bg-stone-900 px-8 py-12 lg:px-32 lg:py-16">
       <div className="flex w-full flex-col gap-16 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-24">
           <div className="flex flex-col gap-16">
@@ -92,7 +92,7 @@ const Footer = () => {
         <p>
           {t.footer.signature}
           <a href="https://linkedin.com/in/zalodias" target="_blank">
-            {" "}
+            {' '}
             Gonçalo Dias
           </a>
         </p>
