@@ -1,12 +1,12 @@
 const Hero = ({ title, image }) => {
   return (
     <header
-      className="relative flex h-[32rem] w-full items-center justify-center bg-cover bg-center bg-no-repeat lg:h-screen"
+      className="relative flex h-128 w-full items-center justify-center bg-cover bg-center bg-no-repeat lg:h-screen"
       style={{
         backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ${image}`,
       }}
     >
-      <h1 className="max-w-screen-md px-8 font-serif text-3xl leading-snug text-white lg:max-w-screen-lg lg:text-5xl lg:leading-tight">
+      <h1 className="text-light max-w-(--breakpoint-md) px-8 font-serif text-3xl leading-snug lg:max-w-(--breakpoint-lg) lg:text-5xl lg:leading-tight">
         {title}
       </h1>
     </header>

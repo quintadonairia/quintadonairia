@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Button from "../components/atoms/Button";
-import Banner from "../components/molecules/Banner";
-import SectionHeader from "../components/molecules/SectionHeader";
-import Gallery from "../components/organisms/Gallery";
-import Hero from "../components/organisms/Hero";
-import { useTranslation } from "../contexts/TranslationContext";
+import Head from 'next/head';
+import Button from '../components/atoms/Button';
+import Banner from '../components/molecules/Banner';
+import SectionHeader from '../components/molecules/SectionHeader';
+import Gallery from '../components/organisms/Gallery';
+import Hero from '../components/organisms/Hero';
+import { useTranslation } from '../contexts/TranslationContext';
 
 export default function Home() {
   const t = useTranslation();
@@ -27,11 +27,11 @@ export default function Home() {
         <div className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24">
           <img
             src="/images/20220410-donairia-004.jpg"
-            className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
+            className="aspect-5/4 w-full object-cover lg:aspect-5/4 lg:w-xl"
           />
           <div className="flex flex-col gap-8 lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <h2 className="font-serif text-3xl text-olive lg:text-4xl">
+              <h2 className="text-olive font-serif text-3xl lg:text-4xl">
                 {t.home.lodging.subheading}
               </h2>
               <p className="leading-relaxed lg:max-w-prose">
@@ -63,11 +63,11 @@ export default function Home() {
           <img
             src="images/20211003-donairia-050.jpg"
             alt="A restaurant full of people dining in a cozy environment"
-            className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
+            className="aspect-5/4 w-full object-cover lg:aspect-5/4 lg:w-xl"
           />
           <div className="flex flex-col gap-8 lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <h2 className="font-serif text-3xl text-olive lg:text-4xl">
+              <h2 className="text-olive font-serif text-3xl lg:text-4xl">
                 {t.home.restaurant.subheading}
               </h2>
               <p className="leading-relaxed lg:max-w-prose">

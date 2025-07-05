@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Container from "../components/layouts/Container";
-import Split from "../components/layouts/Split";
-import Block from "../components/molecules/Block";
-import SectionHeader from "../components/molecules/SectionHeader";
-import Hero from "../components/organisms/Hero";
-import { useTranslation } from "../contexts/TranslationContext";
+import Head from 'next/head';
+import Container from '../components/layouts/Container';
+import Split from '../components/layouts/Split';
+import Block from '../components/molecules/Block';
+import SectionHeader from '../components/molecules/SectionHeader';
+import Hero from '../components/organisms/Hero';
+import { useTranslation } from '../contexts/TranslationContext';
 
 export default function Experiences() {
   const t = useTranslation();
@@ -29,7 +29,7 @@ export default function Experiences() {
         <img
           src="/images/20220306-donairia-001.jpg"
           alt=""
-          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
+          className="aspect-5/4 w-full object-cover lg:aspect-5/4 lg:w-xl"
         />
         <Block
           title={t.experiences.property.title}
@@ -40,7 +40,7 @@ export default function Experiences() {
         <img
           src="/images/20211003-donairia-022.jpg"
           alt=""
-          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
+          className="aspect-5/4 w-full object-cover lg:aspect-5/4 lg:w-xl"
         />
         <Block
           title={t.experiences.tastings.title}
@@ -51,7 +51,7 @@ export default function Experiences() {
         <img
           src="/images/20220319-donairia-006.jpg"
           alt=""
-          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
+          className="aspect-5/4 w-full object-cover lg:aspect-5/4 lg:w-xl"
         />
         <Block
           title={t.experiences.rooms.title}

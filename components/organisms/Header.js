@@ -1,9 +1,9 @@
-import { CallBell, List, X } from "@phosphor-icons/react";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { useTranslation } from "../../contexts/TranslationContext";
-import useScrollDirection from "../../hooks/useScrollDirection";
-import Button from "../atoms/Button";
+import { CallBell, List, X } from '@phosphor-icons/react';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { useTranslation } from '../../contexts/TranslationContext';
+import useScrollDirection from '../../hooks/useScrollDirection';
+import Button from '../atoms/Button';
 
 export default function Header({ handleMenuIsActive, isMenuActive }) {
   const t = useTranslation();
@@ -20,28 +20,28 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
         : setBackground(false);
     };
 
-    window.addEventListener("scroll", updateBackground);
+    window.addEventListener('scroll', updateBackground);
 
     return () => {
-      window.removeEventListener("scroll", updateBackground);
+      window.removeEventListener('scroll', updateBackground);
     };
   }, [background]);
 
   return (
     <header
       className={`fixed inset-x-0 top-0 z-20 flex items-center justify-between p-6 transition-all duration-500 ${
-        scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
-      } ${background ? "bg-stone-900" : "bg-transparent"}`}
+        scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
+      } ${background ? 'bg-stone-900' : 'bg-transparent'}`}
     >
       {isMenuActive ? (
         <X
-          className="cursor-pointer text-light"
+          className="text-light cursor-pointer"
           onClick={handleMenuIsActive}
           size={24}
         />
       ) : (
         <List
-          className="cursor-pointer text-light"
+          className="text-light cursor-pointer"
           onClick={handleMenuIsActive}
           size={24}
         />

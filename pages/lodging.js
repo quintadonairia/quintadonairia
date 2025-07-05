@@ -5,16 +5,16 @@ import {
   Shower,
   TelevisionSimple,
   WifiHigh,
-} from "@phosphor-icons/react";
-import Head from "next/head";
-import Container from "../components/layouts/Container";
-import Split from "../components/layouts/Split";
-import Block from "../components/molecules/Block";
-import Room from "../components/molecules/Room";
-import RoomFeature from "../components/molecules/RoomFeature";
-import SectionHeader from "../components/molecules/SectionHeader";
-import Hero from "../components/organisms/Hero";
-import { useTranslation } from "../contexts/TranslationContext";
+} from '@phosphor-icons/react';
+import Head from 'next/head';
+import Container from '../components/layouts/Container';
+import Split from '../components/layouts/Split';
+import Block from '../components/molecules/Block';
+import Room from '../components/molecules/Room';
+import RoomFeature from '../components/molecules/RoomFeature';
+import SectionHeader from '../components/molecules/SectionHeader';
+import Hero from '../components/organisms/Hero';
+import { useTranslation } from '../contexts/TranslationContext';
 
 export default function Lodging() {
   const t = useTranslation();
@@ -60,7 +60,7 @@ export default function Lodging() {
       <Container>
         <section className="flex flex-col items-center gap-8">
           <div>{t.lodging.features.title}</div>
-          <div className="grid max-w-screen-lg grid-cols-2 gap-16 lg:grid-cols-3">
+          <div className="grid max-w-(--breakpoint-lg) grid-cols-2 gap-16 lg:grid-cols-3">
             <RoomFeature icon={Bed} text={t.lodging.features.beds} />
             <RoomFeature icon={Shower} text={t.lodging.features.bathroom} />
             <RoomFeature icon={WifiHigh} text={t.lodging.features.wiFi} />
@@ -80,7 +80,7 @@ export default function Lodging() {
         <img
           src="/images/senjuti-kundu-GCI8dqi4uWM-unsplash.jpg"
           alt=""
-          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
+          className="aspect-5/4 w-full object-cover lg:aspect-5/4 lg:w-xl"
         />
         <Block
           title={t.lodging.amenities.family.title}
@@ -91,7 +91,7 @@ export default function Lodging() {
         <img
           src="/images/20220410-donairia-017.jpg"
           alt=""
-          className="aspect-[5/4] w-full object-cover lg:aspect-[5/4] lg:w-[36rem]"
+          className="aspect-5/4 w-full object-cover lg:aspect-5/4 lg:w-xl"
         />
         <Block
           title={t.lodging.amenities.accessibility.title}
