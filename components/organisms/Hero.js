@@ -6,7 +6,7 @@ const Hero = ({ title, image }) => {
         backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ${image}`,
       }}
     >
-      <h1 className="text-light max-w-(--breakpoint-md) px-8 font-serif text-3xl leading-snug lg:max-w-(--breakpoint-lg) lg:text-5xl lg:leading-tight">
+      <h1 className="text-foreground-neutral-inverse text-display-small lg:text-display-large max-w-(--breakpoint-md) px-8 font-serif leading-snug lg:max-w-(--breakpoint-lg) lg:leading-tight">
         {title}
       </h1>
     </header>

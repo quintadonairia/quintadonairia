@@ -20,45 +20,45 @@ export default function Contacts() {
       <section className="flex flex-col items-center gap-16 px-6 py-16 lg:flex-row lg:p-24">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-2">
-            <h1 className="text-olive font-serif text-3xl lg:text-4xl">
+            <h1 className="text-foreground-brand-default text-title-large lg:text-display-small font-serif">
               {t.contacts.heading}
             </h1>
             <p>{t.contacts.subheading}</p>
           </div>
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">
-              <small className="text-olive text-xs font-semibold tracking-wider uppercase">
+              <small className="text-foreground-brand-default text-body-small font-semibold tracking-wider uppercase">
                 {t.contacts.address}
               </small>
-              <p className="text-sm">
+              <p className="text-body-medium">
                 Rua Central nº35, Rio de Vide, Miranda do Corvo
               </p>
-              <p className="text-sm">3220-336 Coimbra</p>
+              <p className="text-body-medium">3220-336 Coimbra</p>
             </div>
             <div className="flex flex-col gap-1">
-              <small className="text-olive text-xs font-semibold tracking-wider uppercase">
+              <small className="text-foreground-brand-default text-body-small font-semibold tracking-wider uppercase">
                 {t.contacts.email}
               </small>
-              <p className="text-sm">hello@quintadonairia.com</p>
+              <p className="text-body-medium">hello@quintadonairia.com</p>
             </div>
             <div className="flex flex-col gap-1">
-              <small className="text-olive text-xs font-semibold tracking-wider uppercase">
+              <small className="text-foreground-brand-default text-body-small font-semibold tracking-wider uppercase">
                 {t.contacts.phone}
               </small>
               <div className="flex items-center gap-2">
-                <p className="text-sm">+351 924 733 556</p>
+                <p className="text-body-medium">+351 924 733 556</p>
                 <Tooltip text={t.contacts.phoneDisclaimer}>
-                  <Info className="text-stone-400" />
+                  <Info className="text-foreground-neutral-faded" />
                 </Tooltip>
               </div>
             </div>
           </div>
           <ul className="flex gap-4">
             <a href="https://www.facebook.com/quintadonairia" target="_blank">
-              <FacebookLogo className="hover:text-olive text-xl duration-200 lg:text-2xl" />
+              <FacebookLogo className="hover:text-foreground-brand-default text-title-medium lg:text-title-large duration-200" />
             </a>
             <a href="https://www.instagram.com/quintadonairia/" target="_blank">
-              <InstagramLogo className="hover:text-olive text-xl duration-200 lg:text-2xl" />
+              <InstagramLogo className="hover:text-foreground-brand-default text-title-medium lg:text-title-large duration-200" />
             </a>
           </ul>
         </div>

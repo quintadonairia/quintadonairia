@@ -9,7 +9,7 @@ const Footer = () => {
   const year = currentDate.getFullYear();
 
   return (
-    <footer className="text-light flex flex-col items-start gap-24 bg-stone-900 px-8 py-12 lg:px-32 lg:py-16">
+    <footer className="text-foreground-neutral-inverse bg-background-neutral-inverse flex flex-col items-start gap-24 px-8 py-12 lg:px-32 lg:py-16">
       <div className="flex w-full flex-col gap-16 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-24">
           <div className="flex flex-col gap-16">
@@ -24,14 +24,14 @@ const Footer = () => {
               <a
                 href="https://www.google.com/maps/dir//Quinta+Dona+Iria,+R.+Central+n%C2%BA35,+3220-336+Coimbra/@40.1713618,-8.3993411,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd22f170ee4c62c9:0xc108f06628ebaecb!2m2!1d-8.3320875!2d40.1440357"
                 target="_blank"
-                className="flex items-center gap-1 text-sm duration-200 hover:gap-2"
+                className="text-body-medium flex items-center gap-1 duration-200 hover:gap-2"
               >
                 <ArrowRight />
                 <p>{t.footer.links.maps}</p>
               </a>
               <a
                 href="mailto:hello@quintadonairia.com"
-                className="flex items-center gap-1 text-sm duration-200 hover:gap-2"
+                className="text-body-medium flex items-center gap-1 duration-200 hover:gap-2"
               >
                 <ArrowRight />
                 {t.footer.links.email}
@@ -71,7 +71,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex w-full flex-col gap-12 text-sm lg:flex-row lg:items-start lg:justify-between lg:gap-0">
+      <div className="text-body-medium flex w-full flex-col gap-12 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
         <div className="flex flex-col gap-2">
           <p>© {year} Quinta Dona Iria</p>
           <a

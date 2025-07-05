@@ -1,19 +1,19 @@
-import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
-import { useState } from "react";
+import { ArrowLeft, ArrowRight } from '@phosphor-icons/react';
+import { useState } from 'react';
 
 const Gallery = () => {
   const slides = [
     {
       id: 1,
-      image: "/images/20220306-donairia-001.jpg",
+      image: '/images/20220306-donairia-001.jpg',
     },
     {
       id: 2,
-      image: "/images/20211003-donairia-022.jpg",
+      image: '/images/20211003-donairia-022.jpg',
     },
     {
       id: 3,
-      image: "/images/20220319-donairia-006.jpg",
+      image: '/images/20220319-donairia-006.jpg',
     },
   ];
 
@@ -34,7 +34,7 @@ const Gallery = () => {
           return (
             <div
               className={`relative flex flex-col gap-6 lg:px-32 ${
-                index === slideIndex ? "block" : "hidden"
+                index === slideIndex ? 'block' : 'hidden'
               }`}
               key={slide.id}
             >
@@ -44,11 +44,11 @@ const Gallery = () => {
               ></img>
               <div className="flex flex-row justify-between px-6 text-2xl text-white lg:text-4xl lg:text-stone-900">
                 <ArrowLeft
-                  className="absolute left-6 top-1/2 cursor-pointer duration-200 hover:scale-110 hover:text-olive lg:left-12"
+                  className="hover:text-foreground-brand-default absolute top-1/2 left-6 cursor-pointer duration-200 hover:scale-110 lg:left-12"
                   onClick={prevSlide}
                 />
                 <ArrowRight
-                  className="absolute right-6 top-1/2 cursor-pointer duration-200 hover:scale-110 hover:text-olive lg:right-12"
+                  className="hover:text-foreground-brand-default absolute top-1/2 right-6 cursor-pointer duration-200 hover:scale-110 lg:right-12"
                   onClick={nextSlide}
                 />
               </div>
