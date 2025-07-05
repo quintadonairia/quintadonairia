@@ -11,7 +11,7 @@ export default function Layout({ children }) {
   };
 
   return (
-    <div className="bg-light flex flex-col">
+    <div className="bg-background-neutral-default flex flex-col">
       <Header
         handleMenuIsActive={handleMenuIsActive}
         isMenuActive={isMenuActive}
