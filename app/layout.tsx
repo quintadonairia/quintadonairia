@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Layout from "../components/layouts/Layout";
-import { TranslationProvider } from "../contexts/TranslationContext";
+import { TranslationProvider } from "../contexts/translation-context";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {

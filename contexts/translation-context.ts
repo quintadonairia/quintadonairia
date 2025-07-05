@@ -4,12 +4,7 @@ import { createContext, useContext, ReactNode } from "react";
 import pt from "../locales/pt.json";
 import en from "../locales/en.json";
 
-// Define the translation type based on your JSON structure
 type TranslationKeys = typeof en;
-
-interface TranslationContextType {
-  [key: string]: string;
-}
 
 const TranslationContext = createContext<TranslationKeys | null>(null);
 

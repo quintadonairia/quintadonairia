@@ -1,7 +1,7 @@
 import { CallBell, List, X } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useTranslation } from "../../contexts/TranslationContext";
+import { useTranslation } from "../../contexts/translation-context";
 import useScrollDirection from "../../hooks/useScrollDirection";
 import Button from "../atoms/Button";
 

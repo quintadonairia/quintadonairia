@@ -1,6 +1,6 @@
 import { ArrowRight } from "@phosphor-icons/react";
 import Link from "next/link";
-import { useTranslation } from "../../contexts/TranslationContext";
+import { useTranslation } from "../../contexts/translation-context";
 
 const Footer = () => {
   const t = useTranslation();

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Container from "../components/layouts/Container";
 import Hero from "../components/organisms/Hero";
-import { useTranslation } from "../contexts/TranslationContext";
+import { useTranslation } from "../contexts/translation-context";
 
 interface Section {
   title: string;

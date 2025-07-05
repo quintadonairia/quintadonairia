@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Layout from "../components/layouts/Layout";
-import { TranslationProvider } from "../contexts/TranslationContext";
+import { TranslationProvider } from "../contexts/translation-context";
 import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {

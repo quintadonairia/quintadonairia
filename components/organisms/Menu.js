@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useTranslation } from "../../contexts/TranslationContext";
+import { useTranslation } from "../../contexts/translation-context";
 
 export default function Menu({ handleMenuIsActive, isMenuActive }) {
   const t = useTranslation();
