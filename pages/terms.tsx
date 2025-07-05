@@ -24,10 +24,10 @@ export default function Terms() {
         image="url(images/20220319-donairia-005.jpg)"
       />
       <Container>
-        <section className="flex flex-col items-center gap-8 px-6 py-16 lg:gap-12 lg:p-32">
+        <section className="flex flex-col items-center gap-12 px-6 py-16 lg:gap-16">
           {sections.map((section: Section, index) => (
             <section key={index} className="flex flex-col gap-4">
-              <h1 className="font-display text-display-small-regular text-foreground-default tracking-tight">
+              <h1 className="font-display text-display-small text-foreground-default tracking-tight">
                 {section.title}
               </h1>
               <div className="text-foreground-strong">
