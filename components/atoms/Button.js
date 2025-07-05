@@ -10,7 +10,7 @@ const styles = {
   },
   variant: {
     brand:
-      'border-2 text-olive border-olive hover:bg-olive hover:text-white duration-300',
+      'border-2 text-olive border-olive hover:bg-olive hover:text-light duration-300',
     neutral:
       'border-2 text-light border-light hover:bg-light hover:text-black duration-300',
   },
