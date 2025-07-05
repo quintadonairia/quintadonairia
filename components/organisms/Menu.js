@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { useTranslation } from "../../contexts/TranslationContext";
+import Link from 'next/link';
+import { useTranslation } from '../../contexts/TranslationContext';
 
 export default function Menu({ handleMenuIsActive, isMenuActive }) {
   const t = useTranslation();
@@ -7,34 +7,34 @@ export default function Menu({ handleMenuIsActive, isMenuActive }) {
   const routes = [
     {
       name: t.navigation.lodging,
-      href: "/lodging",
+      href: '/lodging',
     },
     {
       name: t.navigation.experiences,
-      href: "/experiences",
+      href: '/experiences',
     },
     {
       name: t.navigation.restaurant,
-      href: "/restaurant",
+      href: '/restaurant',
     },
     {
       name: t.navigation.contacts,
-      href: "/contacts",
+      href: '/contacts',
     },
   ];
 
   return (
     <div
-      className={`fixed inset-0 top-0 z-10 grid place-items-center bg-stone-900 text-light transition-opacity duration-240 ${
-        isMenuActive ? "opacity-100" : "opacity-0"
+      className={`bg-background-neutral-inverse text-foreground-neutral-inverse fixed inset-0 top-0 z-10 grid place-items-center transition-opacity duration-240 ${
+        isMenuActive ? 'opacity-100' : 'opacity-0'
       }`}
-      inert={isMenuActive ? null : ""}
+      inert={isMenuActive ? null : ''}
     >
-      <ul className="flex cursor-pointer flex-col gap-8 text-center font-serif text-3xl md:gap-12 md:text-5xl">
+      <ul className="text-display-medium md:text-display-large flex cursor-pointer flex-col gap-8 text-center font-serif md:gap-12">
         {routes.map((route) => (
           <Link
             className={`transition-transform duration-480 ${
-              isMenuActive ? "translate-y-0" : "-translate-y-4"
+              isMenuActive ? 'translate-y-0' : '-translate-y-4'
             }`}
             href={route.href}
             key={route.href}

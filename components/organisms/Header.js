@@ -31,17 +31,17 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
     <header
       className={`fixed inset-x-0 top-0 z-20 flex items-center justify-between p-6 transition-all duration-500 ${
         scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
-      } ${background ? 'bg-stone-900' : 'bg-transparent'}`}
+      } ${background ? 'bg-background-neutral-inverse' : 'bg-transparent'}`}
     >
       {isMenuActive ? (
         <X
-          className="text-light cursor-pointer"
+          className="text-foreground-neutral-inverse cursor-pointer"
           onClick={handleMenuIsActive}
           size={24}
         />
       ) : (
         <List
-          className="text-light cursor-pointer"
+          className="text-foreground-neutral-inverse cursor-pointer"
           onClick={handleMenuIsActive}
           size={24}
         />
@@ -57,7 +57,7 @@ export default function Header({ handleMenuIsActive, isMenuActive }) {
         />
       </Link>
       <a className="md:hidden" href={t.global.booking.link}>
-        <CallBell className="text-light" size={24} />
+        <CallBell className="text-foreground-neutral-inverse" size={24} />
       </a>
       <Button
         className="hidden md:inline-flex"

@@ -31,7 +31,7 @@ export default function Home() {
           />
           <div className="flex flex-col gap-8 lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <h2 className="text-olive font-serif text-3xl lg:text-4xl">
+              <h2 className="text-foreground-brand-default text-display-small font-serif">
                 {t.home.lodging.subheading}
               </h2>
               <p className="leading-relaxed lg:max-w-prose">
@@ -67,7 +67,7 @@ export default function Home() {
           />
           <div className="flex flex-col gap-8 lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <h2 className="text-olive font-serif text-3xl lg:text-4xl">
+              <h2 className="text-foreground-brand-default text-display-small font-serif">
                 {t.home.restaurant.subheading}
               </h2>
               <p className="leading-relaxed lg:max-w-prose">

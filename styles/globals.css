@@ -19,6 +19,7 @@
   --border-neutral-strong: hsl(0 0% 64%);
   --border-neutral-subtle: hsl(0 0% 88%);
   --border-neutral-faded: hsl(0 0% 92%);
+  --border-neutral-inverse: hsl(0 0% 8%);
   --border-brand-default: hsl(60, 80%, 24%);
 }
 
@@ -47,6 +48,7 @@
   --color-border-neutral-strong: var(--border-neutral-strong);
   --color-border-neutral-subtle: var(--border-neutral-subtle);
   --color-border-neutral-faded: var(--border-neutral-faded);
+  --color-border-neutral-inverse: var(--border-neutral-inverse);
   --color-border-brand-default: var(--border-brand-default);
 
   --font-*: initial;
