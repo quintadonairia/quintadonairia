@@ -14,6 +14,12 @@ export default function BookingProgress({
       <button
         className="p-2 bg-stone-900/5 rounded-full"
         onClick={navigateToPreviousStep}
+        disabled={activeStepIndex === 0}
+        aria-disabled={activeStepIndex === 0}
+        style={{
+          opacity: activeStepIndex === 0 ? 0.5 : 1,
+          cursor: activeStepIndex === 0 ? "not-allowed" : "pointer",
+        }}
       >
         <ArrowLeft></ArrowLeft>
       </button>
