@@ -28,7 +28,7 @@ export default function Menu({ handleMenuIsActive, isMenuActive }) {
       className={`bg-background-neutral-inverse text-foreground-neutral-inverse fixed inset-0 top-0 z-10 grid place-items-center transition-opacity duration-240 ${
         isMenuActive ? 'opacity-100' : 'opacity-0'
       }`}
-      inert={isMenuActive ? null : ''}
+      inert={isMenuActive ? false : true}
     >
       <ul className="text-display-medium md:text-display-large flex cursor-pointer flex-col gap-8 text-center font-serif md:gap-12">
         {routes.map((route) => (
