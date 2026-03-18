@@ -52,13 +52,13 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://portugalcleanandsafe.com/place/1654747"
+              href="https://www.booking.com/hotel/pt/quinta-dona-iria-coimbra.html"
               target="_blank"
             >
               <img
-                src="/graphics/clean-safe-logo.svg"
-                alt="Clean & Safe logo"
-                className="w-20"
+                src="/images/traveller-review-awards-2026.png"
+                alt="Booking.com Traveller Review Awards 2026"
+                className="w-60"
               />
             </a>
           </div>
