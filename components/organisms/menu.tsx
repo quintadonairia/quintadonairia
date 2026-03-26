@@ -1,5 +1,5 @@
+import { useTranslation } from '@/contexts/translation-context';
 import Link from 'next/link';
-import { useTranslation } from '../../contexts/TranslationContext';
 
 interface MenuProps {
   handleMenuIsActive: () => void;

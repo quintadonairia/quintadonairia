@@ -1,7 +1,7 @@
+import { Footer } from '@/components/organisms/footer';
+import { Header } from '@/components/organisms/header';
+import { Menu } from '@/components/organisms/menu';
 import { useState } from 'react';
-import { Footer } from '../organisms/Footer';
-import { Header } from '../organisms/Header';
-import { Menu } from '../organisms/Menu';
 
 interface LayoutProps {
   children: React.ReactNode;

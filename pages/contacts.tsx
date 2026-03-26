@@ -1,12 +1,12 @@
-import { FacebookLogo, Info, InstagramLogo } from '@phosphor-icons/react'
-import Head from 'next/head'
-import { Tooltip } from '../components/atoms/Tooltip'
-import { Hero } from '../components/organisms/Hero'
-import { useTranslation } from '../contexts/TranslationContext'
+import { Tooltip } from '@/components/atoms/tooltip';
+import { Hero } from '@/components/organisms/hero';
+import { useTranslation } from '@/contexts/translation-context';
+import { FacebookLogo, Info, InstagramLogo } from '@phosphor-icons/react';
+import Head from 'next/head';
 
 export default function Contacts() {
-  const t = useTranslation()
-  const pageTitle = `${t.global.brand} | ${t.navigation.contacts}`
+  const t = useTranslation();
+  const pageTitle = `${t.global.brand} | ${t.navigation.contacts}`;
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
@@ -72,5 +72,5 @@ export default function Contacts() {
         />
       </section>
     </div>
-  )
+  );
 }

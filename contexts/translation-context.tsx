@@ -1,6 +1,6 @@
+import en from '@/locales/en.json';
+import pt from '@/locales/pt.json';
 import { createContext, useContext } from 'react';
-import en from '../locales/en.json';
-import pt from '../locales/pt.json';
 
 type Translations = typeof en;
 

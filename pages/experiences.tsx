@@ -1,14 +1,14 @@
-import Head from 'next/head'
-import { Container } from '../components/layouts/Container'
-import { Split } from '../components/layouts/Split'
-import { Block } from '../components/molecules/Block'
-import { SectionHeader } from '../components/molecules/SectionHeader'
-import { Hero } from '../components/organisms/Hero'
-import { useTranslation } from '../contexts/TranslationContext'
+import { Container } from '@/components/layouts/container';
+import { Split } from '@/components/layouts/split';
+import { Block } from '@/components/molecules/block';
+import { SectionHeader } from '@/components/molecules/section-header';
+import { Hero } from '@/components/organisms/hero';
+import { useTranslation } from '@/contexts/translation-context';
+import Head from 'next/head';
 
 export default function Experiences() {
-  const t = useTranslation()
-  const pageTitle = `${t.global.brand} | ${t.navigation.experiences}`
+  const t = useTranslation();
+  const pageTitle = `${t.global.brand} | ${t.navigation.experiences}`;
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
@@ -59,5 +59,5 @@ export default function Experiences() {
         />
       </Split>
     </div>
-  )
+  );
 }

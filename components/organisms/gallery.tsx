@@ -1,9 +1,9 @@
-import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
-import { useState } from 'react'
+import { ArrowLeft, ArrowRight } from '@phosphor-icons/react';
+import { useState } from 'react';
 
 interface Slide {
-  id: number
-  image: string
+  id: number;
+  image: string;
 }
 
 const slides: Slide[] = [
@@ -19,19 +19,19 @@ const slides: Slide[] = [
     id: 3,
     image: '/images/20220319-donairia-006.jpg',
   },
-]
+];
 
 export function Gallery() {
-  const [slideIndex, setSlideIndex] = useState(0)
-  const length = slides.length
+  const [slideIndex, setSlideIndex] = useState(0);
+  const length = slides.length;
 
   const prevSlide = () => {
-    setSlideIndex(slideIndex === 0 ? length - 1 : slideIndex - 1)
-  }
+    setSlideIndex(slideIndex === 0 ? length - 1 : slideIndex - 1);
+  };
 
   const nextSlide = () => {
-    setSlideIndex(slideIndex === length - 1 ? 0 : slideIndex + 1)
-  }
+    setSlideIndex(slideIndex === length - 1 ? 0 : slideIndex + 1);
+  };
 
   return (
     <section className="flex flex-col gap-6">
@@ -59,9 +59,9 @@ export function Gallery() {
                 />
               </div>
             </div>
-          )
+          );
         })}
       </div>
     </section>
-  )
+  );
 }
