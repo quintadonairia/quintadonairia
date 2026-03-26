@@ -1,12 +1,12 @@
-import { FacebookLogo, Info, InstagramLogo } from '@phosphor-icons/react';
-import Head from 'next/head';
-import Tooltip from '../components/atoms/Tooltip';
-import Hero from '../components/organisms/Hero';
-import { useTranslation } from '../contexts/TranslationContext';
+import { FacebookLogo, Info, InstagramLogo } from '@phosphor-icons/react'
+import Head from 'next/head'
+import { Tooltip } from '../components/atoms/Tooltip'
+import { Hero } from '../components/organisms/Hero'
+import { useTranslation } from '../contexts/TranslationContext'
 
 export default function Contacts() {
-  const t = useTranslation();
-  const pageTitle = `${t.global.brand} | ${t.navigation.contacts}`;
+  const t = useTranslation()
+  const pageTitle = `${t.global.brand} | ${t.navigation.contacts}`
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
@@ -66,11 +66,11 @@ export default function Contacts() {
         <iframe
           className="h-96 w-full lg:w-160"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.921164002513!2d-8.334276185146324!3d40.1440397801037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f170ee4c62c9%3A0xc108f06628ebaecb!2sQuinta%20Dona%20Iria!5e0!3m2!1sen!2spt!4v1648913488549!5m2!1sen!2spt"
-          allowFullScreen=""
+          allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        />
       </section>
     </div>
-  );
+  )
 }

@@ -5,20 +5,20 @@ import {
   Shower,
   TelevisionSimple,
   WifiHigh,
-} from '@phosphor-icons/react';
-import Head from 'next/head';
-import Container from '../components/layouts/Container';
-import Split from '../components/layouts/Split';
-import Block from '../components/molecules/Block';
-import Room from '../components/molecules/Room';
-import RoomFeature from '../components/molecules/RoomFeature';
-import SectionHeader from '../components/molecules/SectionHeader';
-import Hero from '../components/organisms/Hero';
-import { useTranslation } from '../contexts/TranslationContext';
+} from '@phosphor-icons/react'
+import Head from 'next/head'
+import { Container } from '../components/layouts/Container'
+import { Split } from '../components/layouts/Split'
+import { Block } from '../components/molecules/Block'
+import { Room } from '../components/molecules/Room'
+import { RoomFeature } from '../components/molecules/RoomFeature'
+import { SectionHeader } from '../components/molecules/SectionHeader'
+import { Hero } from '../components/organisms/Hero'
+import { useTranslation } from '../contexts/TranslationContext'
 
 export default function Lodging() {
-  const t = useTranslation();
-  const pageTitle = `${t.global.brand} | ${t.navigation.lodging}`;
+  const t = useTranslation()
+  const pageTitle = `${t.global.brand} | ${t.navigation.lodging}`
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
@@ -99,5 +99,5 @@ export default function Lodging() {
         />
       </Split>
     </div>
-  );
+  )
 }
