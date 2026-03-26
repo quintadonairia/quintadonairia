@@ -1,6 +1,12 @@
 import { FacebookLogo, InstagramLogo } from '@phosphor-icons/react';
 
-const Banner = ({ kicker, heading, description }) => {
+interface BannerProps {
+  kicker: string;
+  heading: string;
+  description: string;
+}
+
+export function Banner({ kicker, heading, description }: BannerProps) {
   return (
     <div
       className="text-foreground-neutral-inverse flex w-full flex-col items-center gap-8 p-8 lg:gap-12 lg:p-16"
@@ -30,6 +36,4 @@ const Banner = ({ kicker, heading, description }) => {
       </ul>
     </div>
   );
-};
-
-export default Banner;
+}

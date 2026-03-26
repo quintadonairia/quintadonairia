@@ -1,4 +1,9 @@
-const Tooltip = ({ text, children }) => {
+interface TooltipProps {
+  text: string;
+  children: React.ReactNode;
+}
+
+export function Tooltip({ text, children }: TooltipProps) {
   return (
     <div className="group relative" role="tooltip">
       {children}
@@ -7,6 +12,4 @@ const Tooltip = ({ text, children }) => {
       </span>
     </div>
   );
-};
-
-export default Tooltip;
+}

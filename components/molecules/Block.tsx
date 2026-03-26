@@ -1,6 +1,13 @@
-import Button from '../atoms/Button';
+import { Button } from '../atoms/Button';
 
-const Block = ({ title, text, action, label }) => {
+interface BlockProps {
+  title: string;
+  text: string;
+  action?: boolean;
+  label?: string;
+}
+
+export function Block({ title, text, action, label }: BlockProps) {
   return (
     <div className="flex flex-col gap-8 lg:w-1/2">
       <div className="flex flex-col gap-4">
@@ -16,6 +23,4 @@ const Block = ({ title, text, action, label }) => {
       )}
     </div>
   );
-};
-
-export default Block;
+}

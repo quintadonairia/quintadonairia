@@ -1,4 +1,14 @@
-const SectionHeader = ({ kicker, heading, subheading }) => {
+interface SectionHeaderProps {
+  kicker?: string;
+  heading: string;
+  subheading?: string;
+}
+
+export function SectionHeader({
+  kicker,
+  heading,
+  subheading,
+}: SectionHeaderProps) {
   return (
     <header className="flex flex-col items-center gap-6 text-center">
       <small className="text-body-medium font-semibold tracking-widest uppercase">
@@ -10,6 +20,4 @@ const SectionHeader = ({ kicker, heading, subheading }) => {
       <p className="leading-relaxed lg:max-w-prose">{subheading}</p>
     </header>
   );
-};
-
-export default SectionHeader;
+}
