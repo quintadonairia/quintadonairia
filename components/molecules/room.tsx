@@ -1,5 +1,5 @@
+import { Button } from '@/components/atoms/button';
 import { ArrowRight } from '@phosphor-icons/react';
-import { Button } from '../atoms/Button';
 
 interface RoomProps {
   imageSrc: string;

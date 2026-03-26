@@ -1,12 +1,12 @@
-import Head from 'next/head'
-import { Container } from '../components/layouts/Container'
-import { SectionHeader } from '../components/molecules/SectionHeader'
-import { Hero } from '../components/organisms/Hero'
-import { useTranslation } from '../contexts/TranslationContext'
+import { Container } from '@/components/layouts/container';
+import { SectionHeader } from '@/components/molecules/section-header';
+import { Hero } from '@/components/organisms/hero';
+import { useTranslation } from '@/contexts/translation-context';
+import Head from 'next/head';
 
 export default function Restaurant() {
-  const t = useTranslation()
-  const pageTitle = `${t.global.brand} | ${t.navigation.restaurant}`
+  const t = useTranslation();
+  const pageTitle = `${t.global.brand} | ${t.navigation.restaurant}`;
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
@@ -46,5 +46,5 @@ export default function Restaurant() {
         </div>
       </section>
     </div>
-  )
+  );
 }

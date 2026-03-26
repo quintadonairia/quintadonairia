@@ -1,14 +1,14 @@
-import Head from 'next/head'
-import { Button } from '../components/atoms/Button'
-import { Banner } from '../components/molecules/Banner'
-import { SectionHeader } from '../components/molecules/SectionHeader'
-import { Gallery } from '../components/organisms/Gallery'
-import { Hero } from '../components/organisms/Hero'
-import { useTranslation } from '../contexts/TranslationContext'
+import { Button } from '@/components/atoms/button';
+import { Banner } from '@/components/molecules/banner';
+import { SectionHeader } from '@/components/molecules/section-header';
+import { Gallery } from '@/components/organisms/gallery';
+import { Hero } from '@/components/organisms/hero';
+import { useTranslation } from '@/contexts/translation-context';
+import Head from 'next/head';
 
 export default function Home() {
-  const t = useTranslation()
-  const pageTitle = `${t.global.brand} | ${t.navigation.home}`
+  const t = useTranslation();
+  const pageTitle = `${t.global.brand} | ${t.navigation.home}`;
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
@@ -86,5 +86,5 @@ export default function Home() {
         description={t.home.banner.description}
       />
     </div>
-  )
+  );
 }

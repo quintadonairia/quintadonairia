@@ -1,12 +1,12 @@
-import { ArrowRight } from '@phosphor-icons/react'
-import Link from 'next/link'
-import { useTranslation } from '../../contexts/TranslationContext'
+import { useTranslation } from '@/contexts/translation-context';
+import { ArrowRight } from '@phosphor-icons/react';
+import Link from 'next/link';
 
 export function Footer() {
-  const t = useTranslation()
+  const t = useTranslation();
 
-  const currentDate = new Date()
-  const year = currentDate.getFullYear()
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
 
   return (
     <footer className="text-foreground-neutral-inverse bg-background-neutral-inverse flex flex-col items-start gap-24 px-8 py-12 lg:px-32 lg:py-16">
@@ -98,5 +98,5 @@ export function Footer() {
         </p>
       </div>
     </footer>
-  )
+  );
 }

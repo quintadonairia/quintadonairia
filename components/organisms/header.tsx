@@ -1,9 +1,9 @@
+import { Button } from '@/components/atoms/button';
+import { useTranslation } from '@/contexts/translation-context';
 import useScrollDirection from '@/hooks/use-scroll-direction';
 import { CallBell, List, X } from '@phosphor-icons/react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { useTranslation } from '../../contexts/TranslationContext';
-import { Button } from '../atoms/Button';
 
 interface HeaderProps {
   handleMenuIsActive: () => void;
