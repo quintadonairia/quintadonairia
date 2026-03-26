@@ -1,18 +1,13 @@
-import Head from 'next/head';
-import Container from '../components/layouts/Container';
-import Hero from '../components/organisms/Hero';
-import { useTranslation } from '../contexts/TranslationContext';
-
-interface Section {
-  title: string;
-  description: string;
-}
+import Head from 'next/head'
+import { Container } from '../components/layouts/Container'
+import { Hero } from '../components/organisms/Hero'
+import { useTranslation } from '../contexts/TranslationContext'
 
 export default function Terms() {
-  const t = useTranslation();
-  const pageTitle = `${t.global.brand} | ${t.terms.title}`;
+  const t = useTranslation()
+  const pageTitle = `${t.global.brand} | ${t.terms.title}`
 
-  const sections: Section[] = Object.values(t.terms.sections);
+  const sections = Object.values(t.terms.sections)
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
@@ -25,7 +20,7 @@ export default function Terms() {
       />
       <Container>
         <section className="flex flex-col items-center gap-12 px-6 py-16 lg:gap-16">
-          {sections.map((section: Section, index) => (
+          {sections.map((section, index) => (
             <section key={index} className="flex flex-col gap-4">
               <h1 className="font-display text-display-small text-foreground-default tracking-tight">
                 {section.title}
@@ -38,5 +33,5 @@ export default function Terms() {
         </section>
       </Container>
     </div>
-  );
+  )
 }
