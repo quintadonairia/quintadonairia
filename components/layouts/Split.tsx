@@ -1,4 +1,9 @@
-const Split = ({ children, direction }) => {
+interface SplitProps {
+  children: React.ReactNode;
+  direction: 'normal' | 'reverse';
+}
+
+export function Split({ children, direction }: SplitProps) {
   const directions = {
     normal: 'flex-col lg:flex-row',
     reverse: 'flex-col lg:flex-row-reverse',
@@ -11,6 +16,4 @@ const Split = ({ children, direction }) => {
       {children}
     </section>
   );
-};
-
-export default Split;
+}

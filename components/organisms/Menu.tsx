@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import { useTranslation } from '../../contexts/TranslationContext';
 
-export default function Menu({ handleMenuIsActive, isMenuActive }) {
+interface MenuProps {
+  handleMenuIsActive: () => void;
+  isMenuActive: boolean;
+}
+
+export function Menu({ handleMenuIsActive, isMenuActive }: MenuProps) {
   const t = useTranslation();
 
   const routes = [

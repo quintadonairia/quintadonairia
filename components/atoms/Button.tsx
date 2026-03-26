@@ -16,7 +16,21 @@ const styles = {
   },
 };
 
-const Button = ({ children, className, href, size, variant }) => {
+interface ButtonProps {
+  children: React.ReactNode;
+  className?: string;
+  href?: string;
+  size: keyof typeof styles.size;
+  variant: keyof typeof styles.variant;
+}
+
+export function Button({
+  children,
+  className,
+  href,
+  size,
+  variant,
+}: ButtonProps) {
   if (href) {
     return (
       <Link
@@ -41,6 +55,4 @@ const Button = ({ children, className, href, size, variant }) => {
       {children}
     </button>
   );
-};
-
-export default Button;
+}

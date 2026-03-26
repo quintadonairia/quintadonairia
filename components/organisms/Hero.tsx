@@ -1,4 +1,9 @@
-const Hero = ({ title, image }) => {
+interface HeroProps {
+  title: string;
+  image: string;
+}
+
+export function Hero({ title, image }: HeroProps) {
   return (
     <header
       className="relative flex h-128 w-full items-center justify-center bg-cover bg-center bg-no-repeat lg:h-screen"
@@ -11,6 +16,4 @@ const Hero = ({ title, image }) => {
       </h1>
     </header>
   );
-};
-
-export default Hero;
+}

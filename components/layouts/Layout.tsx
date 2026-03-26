@@ -1,9 +1,13 @@
 import { useState } from 'react';
-import Footer from '../organisms/Footer';
-import Header from '../organisms/Header';
-import Menu from '../organisms/Menu';
+import { Footer } from '../organisms/Footer';
+import { Header } from '../organisms/Header';
+import { Menu } from '../organisms/Menu';
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export function Layout({ children }: LayoutProps) {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   const handleMenuIsActive = () => {

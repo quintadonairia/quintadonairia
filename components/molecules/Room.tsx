@@ -1,7 +1,17 @@
 import { ArrowRight } from '@phosphor-icons/react';
-import Button from '../atoms/Button';
+import { Button } from '../atoms/Button';
 
-const Room2 = ({
+interface RoomProps {
+  imageSrc: string;
+  imageAlt: string;
+  title: string;
+  price: string;
+  description: string;
+  bookingLink: string;
+  buttonLabel: string;
+}
+
+export function Room({
   imageSrc,
   imageAlt,
   title,
@@ -9,7 +19,7 @@ const Room2 = ({
   description,
   bookingLink,
   buttonLabel,
-}) => {
+}: RoomProps) {
   return (
     <article className="flex flex-col items-center gap-8">
       <img
@@ -28,7 +38,7 @@ const Room2 = ({
           {description}
         </h4>
         <a href={bookingLink}>
-          <Button size="large">
+          <Button size="large" variant="brand">
             <ArrowRight size={20} />
             {buttonLabel}
           </Button>
@@ -36,6 +46,4 @@ const Room2 = ({
       </div>
     </article>
   );
-};
-
-export default Room2;
+}

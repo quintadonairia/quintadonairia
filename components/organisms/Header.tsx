@@ -1,11 +1,16 @@
+import useScrollDirection from '@/hooks/use-scroll-direction';
 import { CallBell, List, X } from '@phosphor-icons/react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useTranslation } from '../../contexts/TranslationContext';
-import useScrollDirection from '../../hooks/useScrollDirection';
-import Button from '../atoms/Button';
+import { Button } from '../atoms/Button';
 
-export default function Header({ handleMenuIsActive, isMenuActive }) {
+interface HeaderProps {
+  handleMenuIsActive: () => void;
+  isMenuActive: boolean;
+}
+
+export function Header({ handleMenuIsActive, isMenuActive }: HeaderProps) {
   const t = useTranslation();
   const scrollDirection = useScrollDirection();
 
