@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 export function Parallax({
   children,
   speed = 0.5,
-  travel = 30,
+  travel = 40,
 }: {
   children: React.ReactNode;
   speed?: number;
