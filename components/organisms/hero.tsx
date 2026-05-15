@@ -7,7 +7,7 @@ interface HeroProps {
 }
 
 export function Hero({ title, image }: HeroProps) {
-  const { ref, y } = useParallax(0.4, 80);
+  const { ref, y } = useParallax();
 
   return (
     <section
