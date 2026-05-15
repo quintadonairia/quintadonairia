@@ -11,7 +11,7 @@ export function Hero({ title, image }: HeroProps) {
 
   return (
     <section
-      className="after:to-foreground-neutral-default/60 after:from-foreground-neutral-default/40 relative flex h-128 w-full items-center justify-center overflow-hidden after:absolute after:inset-0 after:bg-linear-to-b lg:h-screen"
+      className="after:to-foreground-neutral-default/60 after:from-foreground-neutral-default/40 relative flex h-screen w-full items-center justify-center overflow-hidden after:absolute after:inset-0 after:bg-linear-to-b"
       ref={ref}
     >
       <motion.img
