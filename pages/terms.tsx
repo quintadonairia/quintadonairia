@@ -14,10 +14,7 @@ export default function Terms() {
       <Head>
         <title>{pageTitle}</title>
       </Head>
-      <Hero
-        title={t.terms.title}
-        image="url(images/20220319-donairia-005.jpg)"
-      />
+      <Hero title={t.terms.title} image="images/20220319-donairia-005.jpg" />
       <Container>
         <section className="flex flex-col items-center gap-12 px-6 py-16 lg:gap-16">
           {sections.map((section, index) => (

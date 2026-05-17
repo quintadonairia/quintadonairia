@@ -15,7 +15,7 @@ export default function Contacts() {
       </Head>
       <Hero
         title={t.contacts.title}
-        image="url(/images/20210903-donairia-003.jpg)"
+        image="/images/20210903-donairia-003.jpg"
       />
       <section className="flex flex-col items-center gap-16 px-6 py-16 lg:flex-row lg:p-24">
         <div className="flex flex-col gap-12">

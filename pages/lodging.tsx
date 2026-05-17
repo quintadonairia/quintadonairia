@@ -25,10 +25,7 @@ export default function Lodging() {
       <Head>
         <title>{pageTitle}</title>
       </Head>
-      <Hero
-        title={t.lodging.title}
-        image="url(/images/20220410-donairia-004.jpg)"
-      />
+      <Hero title={t.lodging.title} image="/images/20220410-donairia-004.jpg" />
       <Container>
         <SectionHeader
           heading={t.lodging.heading}

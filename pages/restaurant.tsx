@@ -15,7 +15,7 @@ export default function Restaurant() {
       </Head>
       <Hero
         title={t.restaurant.title}
-        image="url(/images/20220423-donairia-004.jpg)"
+        image="/images/20220423-donairia-004.jpg"
       />
       <section>
         <Container>

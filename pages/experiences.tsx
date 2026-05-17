@@ -17,7 +17,7 @@ export default function Experiences() {
       </Head>
       <Hero
         title={t.experiences.title}
-        image="url(/images/20211003-donairia-024.jpg)"
+        image="/images/20211003-donairia-024.jpg"
       />
       <Container>
         <SectionHeader
