@@ -34,7 +34,7 @@ export function Header({ handleMenuIsActive, isMenuActive }: HeaderProps) {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-20 flex items-center justify-between p-6 transition-all duration-500 ${
+      className={`fixed inset-x-0 top-0 z-30 flex items-center justify-between p-6 transition-all duration-500 ${
         scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
       } ${background ? 'bg-background-neutral-inverse' : 'bg-transparent'}`}
     >
