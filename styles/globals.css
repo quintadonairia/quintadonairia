@@ -70,11 +70,11 @@
   --text-title-large--line-height: 32px;
   --text-display-small: 32px;
   --text-display-small--line-height: 40px;
-  --text-display-small--letter-spacing: -0.02em;
+  --text-display-small--letter-spacing: -0.03em;
   --text-display-medium: 48px;
   --text-display-medium--line-height: 52px;
   --text-display-medium--letter-spacing: -0.03em;
   --text-display-large: 64px;
   --text-display-large--line-height: 68px;
-  --text-display-large--letter-spacing: -0.04em;
+  --text-display-large--letter-spacing: -0.03em;
 }
