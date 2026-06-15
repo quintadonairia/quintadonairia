@@ -1,6 +1,6 @@
+import { SectionHeader } from '@/components/molecules/section-header';
 import { useParallax } from '@/hooks/use-parallax';
 import { motion } from 'motion/react';
-import { SectionHeader } from '../molecules/section-header';
 
 interface HeroProps {
   title: string;
