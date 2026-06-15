@@ -17,10 +17,11 @@ const headingTags: Record<SectionHeaderVariant, 'h1' | 'h2' | 'h3'> = {
 
 const headingClasses: Record<SectionHeaderVariant, string> = {
   large:
-    'text-display-medium lg:text-display-large font-serif lg:max-w-(--breakpoint-lg)',
+    'text-display-medium text-foreground-brand-default lg:text-display-large font-serif lg:max-w-(--breakpoint-lg)',
   medium:
-    'text-display-small lg:text-display-medium font-serif lg:max-w-(--breakpoint-md)',
-  small: 'text-display-small font-serif lg:max-w-(--breakpoint-sm)',
+    'text-display-small text-foreground-brand-default lg:text-display-medium font-serif lg:max-w-(--breakpoint-md)',
+  small:
+    'text-display-small text-foreground-brand-default font-serif lg:max-w-(--breakpoint-sm)',
 };
 
 export function SectionHeader({
@@ -39,7 +40,9 @@ export function SectionHeader({
       <small className="text-body-medium font-semibold tracking-widest uppercase">
         {kicker}
       </small>
-      <Heading className={headingClasses[size]}>{heading}</Heading>
+      <Heading data-slot="heading" className={headingClasses[size]}>
+        {heading}
+      </Heading>
       <p className="leading-relaxed lg:max-w-prose">{subheading}</p>
     </header>
   );
