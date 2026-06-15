@@ -22,7 +22,7 @@ export function Hero({ title, image }: HeroProps) {
         className="absolute inset-0 w-full object-cover"
       />
       <SectionHeader
-        className="text-foreground-neutral-inverse z-10 max-w-(--breakpoint-md) px-8 font-serif lg:max-w-(--breakpoint-lg)"
+        className="text-foreground-neutral-inverse **:data-[slot=heading]:text-foreground-neutral-inverse z-10 max-w-(--breakpoint-md) px-8 font-serif lg:max-w-(--breakpoint-lg)"
         heading={title}
       />
     </section>
