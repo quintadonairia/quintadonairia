@@ -11,7 +11,7 @@ export default function Document() {
         <meta name="theme-color" content="#faf6f0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap&family=Fraunces:wght@400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300,40,1&display=swap"
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
