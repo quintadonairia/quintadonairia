@@ -22,6 +22,7 @@ export default function Restaurant() {
           <SectionHeader
             heading={t.restaurant.heading}
             subheading={t.restaurant.subheading}
+            size="medium"
           />
         </Container>
         <div className="no-scrollbar grid snap-x snap-mandatory auto-cols-[80%] grid-flow-col gap-8 overflow-x-auto pb-12 lg:auto-cols-[40%]">
