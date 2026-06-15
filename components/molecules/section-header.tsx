@@ -1,16 +1,22 @@
+import { mergeTailwindClassNames as cn } from '@/lib/utils';
+
 interface SectionHeaderProps {
+  className?: string;
   kicker?: string;
   heading: string;
   subheading?: string;
 }
 
 export function SectionHeader({
+  className,
   kicker,
   heading,
   subheading,
 }: SectionHeaderProps) {
   return (
-    <header className="flex flex-col items-center gap-6 text-center">
+    <header
+      className={cn('flex flex-col items-center gap-6 text-center', className)}
+    >
       <small className="text-body-medium font-semibold tracking-widest uppercase">
         {kicker}
       </small>

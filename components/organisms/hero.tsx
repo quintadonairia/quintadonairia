@@ -1,5 +1,6 @@
 import { useParallax } from '@/hooks/use-parallax';
 import { motion } from 'motion/react';
+import { SectionHeader } from '../molecules/section-header';
 
 interface HeroProps {
   title: string;
@@ -20,9 +21,10 @@ export function Hero({ title, image }: HeroProps) {
         style={{ y, height: '120%' }}
         className="absolute inset-0 w-full object-cover"
       />
-      <h1 className="text-foreground-neutral-inverse text-display-small lg:text-display-large z-10 max-w-(--breakpoint-md) px-8 font-serif leading-snug lg:max-w-(--breakpoint-lg) lg:leading-tight">
-        {title}
-      </h1>
+      <SectionHeader
+        className="text-foreground-neutral-inverse z-10 max-w-(--breakpoint-md) px-8 font-serif lg:max-w-(--breakpoint-lg)"
+        heading={title}
+      />
     </section>
   );
 }
