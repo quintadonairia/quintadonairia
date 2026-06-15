@@ -19,7 +19,7 @@ export default function Terms() {
         <section className="flex flex-col items-center gap-12 px-6 py-16 lg:gap-16">
           {sections.map((section, index) => (
             <section key={index} className="flex flex-col gap-4">
-              <h1 className="font-display text-display-small text-foreground-default tracking-tight">
+              <h1 className="text-display-small text-foreground-default font-serif tracking-tight">
                 {section.title}
               </h1>
               <div className="text-foreground-strong">

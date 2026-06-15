@@ -53,8 +53,7 @@
 
   --font-*: initial;
   --font-sans: 'Montserrat';
-  --font-serif: 'Playfair Display';
-  --font-display: Fraunces;
+  --font-serif: 'Fraunces';
 
   --text-*: initial;
   --text-body-small: 12px;
@@ -71,8 +70,11 @@
   --text-title-large--line-height: 32px;
   --text-display-small: 32px;
   --text-display-small--line-height: 40px;
-  --text-display-medium: 40px;
-  --text-display-medium--line-height: 44px;
-  --text-display-large: 48px;
-  --text-display-large--line-height: 52px;
+  --text-display-small--letter-spacing: -0.02em;
+  --text-display-medium: 48px;
+  --text-display-medium--line-height: 52px;
+  --text-display-medium--letter-spacing: -0.03em;
+  --text-display-large: 64px;
+  --text-display-large--line-height: 68px;
+  --text-display-large--letter-spacing: -0.04em;
 }
