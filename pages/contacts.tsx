@@ -1,4 +1,5 @@
 import { Tooltip } from '@/components/atoms/tooltip';
+import { SectionHeader } from '@/components/molecules/section-header';
 import { Hero } from '@/components/organisms/hero';
 import { useTranslation } from '@/contexts/translation-context';
 import { FacebookLogo, Info, InstagramLogo } from '@phosphor-icons/react';
@@ -20,10 +21,11 @@ export default function Contacts() {
       <section className="flex flex-col items-center gap-16 px-6 py-16 lg:flex-row lg:p-24">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-2">
-            <h1 className="text-foreground-brand-default text-title-large lg:text-display-small font-serif">
-              {t.contacts.heading}
-            </h1>
-            <p>{t.contacts.subheading}</p>
+            <SectionHeader
+              heading={t.contacts.heading}
+              subheading={t.contacts.subheading}
+              size="medium"
+            />
           </div>
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">

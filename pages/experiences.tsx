@@ -23,6 +23,7 @@ export default function Experiences() {
         <SectionHeader
           heading={t.experiences.heading}
           subheading={t.experiences.subheading}
+          size="medium"
         />
       </Container>
       <Split direction="reverse">
