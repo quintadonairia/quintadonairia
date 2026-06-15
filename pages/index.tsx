@@ -20,6 +20,7 @@ export default function Home() {
         <SectionHeader
           kicker={t.home.lodging.kicker}
           heading={t.home.lodging.heading}
+          size="medium"
         />
         <div className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24">
           <img
@@ -45,6 +46,7 @@ export default function Home() {
         <SectionHeader
           kicker={t.home.experiences.kicker}
           heading={t.home.experiences.heading}
+          size="medium"
         />
         <Gallery />
         <Button href="/experiences" size="large" variant="brand">
@@ -55,6 +57,7 @@ export default function Home() {
         <SectionHeader
           kicker={t.home.restaurant.kicker}
           heading={t.home.restaurant.heading}
+          size="medium"
         />
         <div className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24">
           <img

@@ -30,6 +30,7 @@ export default function Lodging() {
         <SectionHeader
           heading={t.lodging.heading}
           subheading={t.lodging.subheading}
+          size="medium"
         />
       </Container>
       <Container>
