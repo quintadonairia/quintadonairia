@@ -17,11 +17,11 @@ const headingTags: Record<SectionHeaderVariant, 'h1' | 'h2' | 'h3'> = {
 
 const headingClasses: Record<SectionHeaderVariant, string> = {
   large:
-    'text-display-medium text-foreground-brand-default lg:text-display-large font-serif lg:max-w-(--breakpoint-lg)',
+    'text-display-medium text-foreground-brand-default lg:text-display-large text-balance font-serif lg:max-w-(--breakpoint-lg)',
   medium:
-    'text-display-small text-foreground-brand-default lg:text-display-medium font-serif lg:max-w-(--breakpoint-md)',
+    'text-display-small text-foreground-brand-default lg:text-display-medium text-balance font-serif lg:max-w-(--breakpoint-md)',
   small:
-    'text-display-small text-foreground-brand-default font-serif lg:max-w-(--breakpoint-sm)',
+    'text-display-small text-foreground-brand-default text-balance font-serif lg:max-w-(--breakpoint-sm)',
 };
 
 export function SectionHeader({
