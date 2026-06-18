@@ -15,7 +15,10 @@ export default function Home() {
       <Head>
         <title>{pageTitle}</title>
       </Head>
-      <Hero title={t.home.title} image="/images/20211013-donairia-004.jpg" />
+      <Hero
+        title={t.home.title}
+        video="https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com/exterior-drone-overview.mp4"
+      />
       <section className="flex flex-col items-center gap-8 px-6 py-16 lg:gap-12 lg:p-32">
         <SectionHeader
           kicker={t.home.lodging.kicker}
