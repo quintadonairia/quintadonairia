@@ -10,7 +10,7 @@ export function Parallax({
   speed?: number;
   travel?: number;
 }) {
-  const { ref, y } = useParallax(speed, travel);
+  const { ref, y } = useParallax({ speed, travel });
   return (
     <div ref={ref} style={{ overflow: 'hidden' }}>
       <motion.div style={{ y }}>{children}</motion.div>
