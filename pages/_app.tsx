@@ -1,4 +1,5 @@
 import { Layout } from '@/components/layouts/layout';
+import { SmoothScroll } from '@/components/motion/smooth-scroll';
 import { TranslationProvider } from '@/contexts/translation-context';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
@@ -10,11 +11,13 @@ export default function App({ Component, pageProps }: AppProps) {
   const { locale } = router;
 
   return (
-    <TranslationProvider locale={locale ?? 'pt'}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-      <Analytics />
-    </TranslationProvider>
+    <SmoothScroll>
+      <TranslationProvider locale={locale ?? 'pt'}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+        <Analytics />
+      </TranslationProvider>
+    </SmoothScroll>
   );
 }
