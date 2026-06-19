@@ -1,5 +1,4 @@
-import { useTransform } from 'framer-motion';
-import { useScroll } from 'motion/react';
+import { useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
 
 interface UseParallaxOptions {
