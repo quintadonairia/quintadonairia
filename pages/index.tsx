@@ -17,7 +17,13 @@ export default function Home() {
       </Head>
       <Hero
         title={t.home.title}
-        video="https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com/exterior-drone-overview.mp4"
+        video={{
+          large:
+            'https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com/exterior-drone-overview-large.mp4',
+          small:
+            'https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com/exterior-drone-overview-small.mp4',
+        }}
+        poster="https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com/exterior-drone-overview-poster.jpg"
       />
       <section className="flex flex-col items-center gap-8 px-6 py-16 lg:gap-12 lg:p-32">
         <SectionHeader

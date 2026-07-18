@@ -1,18 +1,27 @@
 import { SectionHeader } from '@/components/molecules/section-header';
 import { useCrossfade } from '@/hooks/use-crossfade';
+import { useMediaQuery } from '@/hooks/use-media-query';
 import { useParallax } from '@/hooks/use-parallax';
+import { getBreakpoint } from '@/lib/breakpoint';
 import { motion } from 'motion/react';
+
+interface HeroVideo {
+  large: string;
+  small?: string;
+}
 
 interface HeroProps {
   title: string;
   image?: string;
-  video?: string;
+  video?: HeroVideo;
+  poster?: string;
 }
 
-export function Hero({ title, image, video }: HeroProps) {
+export function Hero({ title, image, video, poster }: HeroProps) {
   const { ref, y } = useParallax();
   const { lead, follow, leadOpacity, followOpacity, transition } =
     useCrossfade();
+  const isMobile = useMediaQuery(`(max-width: ${getBreakpoint('md')})`);
 
   return (
     <section
@@ -23,7 +32,9 @@ export function Hero({ title, image, video }: HeroProps) {
         <>
           <motion.video
             ref={lead}
-            src={video}
+            src={(isMobile && video?.small) || video.large}
+            poster={poster ?? image}
+            preload="auto"
             muted
             playsInline
             autoPlay
@@ -35,7 +46,9 @@ export function Hero({ title, image, video }: HeroProps) {
           />
           <motion.video
             ref={follow}
-            src={video}
+            src={(isMobile && video?.small) || video.large}
+            poster={poster ?? image}
+            preload="auto"
             muted
             playsInline
             initial={false}
