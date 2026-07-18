@@ -37,8 +37,8 @@ export function Hero({ title, image, video, poster }: HeroProps) {
         <>
           <motion.video
             ref={lead}
-            src={(isMobile && video?.small) || video.large}
-            poster={(isMobile && poster?.small) || poster.large}
+            src={(isMobile && video.small) || video.large}
+            poster={(isMobile && poster?.small) || poster?.large}
             preload="auto"
             muted
             playsInline
@@ -51,8 +51,8 @@ export function Hero({ title, image, video, poster }: HeroProps) {
           />
           <motion.video
             ref={follow}
-            src={(isMobile && video?.small) || video.large}
-            poster={(isMobile && poster?.small) || poster.large}
+            src={(isMobile && video.small) || video.large}
+            poster={(isMobile && poster?.small) || poster?.large}
             preload="auto"
             muted
             playsInline
