@@ -1,6 +1,7 @@
 import { useTransform } from 'framer-motion';
 import { useScroll } from 'motion/react';
 import { useRef } from 'react';
+
 interface UseParallaxOptions {
   speed?: number;
   travel?: number;
