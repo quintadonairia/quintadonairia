@@ -10,11 +10,16 @@ interface HeroVideo {
   small?: string;
 }
 
+interface HeroPoster {
+  large: string;
+  small?: string;
+}
+
 interface HeroProps {
   title: string;
   image?: string;
   video?: HeroVideo;
-  poster?: string;
+  poster?: HeroPoster;
 }
 
 export function Hero({ title, image, video, poster }: HeroProps) {
@@ -33,7 +38,7 @@ export function Hero({ title, image, video, poster }: HeroProps) {
           <motion.video
             ref={lead}
             src={(isMobile && video?.small) || video.large}
-            poster={poster ?? image}
+            poster={(isMobile && poster?.small) || poster.large}
             preload="auto"
             muted
             playsInline
@@ -47,7 +52,7 @@ export function Hero({ title, image, video, poster }: HeroProps) {
           <motion.video
             ref={follow}
             src={(isMobile && video?.small) || video.large}
-            poster={poster ?? image}
+            poster={(isMobile && poster?.small) || poster.large}
             preload="auto"
             muted
             playsInline
