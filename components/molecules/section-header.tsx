@@ -1,6 +1,7 @@
 import { mergeTailwindClassNames as cn } from '@/lib/utils';
 
 type SectionHeaderVariant = 'large' | 'medium' | 'small';
+
 interface SectionHeaderProps {
   className?: string;
   heading: string;
