@@ -19,15 +19,15 @@ export default function Home() {
         title={t.home.title}
         video={{
           large:
-            'https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com/exterior-drone-overview-large.mp4',
+            'https://media.quintadonairia.com/exterior-drone-overview-large.mp4',
           small:
-            'https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com/exterior-drone-overview-small.mp4',
+            'https://media.quintadonairia.com/exterior-drone-overview-small.mp4',
         }}
         poster={{
           large:
-            'https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com/exterior-drone-overview-large.jpg',
+            'https://media.quintadonairia.com/exterior-drone-overview-large.jpg',
           small:
-            'https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com/exterior-drone-overview-small.jpg',
+            'https://media.quintadonairia.com/exterior-drone-overview-small.jpg',
         }}
       />
       <section className="flex flex-col items-center gap-8 px-6 py-16 lg:gap-12 lg:p-32">

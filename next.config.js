@@ -4,9 +4,7 @@ module.exports = {
     defaultLocale: 'pt',
   },
   images: {
-    remotePatterns: [
-      new URL('https://h5lrldbzsuemvuz7.public.blob.vercel-storage.com'),
-    ],
+    remotePatterns: [new URL('https://media.quintadonairia.com')],
   },
   reactStrictMode: true,
 };
