@@ -9,8 +9,8 @@ export function Footer() {
   const year = currentDate.getFullYear();
 
   return (
-    <footer className="text-foreground-neutral-inverse bg-background-neutral-inverse flex flex-col items-start gap-24 px-8 py-12 lg:px-32 lg:py-16">
-      <div className="flex w-full flex-col gap-16 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
+    <footer className="text-foreground-neutral-inverse bg-background-neutral-inverse flex flex-col items-start gap-20 px-8 py-12 lg:px-32 lg:py-16">
+      <div className="flex w-full flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-24">
           <div className="flex flex-col gap-16">
             <Link className="cursor-pointer" href="/">
@@ -73,15 +73,16 @@ export function Footer() {
       </div>
       <div className="text-body-medium flex w-full flex-col gap-12 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
         <div className="flex flex-col gap-2">
-          <p>© {year} Quinta Dona Iria</p>
           <a
             href="https://rnt.turismodeportugal.pt/RNT/RNET.aspx?nr=10101"
             target="_blank"
           >
             RNET - 10101
           </a>
-          <ul className="flex gap-2">
-            <Link href="/terms">{t.footer.legal.terms}</Link>
+          <ul className="flex flex-col gap-2 lg:flex-row lg:gap-5">
+            <li>
+              <Link href="/terms">{t.footer.legal.terms}</Link>
+            </li>
             <li>
               <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao">
                 {t.footer.legal.complaintsBook}
@@ -89,13 +90,16 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <p>
-          {t.footer.signature}
-          <a href="https://linkedin.com/in/zalodias" target="_blank">
-            {' '}
-            Gonçalo Dias
-          </a>
-        </p>
+        <div className="flex flex-col gap-2">
+          <span>
+            {t.footer.signature}
+            <a href="https://linkedin.com/in/zalodias" target="_blank">
+              {' '}
+              Gonçalo Dias
+            </a>
+          </span>
+          <span>© {year} Quinta Dona Iria</span>
+        </div>
       </div>
     </footer>
   );
